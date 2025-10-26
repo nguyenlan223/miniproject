@@ -435,7 +435,11 @@ async function tableProduct(products, currentPage = 1, itemsPerPage = 10) {
     // Gắn sự kiện cho nút "Chi tiết"
     tbody.querySelectorAll(".btn-detail").forEach((btn) => {
         btn.addEventListener("click", async () => {
-            loadProductID(btn.dataset.id)
+            const id = btn.dataset.id;
+
+        // 🔹 Lưu ProductID vào sessionStorage để pageshow có thể đọc lại
+        sessionStorage.setItem("ProductID", id);
+            loadProductID(id)
                 .then((product) => showProductDetail(product))
                 .catch((error) => {
                     console.log(
