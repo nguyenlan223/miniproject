@@ -8,10 +8,6 @@ const dashboardRoutes = require("./routes/dashboardRoutes");
 
 const app = express();
 const path = require("path");
-app.use(cors({
-    origin: "https://miniproject-n8x9.onrender.com", // frontend URL
-    credentials: true
-}));
 
 app.use(express.json());
 app.use(express.static(path.join(__dirname, "public", "client")));
@@ -28,7 +24,7 @@ app.use(
         cookie: {
             httpOnly: true,
             secure:true, // nếu chạy localhost, để false
-            sameSite: 'none',
+            sameSite: 'lax',
             maxAge: 1000 * 60 * 60 * 24
             
         },
