@@ -40,7 +40,7 @@ document.getElementById("editForm").addEventListener("submit", async (e) => {
 
     const newProduct = getFormData();
 
-    // ⚠️ Kiểm tra dữ liệu cơ bản
+    // Kiểm tra dữ liệu cơ bản
     if (!newProduct.masp || !newProduct.name || !newProduct.price) {
         alert("Vui lòng nhập đầy đủ Mã SP, Tên SP và Giá!");
         return;
@@ -53,18 +53,16 @@ document.getElementById("editForm").addEventListener("submit", async (e) => {
             credentials: "include",
             body: JSON.stringify(newProduct),
         });
-
-        if (!res.ok) throw new Error("Thêm sản phẩm thất bại!");
-       console.log(res.status, resText);
         const result = await res.json();
+        if (!res.ok) throw new Error("Thêm sản phẩm thất bại!");
         alert("✅ Thêm sản phẩm thành công!");
         console.log("Kết quả:", result);
 
-        // 🧹 Reset form
+        // Reset form
         e.target.reset();
         document.getElementById("previewImage").src = "";
 
-        // 🏁 Quay lại trang danh sách hoặc reload (tuỳ bạn)
+        // Quay lại trang danh sách hoặc reload (tuỳ bạn)
         sessionStorage.setItem("shouldReload", "true");
         history.back();
     } catch (err) {
