@@ -1,12 +1,12 @@
 import { API_BASE_URL } from "../config.js";
 var API_PRODUCT = `${API_BASE_URL}/products`;
 var API_BASE = `${API_BASE_URL}/products`;
-window.addEventListener("load", () => {
-  if (sessionStorage.getItem("shouldReload") === "true") {
-    sessionStorage.removeItem("shouldReload");
-    location.reload(); // 🔁 tải lại danh sách để hiển thị dữ liệu mới
-  }
+window.addEventListener("load", async () => {
+  const products = await loadProducts();
+  renderProducts(products);
+  tableProduct(products);
 });
+
 
 async function loadProducts() {
     try {
