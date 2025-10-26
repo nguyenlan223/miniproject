@@ -1,4 +1,7 @@
 let list_products = [];
+const API_BASE = window.location.origin.includes('localhost')
+    ? "http://localhost:5000"
+    : window.location.origin;
 window.onload =  async function () {
 	khoiTao();
 
@@ -22,7 +25,7 @@ window.onload =  async function () {
 		autoplayTimeout: 3500
 	});
 	 try {
-    const res = await fetch("http://localhost:5000/api/products");
+    const res = await fetch(`${API_BASE}/api/products`);
     list_products = await res.json();
     // autocomplete cho khung tìm kiếm (sau khi có dữ liệu)
     autocomplete(document.getElementById('search-box'), list_products);

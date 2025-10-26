@@ -36,7 +36,7 @@ app.use(
        }),
         cookie: {
             httpOnly: true,
-            secure: false, // nếu chạy localhost, để false
+            secure: true, // nếu chạy localhost, để false
             maxAge: 1000 * 60 * 60 * 24,
         },
     })

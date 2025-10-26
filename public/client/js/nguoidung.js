@@ -2,13 +2,17 @@ var currentUser;
 var tongTienTatCaDonHang = 0;
 var tongSanPhamTatCaDonHang = 0;
 var selectedDiachi = null;
+// frontend config
+const API_BASE = window.location.origin.includes('localhost')
+    ? "http://localhost:5000"
+    : "https://miniproject-n8x9.onrender.com";
 
 window.onload = async function () {
     console.log('nguoidung.js loaded');
     khoiTao();
 
     try {
-    const res = await fetch("http://localhost:5000/api/products");
+    const res = await fetch(`${API_BASE}/api/products`);
     const list_products = await res.json();
     } catch (err) {
     console.error("Lỗi tải sản phẩm:", err);
@@ -16,7 +20,7 @@ window.onload = async function () {
 
     // Lấy user hiện tại từ server (session)
     try {
-        const res = await fetch('http://localhost:5000/api/users/me', { credentials: 'include' });
+        const res = await fetch(`${API_BASE}/api/users/me`, { credentials: 'include' });
         const data = await res.json();
         if (data.success && data.user) {
             currentUser = data.user;
@@ -50,7 +54,7 @@ async function changeAvatar(event) {
   formData.append("avatar", file);
 
   try {
-    const res = await fetch("http://localhost:5000/api/users/avatar", {
+    const res = await fetch(`${API_BASE}/api/users/avatar`, {
       method: "PUT",
       body: formData,
       credentials: "include"
@@ -88,7 +92,7 @@ async function removeAvatar() {
   if (!confirm("Bạn có chắc muốn xóa ảnh đại diện?")) return;
 
   try {
-    const res = await fetch("http://localhost:5000/api/users/avatar", {
+    const res = await fetch(`${API_BASE}/api/users/avatar`, {
       method: "DELETE",
       credentials: "include"
     });
@@ -225,7 +229,7 @@ async function changePass() {
     }
 
     try {
-        const res = await fetch('http://localhost:5000/api/users/change-password', {
+        const res = await fetch(`${API_BASE}/api/users/change-password`, {
             method: 'PUT', // dùng PUT vì backend là PUT
             headers: { 'Content-Type': 'application/json' },
             credentials: 'include', // gửi cookie session
@@ -258,7 +262,7 @@ async function changeInfo(iTag, field) {
         const value = inp.value;
 
         try {
-            const res = await fetch(`http://localhost:5000/api/users/update`, {
+            const res = await fetch(`${API_BASE}/api/users/update`, {
                 method: 'PUT',
                 headers: { 'Content-Type': 'application/json' },
                 credentials: 'include',
@@ -433,7 +437,7 @@ async function submitAddDiachi() {
         quanHuyen: huyen,
         tinhThanh: tinh
     };
-    const res = await fetch('http://localhost:5000/api/users/address', {
+    const res = await fetch(`${API_BASE}/api/users/address`, {
     method: 'POST',
     headers: { "Content-Type": "application/json" },
     credentials: 'include', // gửi cookie session
@@ -625,7 +629,7 @@ async function submitEditDiachi(index) {
         tinhThanh: city.options[city.selectedIndex].text
     }
     diaChi=currentUser.diaChi[index];
-   const res = await fetch(`http://localhost:5000/api/users/address/${diaChi._id}`, {
+   const res = await fetch(`${API_BASE}/api/users/address/${diaChi._id}`, {
     method: 'PUT',
     headers: { 'Content-Type': 'application/json' },
     credentials: 'include',
@@ -657,7 +661,7 @@ function closeEditDiachiModal() {
 async function deleteDiachi(index) {
     if (window.confirm('Bạn có chắc chắn muốn xóa địa chỉ này?')) {
          diaChi=currentUser.diaChi[index];
-         const res = await fetch(`http://localhost:5000/api/users/address/${diaChi._id}`, {
+         const res = await fetch(`${API_BASE}/api/users/address/${diaChi._id}`, {
          method: 'DELETE',
          credentials: 'include'
 });

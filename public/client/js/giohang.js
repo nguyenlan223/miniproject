@@ -2,11 +2,13 @@
 var products = []; // Danh sách sản phẩm trong giỏ hàng
 var cart = null;   // Giỏ hàng từ server
 var currentUser = null; // User hiện tại
-
+const API_BASE = window.location.origin.includes('localhost')
+    ? "http://localhost:5000"
+    : "https://miniproject-n8x9.onrender.com";
 window.onload = async function () {
     khoiTao()
    try {
-    const res = await fetch("http://localhost:5000/api/products");
+    const res = await fetch(`${API_BASE}/api/products`);
     var list_products = await res.json();
   } catch (err) {
     console.error("Lỗi tải sản phẩm:", err);
@@ -40,7 +42,7 @@ window.onload = async function () {
 async function loadCart() {
     if (!currentUser) return;
     try {
-        const res = await fetch('http://localhost:5000/api/cart',{
+        const res = await fetch(`${API_BASE}/api/cart`,{
             credentials: 'include'
         });
         const data = await res.json();
@@ -174,7 +176,7 @@ async function xoaSanPhamTrongGioHang(i) {
 
     if (window.confirm('Xác nhận xóa sản phẩm này khỏi giỏ hàng?')) {
         try {
-            const res = await fetch(`http://localhost:5000/api/cart?productId=${productId}`, {
+            const res = await fetch(`${API_BASE}/api/cart?productId=${productId}`, {
                 method: 'DELETE',
                 credentials: 'include' // ✅ quan trọng: gửi cookie session
             });
@@ -198,7 +200,7 @@ async function xoaHet() {
     if (products.length) {
         if (window.confirm('Bạn có chắc chắn muốn xóa toàn bộ sản phẩm trong giỏ hàng?')) {
             try {
-                const res = await fetch('http://localhost:5000/api/cart', {
+                const res = await fetch(`${API_BASE}/api/cart`, {
                     method: 'DELETE',
                     credentials: 'include' // ✅ gửi session
                 });
@@ -236,7 +238,7 @@ async function giamSoLuong(index) {
 //  Cập nhật giỏ hàng lên server 
 async function updateCartOnServer() {
     try {
-        const res = await fetch('http://localhost:5000/api/cart', {
+        const res = await fetch(`${API_BASE}/api/cart`, {
             method: 'PUT',
             headers: { 'Content-Type': 'application/json' },
             credentials: 'include', // ✅ gửi cookie session lên server
@@ -520,7 +522,7 @@ async function processCOD(selectedProducts) {
             "diaChiNhanHang": window.selectedAddress || 'Chưa xác định'
         };
         
-        const res= await fetch(`http://localhost:5000/api/orders`,{
+        const res= await fetch(`${API_BASE}/api/orders`,{
              method:'POST',
              headers:{
              "Content-Type":"application/json",
@@ -617,7 +619,7 @@ async function processCOD(selectedProducts) {
             data.paymentStatus = 'Chờ xác nhận chuyển khoản';
             data.orderStatus = 'Đang chờ thanh toán';
              // Tạo đơn hàng với phương thức COD
-            const res= await fetch(`http://localhost:5000/api/orders`,{
+            const res= await fetch(`${API_BASE}/api/orders`,{
              method:'POST',
              headers:{
              "Content-Type":"application/json",

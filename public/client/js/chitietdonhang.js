@@ -1,3 +1,6 @@
+const API_BASE = window.location.origin.includes('localhost')
+    ? "http://localhost:5000"
+    : "https://miniproject-n8x9.onrender.com";
 $(document).ready(async function () {
   const params = new URLSearchParams(window.location.search);
   const orderId = params.get("id");
@@ -11,7 +14,7 @@ $(document).ready(async function () {
     // 🟢 Lấy thông tin user hiện tại (để lấy địa chỉ)
     let currentUser = null;
     try {
-      const userRes = await fetch("http://localhost:5000/api/users/me", {
+      const userRes = await fetch(`${API_BASE}/api/users/me`, {
         credentials: "include",
       });
       const userData = await userRes.json();
@@ -21,7 +24,7 @@ $(document).ready(async function () {
     }
 
     // 🟢 Lấy chi tiết đơn hàng
-    const res = await fetch(`http://localhost:5000/api/orders/${orderId}`, {
+    const res = await fetch(`${API_BASE}/api/orders/${orderId}`, {
       credentials: "include",
     });
     const dh = await res.json();

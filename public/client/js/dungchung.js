@@ -1,11 +1,14 @@
 var currentUser=null;
+const API_BASE = window.location.origin.includes('localhost')
+    ? "http://localhost:5000"
+    : "https://miniproject-n8x9.onrender.com";
 // Hàm khởi tạo, tất cả các trang đều cần
 document.addEventListener('DOMContentLoaded', () => {
     setupEventTaiKhoan();
 });
 async function khoiTao() {
      try {
-    const res = await fetch("http://localhost:5000/api/products");
+    const res = await fetch(`${API_BASE}/api/products`);
     list_products = await res.json();
    
     await capNhat_ThongTin_CurrentUser();
@@ -24,7 +27,7 @@ async function khoiTao() {
 
 async function getListProducts() {
     try {
-    const res = await fetch("http://localhost:5000/api/products");
+    const res = await fetch(`${API_BASE}/api/products`);
     list_products = await res.json();
     return list_products;
   } catch (err) {
@@ -127,7 +130,7 @@ async function themVaoGioHang(masp,tensp) {
 
     try {
    
-    const res = await fetch(`http://localhost:5000/api/cart/add`, {
+    const res = await fetch(`${API_BASE}/api/cart/add`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       credentials: 'include',
@@ -157,7 +160,7 @@ async function themVaoGioHang(masp,tensp) {
 // Lấy user hiện tại từ server (session)
 async function getCurrentUser() {
     try {
-        const res = await fetch('http://localhost:5000/api/users/me', {
+        const res = await fetch(`${API_BASE}/api/users/me`, {
             method: 'GET',
             credentials: 'include'
         });
@@ -189,7 +192,7 @@ async function logIn(form,event) {
       const password = form.pass.value;
 
     try {
-        const res = await fetch('http://localhost:5000/api/users/login', {
+        const res = await fetch(`${API_BASE}/api/users/login`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             credentials: 'include',
@@ -230,7 +233,7 @@ async function signUp(form, event) {
         password: form.newPass.value
     };
     try {
-        const res = await fetch('http://localhost:5000/api/users/register', {
+        const res = await fetch(`${API_BASE}/api/users/register`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
              credentials: 'include',
@@ -256,7 +259,7 @@ async function signUp(form, event) {
 // Đăng xuất
 async function logOut() {
     try {
-        const res = await fetch('http://localhost:5000/api/users/logout', {
+        const res = await fetch(`${API_BASE}/api/users/logout`, {
             method: 'POST',
             credentials: 'include'
         });
@@ -361,7 +364,7 @@ async function capNhat_ThongTin_CurrentUser() {
         setCurrentUser(user);
     if (!currentUser) return;
     // Lấy giỏ hàng
-        const res = await fetch('http://localhost:5000/api/cart', {
+        const res = await fetch(`${API_BASE}/api/cart`, {
             credentials: 'include'
         });
         const data = await res.json();

@@ -1,14 +1,16 @@
 var allOrders = [];
 var currentUser = null;
 var isAdmin = false; // ✅ Kiểm tra quyền admin
-
+const API_BASE = window.location.origin.includes('localhost')
+    ? "http://localhost:5000"
+    : "https://miniproject-n8x9.onrender.com";
 window.onload = async function () {
   console.log("donmua.js loaded");
   khoiTao();
 
   // 🟢 Lấy thông tin user hiện tại
   try {
-    const res = await fetch("http://localhost:5000/api/users/me", {
+    const res = await fetch(`${API_BASE}/api/users/me`, {
       credentials: "include",
     });
     const result = await res.json();
@@ -38,7 +40,7 @@ window.onload = async function () {
 // =============================== //
 async function loadOrders(filterStatus) {
   try {
-    const orderRes = await fetch("http://localhost:5000/api/orders", {
+    const orderRes = await fetch(`${API_BASE}/api/orders`, {
       credentials: "include",
     });
     const orders = await orderRes.json();
@@ -106,7 +108,7 @@ function attachEventButtons(filterStatus) {
       if (confirm("Bạn có chắc muốn hủy đơn hàng này không?")) {
         try {
           const res = await fetch(
-            `http://localhost:5000/api/orders/${id}/cancel`,
+            `${API_BASE}/api/orders/${id}/cancel`,
             {
               method: "PUT",
               credentials: "include",
@@ -264,7 +266,7 @@ async function muaLai(orderId) {
 
   try {
     for (const p of dh.products) {
-      const res = await fetch("http://localhost:5000/api/cart/add", {
+      const res = await fetch(`${API_BASE}/api/cart/add`, {
         method: "POST",
         credentials: "include",
         headers: { "Content-Type": "application/json" },
