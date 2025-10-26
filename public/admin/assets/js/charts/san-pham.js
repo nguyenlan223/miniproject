@@ -573,12 +573,14 @@ window.addEventListener("pageshow", () => {
                 console.log(`Lỗi trang Sản Phẩm, tableProduct: ${error}`)
             );
         sessionStorage.removeItem("shouldReload");
-
-        loadProductID(sessionStorage.getItem("ProductID"))
-            .then((product) => showProductDetail(product))
-            .catch((error) => {
-                console.log(`Lỗi trang Sản Phẩm, showProductDetail: ${error}`);
-            });
-        sessionStorage.removeItem("ProductID");
+        const productId = sessionStorage.getItem("ProductID");
+        if (productId) {
+            loadProductID(productId)
+                .then((product) => showProductDetail(product))
+                .catch((error) => {
+                    console.log(`Lỗi trang Sản Phẩm, showProductDetail: ${error}`);
+                });
+            sessionStorage.removeItem("ProductID");
+        }
     }
 });
