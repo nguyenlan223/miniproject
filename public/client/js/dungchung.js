@@ -1,5 +1,5 @@
 var currentUser=null;
-const API_BASE = window.location.origin.includes('localhost')
+let API_BASE = window.location.origin.includes('localhost')
     ? "http://localhost:5000"
     : "https://miniproject-n8x9.onrender.com";
 // Hàm khởi tạo, tất cả các trang đều cần

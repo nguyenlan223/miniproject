@@ -1,7 +1,7 @@
 var allOrders = [];
 var currentUser = null;
 var isAdmin = false; // ✅ Kiểm tra quyền admin
-const API_BASE = window.location.origin.includes('localhost')
+let API_BASE = window.location.origin.includes('localhost')
     ? "http://localhost:5000"
     : "https://miniproject-n8x9.onrender.com";
 window.onload = async function () {
