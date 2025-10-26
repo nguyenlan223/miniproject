@@ -225,9 +225,9 @@ function numToString(x) {
 
 function getColorStatus(status) {
   switch (status) {
-    case "Chờ xác nhận":
+    case "Chờ xử lý":
       return "#ff9f00";
-    case "Đang xử lý":
+    case "Hoàn trả":
       return "#17a2b8";
     case "Đang giao":
       return "#007bff";
