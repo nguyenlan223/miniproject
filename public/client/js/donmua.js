@@ -106,7 +106,7 @@ function attachEventButtons(filterStatus) {
       if (confirm("Bạn có chắc muốn hủy đơn hàng này không?")) {
         try {
           const res = await fetch(
-            "https://miniproject-n8x9.onrender.com/api/orders/${id}/cancel",
+            `https://miniproject-n8x9.onrender.com/api/orders/${id}/cancel`,
             {
               method: "PUT",
               credentials: "include",

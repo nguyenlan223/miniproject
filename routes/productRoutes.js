@@ -15,7 +15,7 @@ router.get("/all", authMiddleware, adminMiddleware, async (req, res) => {
         const warehouse = await Warehouse.findOne({}).populate("products.product");
 
         const productsWithStock = products.map(p => {
-            const wProduct = warehouse?.products.find(wp => wp.product._id.equals(p._id));
+            const wProduct = warehouse?.products.find(wp => wp.product && wp.product._id.equals(p._id));
             return {
                 ...p._doc,
                 stock: wProduct?.stock || 0,
@@ -46,14 +46,42 @@ router.get("/:id", authMiddleware, adminMiddleware, async (req, res) => {
     }
 });
 // thêm sản phẩm
+// 👉 Thêm sản phẩm (và thêm vào kho)
 router.post("/", authMiddleware, adminMiddleware, async (req, res) => {
-    try {
-        const newProduct = new Product(req.body);
-        const savedProduct = await newProduct.save();
-        res.status(201).json(savedProduct);
-    } catch (err) {
-        res.status(500).json({ error: err.message });
+  try {
+    const { stock = 0, ...productData } = req.body;
+
+    // 1️⃣ Tạo sản phẩm
+    const newProduct = new Product(productData);
+    const savedProduct = await newProduct.save();
+
+    // 2️⃣ Tìm hoặc tạo kho
+    let warehouse = await Warehouse.findOne();
+    if (!warehouse) {
+      warehouse = new Warehouse({
+        name: "Kho mặc định",
+        location: "Chưa xác định",
+        products: [],
+      });
     }
+
+    // 3️⃣ Thêm sản phẩm vào kho
+    warehouse.products.push({
+      product: savedProduct._id,
+      stock: Number.isFinite(stock) ? stock : 0,
+    });
+    await warehouse.save();
+
+    // 4️⃣ Phản hồi
+    res.status(201).json({
+      success: true,
+      message: "✅ Thêm sản phẩm thành công và đã cập nhật kho!",
+      product: savedProduct,
+    });
+  } catch (err) {
+    console.error("❌ Lỗi khi thêm sản phẩm:", err);
+    res.status(500).json({ success: false, error: err.message });
+  }
 });
 // Cập nhật sản phẩm (và tồn kho nếu có)
 router.patch("/:id", async (req, res) => {
@@ -108,16 +136,20 @@ router.patch("/:id", async (req, res) => {
 });
 
 
-//Xóa sản phẩm (Delete)
+// 👉 Xóa sản phẩm
 router.delete("/:id", authMiddleware, adminMiddleware, async (req, res) => {
-    try {
-        const deletedProduct = await Product.findByIdAndDelete(req.params.id);
-        if (!deletedProduct)
-            return res.status(404).json({ message: "Không tìm thấy sản phẩm" });
-        res.json({ message: "Sản phẩm đã được xóa" });
-    } catch (err) {
-        res.status(500).json({ error: err.message });
-    }
+  try {
+    const deleted = await Product.findByIdAndDelete(req.params.id);
+    if (!deleted)
+      return res.status(404).json({ message: "Không tìm thấy sản phẩm" });
+
+    // Xóa khỏi kho
+    await Warehouse.updateMany({}, { $pull: { products: { product: deleted._id } } });
+
+    res.json({ message: "🗑️ Sản phẩm đã được xóa khỏi hệ thống và kho" });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
 });
 /* ===== USER ROUTES ===== */
 // Lấy danh sách sản phẩm
