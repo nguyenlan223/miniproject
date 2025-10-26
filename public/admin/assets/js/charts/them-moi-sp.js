@@ -64,7 +64,6 @@ document.getElementById("editForm").addEventListener("submit", async (e) => {
 
         // Quay lại trang danh sách hoặc reload (tuỳ bạn)
         sessionStorage.setItem("shouldReload", "true");
-        history.back();
     } catch (err) {
         alert("❌ Lỗi: " + err.message);
     }
