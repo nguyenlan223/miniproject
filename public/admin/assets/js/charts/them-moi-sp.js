@@ -55,11 +55,8 @@ document.getElementById("editForm").addEventListener("submit", async (e) => {
         });
 
         if (!res.ok) throw new Error("Thêm sản phẩm thất bại!");
-        const resText = await res.text();
        console.log(res.status, resText);
         const result = await res.json();
-        
-
         alert("✅ Thêm sản phẩm thành công!");
         console.log("Kết quả:", result);
 
