@@ -22,7 +22,7 @@ $(document).ready(async function () {
     }
 
     // 🟢 Lấy chi tiết đơn hàng
-    const res = await fetch("https://miniproject-n8x9.onrender.com/api/orders/${orderId}", {
+    const res = await fetch(`https://miniproject-n8x9.onrender.com/api/orders/${orderId}`, {
       credentials: "include",
     });
     const dh = await res.json();

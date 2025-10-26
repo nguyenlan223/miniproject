@@ -174,7 +174,7 @@ async function xoaSanPhamTrongGioHang(i) {
 
     if (window.confirm('Xác nhận xóa sản phẩm này khỏi giỏ hàng?')) {
         try {
-            const res = await fetch("https://miniproject-n8x9.onrender.com/api/cart?productId=${productId}", {
+            const res = await fetch(`https://miniproject-n8x9.onrender.com/api/cart?productId=${productId}`, {
                 method: 'DELETE',
                 credentials: 'include' // ✅ quan trọng: gửi cookie session
             });
