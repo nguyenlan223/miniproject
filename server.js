@@ -16,6 +16,8 @@ app.use(cors({
     origin: "https://miniproject-n8x9.onrender.com",
     credentials: true, // quan trọng để gửi cookie
 }));
+
+app.set("trust proxy",1)
 // ⚠️ session middleware
 app.use(
     session({
