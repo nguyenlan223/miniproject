@@ -1,82 +1,180 @@
 <!DOCTYPE html>
 <html lang="vi">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Giới thiệu - Thế giới điện thoại</title>
+    <title>Giới thiệu - Nhóm 4: Thế giới điện thoại</title>
     <link rel="shortcut icon" href="img/favicon.ico" />
 
-    <!-- Load font awesome icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-        crossorigin="anonymous">
-        
-    <!-- our files -->
-    <!-- css -->
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/topnav.css">
     <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/taikhoan.css">
     <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/gioithieu.css">
-
-    <!-- js -->
-	<script src="js/dungchung.js"></script>
+    <link rel="stylesheet" href="css/taikhoan.css">
+    
+    <script src="js/dungchung.js"></script>
     <script>
         window.onload = function () {
             khoiTao();
-            // thêm tags (từ khóa) vào khung tìm kiếm
-            var tags = ["Samsung", "iPhone", "Huawei", "Oppo", "Mobi"];
-            for (var t of tags) addTags(t, "index.html?search=" + t);
         }
     </script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
 
+        .page-gt {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .page-header {
+            text-align: center;
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: 40px;
+            color: #1cc88a;
+        }
+
+        .intro-section p {
+            font-size: 1rem;
+            color: #555;
+            line-height: 1.7;
+            margin-bottom: 15px;
+        }
+        .intro-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .feature-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-between;
+            margin: 40px 0;
+        }
+
+        .feature-card {
+            flex: 1;
+            min-width: 220px;
+            background-color: #fff;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+        }
+
+        .feature-card i {
+            font-size: 2.5rem;
+            color: #1cc88a;
+            margin-bottom: 15px;
+        }
+
+        .feature-card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .feature-card p {
+            font-size: 0.95rem;
+            color: #555;
+        }
+
+        .vision-section {
+            background-color: #f1fdf7;
+            padding: 30px 20px;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .vision-section h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: #1cc88a;
+        }
+
+        .vision-section p {
+            font-size: 1rem;
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        @media(max-width: 768px) {
+            .feature-section {
+                flex-direction: column;
+            }
+        }
+    </style>
 </head>
-
 <body>
-    <script> addTopNav();</script>
+    <script> addTopNav(); </script>
+    <script> addHeader2(); </script>
 
-    <section style="min-height: 85vh">
-        <script> addHeader(); </script>
+    <section class="page-gt">
+        <h4 class="page-header">Giới thiệu Nhóm 4 - Thế giới điện thoại</h4>
 
-        <div class="page-gt">
-            <h4 class="page-header">
-                Giới thiệu
-            </h4>
-            <div class="page-info">
-                <p>Được thành lập từ năm 1996, chúng tôi là một trong những nhà phân phối ĐTDĐ đầu tiên tại Hà Nội và
-                    kể từ năm 2000, chúng tôi chính thức trở thành nhà phân phối ĐTDĐ SamSung – Masterdealer duy nhất
-                    tại 194 đường Lê Duẩn.
-                </p>
-                <br />
-                <p>
-                    Với bề dày gần 10 năm kinh nghiệm và uy tín đã tạo được trong những năm vừa qua, chúng tôi luôn đem
-                    lại cho khách hàng sự hài lòng và thỏa mãn với tất cả các sản phẩm của mình.<br />
-                    Bên cạnh đó là đội ngũ nhân viên nhiệt tình chu đáo và đầy kinh nghiệm của chúng tôi luôn đưa được
-                    ra cho khách hàng những thông tin có giá trị và giúp khách hàng lựa chọn được những sản phẩm phù
-                    hợp nhất.<br />
-                    Để nâng cao thương hiệu của mình, mục tiêu của chúng tôi trong thời gian tới là cung cấp đến tận
-                    tay khách hàng những sản phẩm chính hãng với chất lượng đảm bảo và uy tín cũng như giá cả hợp lý
-                    nhất.<br />
-                    Chúng tôi mong muốn sự đóng góp của khách hàng sẽ giúp chúng tôi ngày một phát triển để từ đó củng
-                    cố thêm lòng tin của khách hàng với chúng tôi. Chúng tôi rất biết ơn sự tin tưởng của khách hàng
-                    trong suốt gần 10 năm qua và chúng tôi luôn tâm niệm rằng cần phải cố gắng hơn nữa để xứng đáng với
-                    phương châm đề ra “Nếu những gì chúng tôi không có, nghĩa là bạn không cần .<br />
-                    Chúng tôi xin chân thành cảm ơn tất cả các khách hàng đã, đang và sẽ ủng hộ chúng tôi.
-                </p>
+        <!-- Giới thiệu -->
+        <div class="intro-section">
+            <p>Nhóm 4 xây dựng website <strong>Thế giới điện thoại</strong> nhằm cung cấp nền tảng mua bán điện thoại trực tuyến đầy đủ tính năng, thân thiện và hiện đại.</p>
+            <p>Website cho phép khách hàng tham khảo sản phẩm, đặt mua trực tuyến, theo dõi đơn hàng, thanh toán và quản lý tài khoản cá nhân.</p>
+            <p>Chúng tôi cam kết mang đến trải nghiệm mua sắm tiện lợi, sản phẩm chính hãng và dịch vụ khách hàng tận tâm.</p>
+        </div>
+
+        <!-- Điểm nổi bật -->
+        <div class="feature-section">
+            <div class="feature-card">
+                <i class="fa fa-mobile-alt"></i>
+                <h3>Sản phẩm chính hãng</h3>
+                <p>Tất cả sản phẩm đều nhập khẩu chính hãng, bảo hành đầy đủ.</p>
             </div>
+            <div class="feature-card">
+                <i class="fa fa-star"></i>
+                <h3>Dịch vụ chuyên nghiệp</h3>
+                <p>Nhân viên tư vấn tận tâm, giàu kinh nghiệm hỗ trợ khách hàng.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fa fa-shipping-fast"></i>
+                <h3>Giao hàng nhanh</h3>
+                <p>Giao hàng an toàn, đúng thời gian, trải nghiệm liền mạch.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fa fa-percent"></i>
+                <h3>Ưu đãi hấp dẫn</h3>
+                <p>Khuyến mãi, giảm giá thường xuyên dành cho khách hàng.</p>
+            </div>
+        </div>
+
+        <!-- Tầm nhìn & Sứ mệnh -->
+        <div class="vision-section">
+            <h3>Tầm nhìn & Sứ mệnh</h3>
+            <p><strong>Tầm nhìn:</strong> Trở thành cửa hàng điện thoại uy tín hàng đầu tại Việt Nam.</p>
+            <p><strong>Sứ mệnh:</strong> Cung cấp sản phẩm chất lượng, dịch vụ tận tâm, trải nghiệm mua sắm trực tuyến thuận tiện nhất.</p>
         </div>
     </section>
 
     <script> addContainTaiKhoan(); </script>
-
     <div class="footer">
-        <script>addFooter();</script>
-        
+        <script> addFooter(); </script>
     </div>
 
     <i class="fa fa-arrow-up" id="goto-top-page" onclick="gotoTop()"></i>
 </body>
-
 </html>

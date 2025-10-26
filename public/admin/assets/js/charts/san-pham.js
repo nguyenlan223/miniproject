@@ -1,19 +1,27 @@
 import { API_BASE_URL } from "../config.js";
-
+const API_PRODUCT = `${API_BASE_URL}/products`;
 const API_BASE = `${API_BASE_URL}/products`;
+window.addEventListener("load", () => {
+  if (sessionStorage.getItem("shouldReload") === "true") {
+    sessionStorage.removeItem("shouldReload");
+    location.reload(); // 🔁 tải lại danh sách để hiển thị dữ liệu mới
+  }
+});
 
 async function loadProducts() {
     try {
-        const res = await fetch(API_BASE);
+        const res = await fetch(`${API_BASE}/all`, { credentials: "include" });
         if (!res.ok) throw new Error("Không lấy được dữ liệu sản phẩm!");
-        return await res.json();
+        const data = await res.json();
+        return Array.isArray(data) ? data : []; // luôn trả về mảng
     } catch (error) {
         console.error(`Lỗi trang Sản Phẩm, loadProducts: ${error}`);
+        return []; // fallback mảng rỗng để tránh crash
     }
 }
 async function loadProductID(id) {
     try {
-        const res = await fetch(`${API_BASE}/${id}`);
+        const res = await fetch(`${API_BASE}/${id}`,{credentials: "include"});
         if (!res.ok)
             throw new Error("Không lấy được dữ liệu sản phẩm theo ID !");
         return await res.json();
@@ -22,7 +30,15 @@ async function loadProductID(id) {
     }
 }
 
-async function renderProducts(products) {
+async function renderProducts(products = []) {
+    if (!Array.isArray(products) || products.length === 0) {
+        document.querySelector("#total-products").innerText = 0;
+        document.querySelector("#low-stock").innerText = "0 sp";
+        document.querySelector("#out-stock").innerText = "0 sp";
+        document.querySelector("#inventory-value").innerText = formatCurrency(0);
+        return;
+    }
+
     document.querySelector("#total-products").innerText = `${
         products.filter((p) => p.masp).length || 0
     }`;
@@ -33,14 +49,15 @@ async function renderProducts(products) {
         products.filter((p) => p.stock === 0).length || 0
     } sp`;
     document.querySelector("#inventory-value").innerText = formatCurrency(
-        products.reduce((sum, p) => sum + (p.stock || 0) * p.price, 0)
+        products.reduce((sum, p) => sum + (p.stock || 0) * (p.price || 0), 0)
     );
 }
-loadProducts()
-    .then((products) => renderProducts(products))
-    .catch((error) =>
-        console.log(`Lỗi trang Sản Phẩm, renderProducts: ${error}`)
-    );
+// Chạy khi load trang
+window.addEventListener("load", async () => {
+    const products = await loadProducts();
+    renderProducts(products);
+    tableProduct(products); // render bảng ngay sau khi có dữ liệu
+});
 
 const glowPlugin = {
     id: "glow",
@@ -85,6 +102,9 @@ const crosshairPlugin = {
         }
     },
 };
+
+
+
 async function renderProductCharts(data) {
     // 🔹 Biểu đồ Top 5 sản phẩm bán chạy
     new Chart(document.getElementById("chart-top-products"), {
@@ -329,14 +349,16 @@ function processDashboardData(orders, products = []) {
 }
 async function loadProductCharts() {
     const [orders, products] = await Promise.all([
-        fetch(`${API_BASE_URL}/orders/all`)
+        fetch(`${API_BASE_URL}/orders/all`,{credentials: "include"})
             .then((res) => res.json())
             .catch((error) => {
                 console.error(
                     `Lỗi trang Sản Phẩm, renderProductCharts: ${error}`
                 );
             }),
-        fetch(API_BASE)
+        fetch(`${API_BASE}/all`, {  // gọi đúng admin route sản phẩm
+            credentials: "include",        // gửi cookie session
+        })
             .then((res) => res.json())
             .catch((error) => {
                 console.error(
@@ -494,7 +516,38 @@ function showProductDetail(product) {
             location.href = `chinh-sua-sp.html?id=${product._id}`;
         };
     }
+     // Nút xoá sản phẩm
+    document
+        .getElementById("deleteProductBtn")
+        .addEventListener("click", async () => {
+            if (!confirm("Bạn có chắc muốn xoá sản phẩm này không?")) return;
+
+            try {
+                const res = await fetch(`${API_PRODUCT}/${product._id}`, {
+                    method: "DELETE",
+                    credentials: "include",
+                });
+
+                const data = await res.json();
+
+                if (!res.ok) {
+                    alert(data.error || "Xoá sản phẩm thất bại!");
+                    return;
+                }
+
+                alert("Đã xoá sản phẩm thành công!");
+                location.reload(); // 🔁 tải lại danh sách để hiển thị dữ liệu mới
+            } catch (err) {
+                console.error(err);
+                alert("Lỗi khi xoá sản phẩm!");
+            }
+        });
 }
+
+document.getElementById("createProductBtn").onclick = () => {
+    // chuyển hướng sang trang tạo sản phẩm
+    location.href = "them-moi-sp.html";
+};
 
 async function renderCategories(productCategories) {
     const newArrivals = document.querySelector("#new-arrivals");

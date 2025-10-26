@@ -1,0 +1,309 @@
+[{
+  "_id": {
+    "$oid": "34d2da62958c6e3b7a0979db"
+  },
+  "name": "Kho trung tâm MyShop",
+  "location": "TP. Hồ Chí Minh",
+  "products": [
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b963"
+      },
+      "stock": 36
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b964"
+      },
+      "stock": 70
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b965"
+      },
+      "stock": 3
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b966"
+      },
+      "stock": 9
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b967"
+      },
+      "stock": 0
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b968"
+      },
+      "stock": 27
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b969"
+      },
+      "stock": 5
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b96a"
+      },
+      "stock": 99
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b96b"
+      },
+      "stock": 65
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b96c"
+      },
+      "stock": 53
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b96d"
+      },
+      "stock": 13
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b96e"
+      },
+      "stock": 53
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b96f"
+      },
+      "stock": 94
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b970"
+      },
+      "stock": 66
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b971"
+      },
+      "stock": 55
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b972"
+      },
+      "stock": 8
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b973"
+      },
+      "stock": 58
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b974"
+      },
+      "stock": 86
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b975"
+      },
+      "stock": 61
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b976"
+      },
+      "stock": 23
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b977"
+      },
+      "stock": 49
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b978"
+      },
+      "stock": 70
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b979"
+      },
+      "stock": 87
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b97a"
+      },
+      "stock": 50
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b97b"
+      },
+      "stock": 67
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b97c"
+      },
+      "stock": 78
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b97d"
+      },
+      "stock": 71
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b97e"
+      },
+      "stock": 57
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b97f"
+      },
+      "stock": 13
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b980"
+      },
+      "stock": 95
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b981"
+      },
+      "stock": 94
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b982"
+      },
+      "stock": 3
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b983"
+      },
+      "stock": 52
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b984"
+      },
+      "stock": 41
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b985"
+      },
+      "stock": 0
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b986"
+      },
+      "stock": 14
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b987"
+      },
+      "stock": 67
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b988"
+      },
+      "stock": 39
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b989"
+      },
+      "stock": 17
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b98a"
+      },
+      "stock": 9
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b98b"
+      },
+      "stock": 54
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b98c"
+      },
+      "stock": 45
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b98d"
+      },
+      "stock": 99
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b98e"
+      },
+      "stock": 8
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b98f"
+      },
+      "stock": 73
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b990"
+      },
+      "stock": 92
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b991"
+      },
+      "stock": 95
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b992"
+      },
+      "stock": 48
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b993"
+      },
+      "stock": 40
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b994"
+      },
+      "stock": 50
+    }
+  ]
+}]

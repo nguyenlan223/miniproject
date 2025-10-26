@@ -33,7 +33,7 @@ const orderSchema = new mongoose.Schema({
     // Phương thức thanh toán (COD, VNPay, Momo…)
     paymentMethod: {
         type: String,
-        enum: ["COD", "Momo", "VNPay", "Bank", "VietQr"],
+        enum: ["COD","VietQr"],
         default: "COD",
     },
 

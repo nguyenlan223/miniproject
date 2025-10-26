@@ -1,0 +1,315 @@
+[{
+  "_id": {
+    "$oid": "68fca62ef0da11c8a7d03cc3"
+  },
+  "ho": "Nguyen",
+  "ten": "Lan",
+  "email": "lan.nguyen@example.com",
+  "username": "nguyenlan",
+  "password": "$2b$10$icpiXTbdOEP6ihBtp4TYSOuuIMYAqc94MMz5Z2CZdYlTpvhx3AyH.",
+  "diaChi": [],
+  "role": "user",
+  "off": false,
+  "avatar": "https://cdn-icons-png.flaticon.com/512/149/149071.png",
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-25T10:27:58.863Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-25T10:27:58.863Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68fca62ef0da11c8a7d03cc4"
+  },
+  "ho": "Tran",
+  "ten": "Minh",
+  "email": "minh.tran@example.com",
+  "username": "tranminh",
+  "password": "$2b$10$fDarwlLmGxdMg6v.h78/gOJila16gBeJM7UylZprlHNqwH.RV5gOS",
+  "diaChi": [],
+  "role": "user",
+  "off": false,
+  "avatar": "https://cdn-icons-png.flaticon.com/512/149/149071.png",
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-25T10:27:58.866Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-25T10:27:58.866Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68fca62ef0da11c8a7d03cc5"
+  },
+  "ho": "Le",
+  "ten": "Hoa",
+  "email": "hoa.le@example.com",
+  "username": "lehoa",
+  "password": "$2b$10$N9nOL9XZt2WdIArzqcde0.d3605YwwF7ePYGKZ6A2Ll2OW2SJbB7u",
+  "diaChi": [],
+  "role": "admin",
+  "off": false,
+  "avatar": "https://cdn-icons-png.flaticon.com/512/149/149071.png",
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-25T10:27:58.866Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-25T10:27:58.866Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68fca62ef0da11c8a7d03cc6"
+  },
+  "ho": "Pham",
+  "ten": "Tuan",
+  "email": "tuan.pham@example.com",
+  "username": "phamtuan",
+  "password": "$2b$10$ffaAGGC28/Lte62KmbCmG.xaPONU0KPv9gfbxNFLSSFfJM073A2ma",
+  "diaChi": [],
+  "role": "user",
+  "off": false,
+  "avatar": "https://cdn-icons-png.flaticon.com/512/149/149071.png",
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-25T10:27:58.866Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-25T10:27:58.866Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68fca62ef0da11c8a7d03cc7"
+  },
+  "ho": "Do",
+  "ten": "Anh",
+  "email": "anh.do@example.com",
+  "username": "doanh",
+  "password": "$2b$10$TKDdwKCiLHuStq4/2e718ewPXZbW2XDKqWA5VzOcKIkCwCCLcOAjm",
+  "diaChi": [],
+  "role": "user",
+  "off": false,
+  "avatar": "https://cdn-icons-png.flaticon.com/512/149/149071.png",
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-25T10:27:58.866Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-25T10:27:58.866Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68fca62ef0da11c8a7d03cc8"
+  },
+  "ho": "Hoang",
+  "ten": "Long",
+  "email": "long.hoang@example.com",
+  "username": "hoanglong",
+  "password": "$2b$10$rKgO8K2swdxtF3hPmTDga.KH32/jhk4NjTIId/V7SDlIXvNjts2/O",
+  "diaChi": [],
+  "role": "user",
+  "off": false,
+  "avatar": "https://cdn-icons-png.flaticon.com/512/149/149071.png",
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-25T10:27:58.867Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-25T10:27:58.867Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68fca62ef0da11c8a7d03cc9"
+  },
+  "ho": "Bui",
+  "ten": "Trang",
+  "email": "trang.bui@example.com",
+  "username": "buitrang",
+  "password": "$2b$10$UyvrzOYu/0P9orDZCFACuOl9UobGsYSk2KAgOq.It7.DcSQ0RXhSe",
+  "diaChi": [],
+  "role": "user",
+  "off": false,
+  "avatar": "https://cdn-icons-png.flaticon.com/512/149/149071.png",
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-25T10:27:58.867Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-25T10:27:58.867Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68fca62ef0da11c8a7d03cca"
+  },
+  "ho": "Vo",
+  "ten": "Khoa",
+  "email": "khoa.vo@example.com",
+  "username": "vokhoa",
+  "password": "$2b$10$aYktftAmgZ7DQ4Syk/F0GuvL.GiKOUYC.XPOkvb7ceWGXcx06F1DC",
+  "diaChi": [],
+  "role": "user",
+  "off": false,
+  "avatar": "https://cdn-icons-png.flaticon.com/512/149/149071.png",
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-25T10:27:58.867Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-25T10:27:58.867Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68fca62ef0da11c8a7d03ccb"
+  },
+  "ho": "Nguyen",
+  "ten": "Ha",
+  "email": "ha.nguyen@example.com",
+  "username": "nguyenha",
+  "password": "$2b$10$VKbf5yzzUDwLQfgEk7aa5.d2ZyaX5zERzhk7GvF6TDJNd2hPelTku",
+  "diaChi": [],
+  "role": "user",
+  "off": false,
+  "avatar": "https://cdn-icons-png.flaticon.com/512/149/149071.png",
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-25T10:27:58.867Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-25T10:27:58.867Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68fca62ef0da11c8a7d03ccc"
+  },
+  "ho": "Pham",
+  "ten": "Quyen",
+  "email": "quyen.pham@example.com",
+  "username": "phamquyen",
+  "password": "$2b$10$/DEr9GCkC.einVGL3MyXGujlLODsVt/W/f7QFmQFKy1yh2RlgfRfG",
+  "diaChi": [],
+  "role": "admin",
+  "off": false,
+  "avatar": "https://cdn-icons-png.flaticon.com/512/149/149071.png",
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-25T10:27:58.868Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-25T10:27:58.868Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68fca62ef0da11c8a7d03ccd"
+  },
+  "ho": "Dang",
+  "ten": "Khanh",
+  "email": "khanh.dang@example.com",
+  "username": "dangkhanh",
+  "password": "$2b$10$A0up6QIoZD/F3WbH5bXci.T5IxXbKhR7XZfUJarZRgz6.67jdjCrW",
+  "diaChi": [],
+  "role": "user",
+  "off": false,
+  "avatar": "https://cdn-icons-png.flaticon.com/512/149/149071.png",
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-25T10:27:58.869Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-25T10:27:58.869Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68fca62ef0da11c8a7d03cce"
+  },
+  "ho": "Le",
+  "ten": "Nam",
+  "email": "nam.le@example.com",
+  "username": "lenam",
+  "password": "$2b$10$KKNMOJbqHU.gStZiG2KoruF3yf4lczHEWSIMQJDDEturkEZfuWSpa",
+  "diaChi": [],
+  "role": "user",
+  "off": false,
+  "avatar": "https://cdn-icons-png.flaticon.com/512/149/149071.png",
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-25T10:27:58.869Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-25T10:27:58.869Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68fca62ef0da11c8a7d03ccf"
+  },
+  "ho": "Tran",
+  "ten": "Tuan",
+  "email": "tuan.tran@example.com",
+  "username": "trantuan",
+  "password": "$2b$10$kuf1OwOj.1waDoOiWN7Y0emilHXAXPL8hsX5BkL5U6kYFVVOjSWJG",
+  "diaChi": [],
+  "role": "user",
+  "off": false,
+  "avatar": "https://cdn-icons-png.flaticon.com/512/149/149071.png",
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-25T10:27:58.869Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-25T10:27:58.869Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68fca62ef0da11c8a7d03cd0"
+  },
+  "ho": "Vu",
+  "ten": "Yen",
+  "email": "yen.vu@example.com",
+  "username": "vuyen",
+  "password": "$2b$10$GZiFK27L0oxGLO8q89KzsucWiEuuINiu9MUbIYD7UMg91tADzqpBy",
+  "diaChi": [],
+  "role": "user",
+  "off": false,
+  "avatar": "https://cdn-icons-png.flaticon.com/512/149/149071.png",
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-25T10:27:58.869Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-25T10:27:58.869Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68fca62ef0da11c8a7d03cd1"
+  },
+  "ho": "Nguyen",
+  "ten": "Hieu",
+  "email": "hieu.nguyen@example.com",
+  "username": "nguyenhieu",
+  "password": "$2b$10$CL0LAQum8KeQ3ArTeSaYPe0K0kONLEL2M4SGm9GZf0.UMwoG.vraa",
+  "diaChi": [],
+  "role": "admin",
+  "off": false,
+  "avatar": "https://cdn-icons-png.flaticon.com/512/149/149071.png",
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-25T10:27:58.869Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-25T10:27:58.869Z"
+  }
+}]

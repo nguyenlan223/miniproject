@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="css/gioHang.css">
     <link rel="stylesheet" href="css/nguoidung.css">
 	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="css/donmua.css">
 	<!-- js -->
 	<script src="js/classes.js"></script>
     <script src="js/dungchung.js"></script>
@@ -34,11 +35,23 @@
 <body>
 	<script> addTopNav(); </script>
 
-	<section>
-		<script> addHeader2(); </script>
-        
-       <div class="listDonHang"> </div>
-	</section> <!-- End Section -->
+<section>
+  <script> addHeader2(); </script>
+
+  <div class="donhang-container">
+      <div class="tabs">
+          <div class="tab active" data-status="Tất cả">Tất cả</div>
+          <div class="tab" data-status="Chờ xác nhận">Chờ xử lý</div>
+          <div class="tab" data-status="Đang giao">Đang giao</div>
+          <div class="tab" data-status="Hoàn tất">Hoàn thành</div>
+          <div class="tab" data-status="Đã hủy">Đã hủy</div>
+          <div class="tab" data-status="Đã hủy">Hoàn trả</div>
+      </div>
+
+      <div class="listDonHang"></div>
+  </div>
+</section>
+
 
 	<script>
 		addContainTaiKhoan(); addPlc();

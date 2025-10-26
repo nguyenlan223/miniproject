@@ -4,10 +4,8 @@ const Order = require("../models/Order");
 const User = require("../models/User");
 const Product = require("../models/Product");
 const Cart = require("../models/Cart");
-const authMiddleware = require("../middleware/authMiddleware");
-const adminMiddleware = require("../middleware/adminMiddleware");
-const { adminOnly } = require("../middleware/authMiddleware");
-
+const Warehouse = require("../models/Warehouse");
+const { authMiddleware, adminMiddleware } = require("../middleware/authMiddleware");
 /// 🟢 Tạo đơn hàng từ giỏ hàng (chỉ user login)
 router.post("/", authMiddleware, async (req, res) => {
     try {
@@ -29,26 +27,39 @@ router.post("/", authMiddleware, async (req, res) => {
             diaChiNhanHang,
         } = req.body;
         const diaChiNhanHang2 = `${diaChiNhanHang.diaChiChiTiet}, ${diaChiNhanHang.phuongXa}, ${diaChiNhanHang.quanHuyen}, ${diaChiNhanHang.tinhThanh}`;
+        
+        // Lấy kho (ở đây lấy kho mặc định, có thể nâng cấp chọn kho theo sản phẩm)
+        const warehouse = await Warehouse.findOne({});
+        if (!warehouse) return res.status(500).json({ message: "Kho không tồn tại" });
+
+        // Kiểm tra tồn kho
+        for (let p of products) {
+            const wProduct = warehouse.products.find(item => item.product.equals(p.product._id));
+            if (!wProduct || wProduct.stock < p.soLuong) {
+                return res.status(400).json({ message: `${p.product.name} không đủ hàng` });
+            }
+        }
 
         let tongTienHang = 0;
+        let giamGia=0;
         const orderProducts = products.map((p) => {
-            const price =
-                p.product?.promo?.name === "giareonline"
-                    ? p.product.promo.value
-                    : p.product.price;
+            const price = p.product?.promo?.name === "giareonline" ? p.product.promo.value
+                                                                            : p.product.price;
+        // Nếu có giảm giá kiểu "giamgia", cộng dồn phần giảm
+        if (p.product?.promo?.name === "giamgia") {
+        giamGia += p.product.promo.value || 0;
+        }
             tongTienHang += Number(price) * p.soLuong;
             return {
                 product: p.product._id,
                 ten: p.product.name,
                 gia: price,
-                soLuong: p.soLuong,
+                soLuong: p.soLuong
             };
         });
 
-        const giamGia = 0;
-        const phiVanChuyen = 30;
+        const phiVanChuyen = 30000;
         const tongTienThanhToan = tongTienHang - giamGia + phiVanChuyen;
-
         const newOrder = new Order({
             user: userId,
             products: orderProducts,
@@ -62,7 +73,14 @@ router.post("/", authMiddleware, async (req, res) => {
         });
 
         await newOrder.save();
-
+       
+        // Trừ stock trong kho
+        for (let p of products) {
+            await Warehouse.updateOne(
+                { _id: warehouse._id, "products.product": p.product._id },
+                { $inc: { "products.$.stock": -p.soLuong } }
+            );
+        }
         // Xóa các sản phẩm đã đặt trong giỏ hàng
         const orderedProductIds = products.map((p) => p.product);
         await Cart.updateOne(
@@ -85,7 +103,8 @@ router.post("/", authMiddleware, async (req, res) => {
     }
 });
 
-// 🟢 Lấy danh sách đơn hàng của user hiện tại
+//Của client
+//  Lấy danh sách đơn hàng của user hiện tại
 router.get("/", authMiddleware, async (req, res) => {
     try {
         const userId = req.session.userId;
@@ -103,7 +122,7 @@ router.get("/", authMiddleware, async (req, res) => {
     }
 });
 
-// 🟢 Lấy tất cả đơn hàng của tất cả users (chỉ admin)
+//  Lấy tất cả đơn hàng của tất cả users (chỉ admin)
 router.get("/all", authMiddleware, adminMiddleware, async (req, res) => {
     try {
         const orders = await Order.find({})
@@ -188,7 +207,7 @@ router.put(
     }
 );
 
-// 🟢 Lấy chi tiết 1 đơn hàng (của user hiện tại)
+// Lấy chi tiết 1 đơn hàng (của user hiện tại)
 router.get("/:id", authMiddleware, async (req, res) => {
     try {
         const userId = req.session.userId;
@@ -207,68 +226,48 @@ router.get("/:id", authMiddleware, async (req, res) => {
         });
     }
 });
-
-//Phần admin
-/*Lấy danh sách tất cả đơn hàng
-API: GET /api/orders/admin
-Middleware: authMiddleware + adminOnly
-Mục đích: Admin xem tất cả đơn, có thể lọc theo trạng thái, ngày đặt, hoặc user."""*/
-
-router.get("/admin", authMiddleware, adminOnly, async (req, res) => {
+// =============================== //
+//   HỦY ĐƠN HÀNG CỦA CLIENT      //
+// =============================== //
+// Hủy đơn hàng (client) và hoàn lại stock, xóa khỏi CSDL
+router.put("/:id/cancel", authMiddleware, async (req, res) => {
     try {
-        const orders = await Order.find()
-            .populate("user", "username email")
-            .populate("products.product", "name img")
-            .sort({ ngayDat: -1 });
-        res.json(orders);
-    } catch (err) {
-        res.status(500).json({ error: err.message });
-    }
-});
+        const userId = req.session.userId;
+        const order = await Order.findOne({ _id: req.params.id, user: userId });
+        if (!order) return res.status(404).json({ message: "Không tìm thấy đơn hàng" });
 
-//Lấy chi tiết một đơn hàng bất kỳ
-
-/*API: GET /api/orders/admin/:id
-Middleware: authMiddleware + adminOnly
-Mục đích: Xem chi tiết đơn, bao gồm sản phẩm, khách hàng, thanh toán, trạng thái.*/
-
-router.get("/admin/:id", authMiddleware, adminOnly, async (req, res) => {
-    try {
-        const order = await Order.findById(req.params.id)
-            .populate("user", "username email")
-            .populate("products.product", "name img price");
-        if (!order) return res.status(404).json({ message: "Order not found" });
-        res.json(order);
-    } catch (err) {
-        res.status(500).json({ error: err.message });
-    }
-});
-
-//Cập nhật trạng thái đơn hàng (admin)
-
-/*API: PUT /api/orders/admin/:id
-Middleware: authMiddleware + adminOnly
-Mục đích: Admin cập nhật các field quản lý: orderStatus, paymentStatus, ngayGiao, note, history.*/
-
-router.put("/admin/:id", authMiddleware, adminOnly, async (req, res) => {
-    try {
-        const { orderStatus, paymentStatus, ngayGiao, note } = req.body;
-        const order = await Order.findById(req.params.id);
-        if (!order) return res.status(404).json({ message: "Order not found" });
-
-        if (orderStatus) {
-            order.orderStatus = orderStatus;
-            order.history.push({ status: orderStatus, note: note || "" });
+        // Lấy kho mặc định
+        const warehouse = await Warehouse.findOne({});
+        if (warehouse) {
+            for (let p of order.products) {
+                await Warehouse.updateOne(
+                    { _id: warehouse._id, "products.product": p.product },
+                    { $inc: { "products.$.stock": p.soLuong } }
+                );
+            }
         }
-        if (paymentStatus) order.paymentStatus = paymentStatus;
-        if (ngayGiao) order.ngayGiao = new Date(ngayGiao);
 
-        const updatedOrder = await order.save();
-        res.json(updatedOrder);
+        // Cập nhật history trước khi xóa (nếu muốn lưu log)
+        order.history.push({ status: "Đã hủy", note: "Hủy bởi user" });
+        await order.save(); // lưu log trước
+
+        // Cập nhật trạng thái thay vì xóa
+       order.orderStatus = "Đã hủy";
+       order.history.push({ status: "Đã hủy", note: "Hủy bởi user", date: new Date() });
+       await order.save();
+
+       res.json({
+         success: true,
+         message: "Đơn hàng đã được hủy và giữ lại trong hệ thống",
+         order
+        });
     } catch (err) {
-        res.status(500).json({ error: err.message });
+        console.error(err);
+        res.status(500).json({ success: false, message: "Lỗi server", error: err.message });
     }
 });
+
+
 
 //Hủy đơn hàng (cập nhật orderStatus: "Đã hủy")
 
@@ -276,18 +275,30 @@ router.put("/admin/:id", authMiddleware, adminOnly, async (req, res) => {
 Middleware: authMiddleware + adminOnly
 Mục đích: Hủy đơn, ghi vào lịch sử.*/
 
-router.put("/admin/:id/cancel", authMiddleware, adminOnly, async (req, res) => {
+// Hủy đơn hàng (admin) và cộng stock về kho
+router.put("/admin/:id/cancel", authMiddleware, adminMiddleware, async (req, res) => {
     try {
         const order = await Order.findById(req.params.id);
         if (!order) return res.status(404).json({ message: "Order not found" });
+
+        const warehouse = await Warehouse.findOne({});
+        if (warehouse) {
+            for (let p of order.products) {
+                await Warehouse.updateOne(
+                    { _id: warehouse._id, "products.product": p.product },
+                    { $inc: { "products.$.stock": p.soLuong } }
+                );
+            }
+        }
 
         order.orderStatus = "Đã hủy";
         order.history.push({ status: "Đã hủy", note: "Hủy bởi admin" });
 
         const updatedOrder = await order.save();
-        res.json(updatedOrder);
+        res.json({ success: true, message: "Đã hủy đơn hàng và cập nhật kho", order: updatedOrder });
     } catch (err) {
-        res.status(500).json({ error: err.message });
+        console.error(err);
+        res.status(500).json({ success: false, message: "Lỗi server", error: err.message });
     }
 });
 module.exports = router;

@@ -2,30 +2,31 @@ var nameProduct, maProduct, sanPhamHienTai; // Tên sản phẩm trong trang nà
 // là biến toàn cục để có thể dùng ở bát cứ đâu trong trang
 // không cần tính toán lấy tên từ url nhiều lần
 
-window.onload =async function () {
+window.onload = async function () {
     khoiTao();
+
+    try {
+        const res = await fetch("http://localhost:5000/api/products");
+        list_products = await res.json();
+
+        // ✅ Gọi trực tiếp thay vì chờ DOMContentLoaded
+        phanTich_URL_chiTietSanPham();
+
+        // autocomplete cho khung tìm kiếm
+        const inp = document.getElementById("search-box");
+        if (inp && list_products) autocomplete(inp, list_products);
+
+        // ✅ Nếu tìm thấy sản phẩm, mới gợi ý
+        if (sanPhamHienTai) suggestion();
+    } catch (err) {
+        console.error("Lỗi tải sản phẩm:", err);
+    }
 
     // thêm tags (từ khóa) vào khung tìm kiếm
     var tags = ["Samsung", "iPhone", "Huawei", "Oppo", "Mobi"];
     for (var t of tags) addTags(t, "index.html?search=" + t, true);
+};
 
-    try {
-    const res = await fetch("http://localhost:5000/api/products");
-    list_products = await res.json();
-    // autocomplete cho khung tìm kiếm (sau khi có dữ liệu)
-    autocomplete(document.getElementById('search-box'), list_products);
-     phanTich_URL_chiTietSanPham();
-
-    // Thêm gợi ý sản phẩm
-    sanPhamHienTai && suggestion();
-  } catch (err) {
-    console.error("Lỗi tải sản phẩm:", err);
-  }
-
-
-	// autocomplete cho khung tim kiem
-	autocomplete(document.getElementById('search-box'), list_products);
-}
 
 function khongTimThaySanPham() {
     document.getElementById('productNotFound').style.display = 'block';
@@ -139,7 +140,7 @@ function getDetailPromo(sp) {
             return `Khách hàng sẽ được thử máy miễn phí tại cửa hàng. Có thể đổi trả lỗi trong vòng 2 tháng.`;
 
         case 'giareonline':
-            var del = stringToNum(sp.price) - stringToNum(sp.promo.value);
+            var del = sp.price - sp.promo.value;
             var span = `<span style="font-weight: bold">` + numToString(del) + `</span>`;
             return `Sản phẩm sẽ được giảm ` + span + `₫ khi mua hàng online bằng thẻ VPBank hoặc tin nhắn SMS`;
 
@@ -206,7 +207,7 @@ function addKhungSanPham(list_sanpham, tenKhung, color, ele) {
 /// gợi ý sản phẩm
 function suggestion(){
     // ====== Lay ra thong tin san pham hien tai ====== 
-    const giaSanPhamHienTai = stringToNum(sanPhamHienTai.price);
+    const giaSanPhamHienTai = sanPhamHienTai.price;
 
     // ====== Tìm các sản phẩm tương tự theo tiêu chí ====== 
     const sanPhamTuongTu = list_products
@@ -215,7 +216,7 @@ function suggestion(){
     // Tính điểm cho từng sản phẩm
     .map(sanPham => {
         // Tiêu chí 1: giá sản phẩm ko lệch nhau quá 1 triệu
-        const giaSanPham = stringToNum(sanPham.price);
+        const giaSanPham = sanPham.price;
         let giaTienGanGiong = Math.abs(giaSanPham - giaSanPhamHienTai) < 1000000;
 
         // Tiêu chí 2: các thông số kỹ thuật giống nhau

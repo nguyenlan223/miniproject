@@ -2,7 +2,8 @@ const express = require("express");
 const router = express.Router();
 const Address = require("../models/Address");
 const User = require("../models/User");
-const authMiddleware = require("../middleware/authMiddleware");
+const { authMiddleware} = require("../middleware/authMiddleware");
+
 // Lấy địa chỉ mặc định của user
 router.get("/default", authMiddleware, async (req, res) => {
     try {

@@ -1,0 +1,6767 @@
+[{
+  "_id": {
+    "$oid": "3ebdb61ad2434acb823d5c39"
+  },
+  "user": {
+    "$oid": "68fca62ef0da11c8a7d03cca"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b964"
+      },
+      "ten": "Xiaomi Mi 8 Lite",
+      "gia": 6690000,
+      "soLuong": 2,
+      "promo": {
+        "name": "tragop",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b992"
+      },
+      "ten": "iPhone 8 Plus 256GB",
+      "gia": 25790000,
+      "soLuong": 1,
+      "promo": {
+        "name": "giamgia",
+        "value": 500000
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b994"
+      },
+      "ten": "Huawei Nova 2i",
+      "gia": 4490000,
+      "soLuong": 3,
+      "promo": {
+        "name": "giareonline",
+        "value": 3990000
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b97e"
+      },
+      "ten": "Philips S329",
+      "gia": 2390000,
+      "soLuong": 1,
+      "promo": {
+        "name": "",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b97e"
+      },
+      "ten": "Philips S329",
+      "gia": 2390000,
+      "soLuong": 1,
+      "promo": {
+        "name": "",
+        "value": 0
+      }
+    }
+  ],
+  "tongTienHang": 57420000,
+  "giamGia": 500000,
+  "tongTienThanhToan": 56950000,
+  "diaChiNhanHang": "67 Nguyễn Kiệm, Phường 3, Quận Gò Vấp, TP. Hồ Chí Minh",
+  "paymentMethod": "COD",
+  "paymentStatus": "Chưa thanh toán",
+  "orderStatus": "Đang giao",
+  "ngayDat": {
+    "$date": "2025-06-25T09:47:35.299Z"
+  },
+  "ngayGiao": {
+    "$date": "2025-07-02T09:47:35.299Z"
+  },
+  "history": [
+    {
+      "status": "Chờ xử lý",
+      "date": "2025-06-25T09:47:35.299Z"
+    },
+    {
+      "status": "Đang giao",
+      "date": "2025-07-02T09:47:35.299Z"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "2d636701d9dc4812aaca7400"
+  },
+  "user": {
+    "$oid": "68fca62ef0da11c8a7d03cc3"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b98c"
+      },
+      "ten": "Coolpad N3",
+      "gia": 1890000,
+      "soLuong": 1,
+      "promo": {
+        "name": "moiramat",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b983"
+      },
+      "ten": "Vivo Y71",
+      "gia": 3290000,
+      "soLuong": 2,
+      "promo": {
+        "name": "tragop",
+        "value": 0
+      }
+    }
+  ],
+  "tongTienHang": 8470000,
+  "giamGia": 0,
+  "tongTienThanhToan": 8500000,
+  "diaChiNhanHang": "123 Nguyễn Thị Minh Khai, Bến Thành, Quận 1, TP. Hồ Chí Minh",
+  "paymentMethod": "VietQr",
+  "paymentStatus": "Đã thanh toán",
+  "orderStatus": "Đang giao",
+  "ngayDat": {
+    "$date": "2025-08-01T06:59:23.192Z"
+  },
+  "ngayGiao": {
+    "$date": "2025-08-04T06:59:23.192Z"
+  },
+  "history": [
+    {
+      "status": "Chờ xử lý",
+      "date": "2025-08-01T06:59:23.192Z"
+    },
+    {
+      "status": "Đang giao",
+      "date": "2025-08-04T06:59:23.192Z"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "f8db0e5550684fd5a265ec80"
+  },
+  "user": {
+    "$oid": "68fca62ef0da11c8a7d03cce"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b984"
+      },
+      "ten": "Mobell M789",
+      "gia": 550000,
+      "soLuong": 2,
+      "promo": {
+        "name": "",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b970"
+      },
+      "ten": "Mobiistar E Selfie",
+      "gia": 2490000,
+      "soLuong": 2,
+      "promo": {
+        "name": "",
+        "value": 0
+      }
+    }
+  ],
+  "tongTienHang": 6080000,
+  "giamGia": 0,
+  "tongTienThanhToan": 6110000,
+  "diaChiNhanHang": "15 Nguyễn Văn Trỗi, Phường 14, Quận Phú Nhuận, TP. Hồ Chí Minh",
+  "paymentMethod": "VietQr",
+  "paymentStatus": "Đã thanh toán",
+  "orderStatus": "Hoàn trả",
+  "ngayDat": {
+    "$date": "2025-09-22T03:07:20.624Z"
+  },
+  "ngayGiao": {
+    "$date": "2025-09-26T03:07:20.624Z"
+  },
+  "history": [
+    {
+      "status": "Chờ xử lý",
+      "date": "2025-09-22T03:07:20.624Z"
+    },
+    {
+      "status": "Hoàn trả",
+      "date": "2025-09-26T03:07:20.624Z"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "c31d9f3b1f66499ab5aebc66"
+  },
+  "user": {
+    "$oid": "68fca62ef0da11c8a7d03ccf"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b992"
+      },
+      "ten": "iPhone 8 Plus 256GB",
+      "gia": 25790000,
+      "soLuong": 1,
+      "promo": {
+        "name": "giamgia",
+        "value": 500000
+      }
+    }
+  ],
+  "tongTienHang": 25790000,
+  "giamGia": 500000,
+  "tongTienThanhToan": 25320000,
+  "diaChiNhanHang": "8 Hoàng Văn Thụ, Phường 9, Quận Phú Nhuận, TP. Hồ Chí Minh",
+  "paymentMethod": "COD",
+  "paymentStatus": "Chưa thanh toán",
+  "orderStatus": "Đang giao",
+  "ngayDat": {
+    "$date": "2025-08-07T10:28:49.995Z"
+  },
+  "ngayGiao": {
+    "$date": "2025-08-08T10:28:49.995Z"
+  },
+  "history": [
+    {
+      "status": "Chờ xử lý",
+      "date": "2025-08-07T10:28:49.995Z"
+    },
+    {
+      "status": "Đang giao",
+      "date": "2025-08-08T10:28:49.995Z"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "dfbce28874ad44af87f0dab7"
+  },
+  "user": {
+    "$oid": "68fca62ef0da11c8a7d03cca"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b982"
+      },
+      "ten": "Vivo Y85",
+      "gia": 4990000,
+      "soLuong": 3,
+      "promo": {
+        "name": "giamgia",
+        "value": 500000
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b992"
+      },
+      "ten": "iPhone 8 Plus 256GB",
+      "gia": 25790000,
+      "soLuong": 1,
+      "promo": {
+        "name": "giamgia",
+        "value": 500000
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b972"
+      },
+      "ten": "Xiaomi Redmi Note 5",
+      "gia": 5690000,
+      "soLuong": 3,
+      "promo": {
+        "name": "moiramat",
+        "value": 0
+      }
+    }
+  ],
+  "tongTienHang": 57830000,
+  "giamGia": 1000000,
+  "tongTienThanhToan": 56860000,
+  "diaChiNhanHang": "67 Nguyễn Kiệm, Phường 3, Quận Gò Vấp, TP. Hồ Chí Minh",
+  "paymentMethod": "COD",
+  "paymentStatus": "Chưa thanh toán",
+  "orderStatus": "Đã hủy",
+  "ngayDat": {
+    "$date": "2025-10-09T12:48:18.492Z"
+  },
+  "ngayGiao": {
+    "$date": "2025-10-12T12:48:18.492Z"
+  },
+  "history": [
+    {
+      "status": "Chờ xử lý",
+      "date": "2025-10-09T12:48:18.492Z"
+    },
+    {
+      "status": "Đã hủy",
+      "date": "2025-10-12T12:48:18.492Z"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "f8533b037a70495391f2c8fc"
+  },
+  "user": {
+    "$oid": "68fca62ef0da11c8a7d03ccc"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b97d"
+      },
+      "ten": "Philips E331",
+      "gia": 890000,
+      "soLuong": 2,
+      "promo": {
+        "name": "",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b96e"
+      },
+      "ten": "Mobiistar X",
+      "gia": 3490000,
+      "soLuong": 2,
+      "promo": {
+        "name": "tragop",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b98a"
+      },
+      "ten": "Itel it2161",
+      "gia": 170000,
+      "soLuong": 1,
+      "promo": {
+        "name": "moiramat",
+        "value": 0
+      }
+    }
+  ],
+  "tongTienHang": 8930000,
+  "giamGia": 0,
+  "tongTienThanhToan": 8960000,
+  "diaChiNhanHang": "5 Lê Duẩn, Bến Nghé, Quận 1, TP. Hồ Chí Minh",
+  "paymentMethod": "COD",
+  "paymentStatus": "Chưa thanh toán",
+  "orderStatus": "Chờ xử lý",
+  "ngayDat": {
+    "$date": "2025-10-09T01:25:07.166Z"
+  },
+  "ngayGiao": {
+    "$date": "2025-10-11T01:25:07.166Z"
+  },
+  "history": [
+    {
+      "status": "Chờ xử lý",
+      "date": "2025-10-09T01:25:07.166Z"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "ce9070e7cba64851a500008e"
+  },
+  "user": {
+    "$oid": "68fca62ef0da11c8a7d03cc5"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b982"
+      },
+      "ten": "Vivo Y85",
+      "gia": 4990000,
+      "soLuong": 2,
+      "promo": {
+        "name": "giamgia",
+        "value": 500000
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b979"
+      },
+      "ten": "Realme 2 Pro 8GB/128GB",
+      "gia": 6990000,
+      "soLuong": 3,
+      "promo": {
+        "name": "moiramat",
+        "value": 0
+      }
+    }
+  ],
+  "tongTienHang": 30950000,
+  "giamGia": 500000,
+  "tongTienThanhToan": 30480000,
+  "diaChiNhanHang": "120 Điện Biên Phủ, Phường 7, Quận 3, TP. Hồ Chí Minh",
+  "paymentMethod": "COD",
+  "paymentStatus": "Chưa thanh toán",
+  "orderStatus": "Đã hủy",
+  "ngayDat": {
+    "$date": "2025-06-11T12:55:44.962Z"
+  },
+  "ngayGiao": {
+    "$date": "2025-06-16T12:55:44.962Z"
+  },
+  "history": [
+    {
+      "status": "Chờ xử lý",
+      "date": "2025-06-11T12:55:44.962Z"
+    },
+    {
+      "status": "Đã hủy",
+      "date": "2025-06-16T12:55:44.962Z"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "69ba0c42af27415b838196a4"
+  },
+  "user": {
+    "$oid": "68fca62ef0da11c8a7d03cc9"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b971"
+      },
+      "ten": "Mobiistar B310",
+      "gia": 260000,
+      "soLuong": 3,
+      "promo": {
+        "name": "moiramat",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b96b"
+      },
+      "ten": "iPad 2018 Wifi 32GB",
+      "gia": 8990000,
+      "soLuong": 2,
+      "promo": {
+        "name": "tragop",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b98f"
+      },
+      "ten": "Motorola Moto C 4G",
+      "gia": 1290000,
+      "soLuong": 2,
+      "promo": {
+        "name": "",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b98b"
+      },
+      "ten": "Coolpad N3D",
+      "gia": 2390000,
+      "soLuong": 1,
+      "promo": {
+        "name": "moiramat",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b971"
+      },
+      "ten": "Mobiistar B310",
+      "gia": 260000,
+      "soLuong": 3,
+      "promo": {
+        "name": "moiramat",
+        "value": 0
+      }
+    }
+  ],
+  "tongTienHang": 24510000,
+  "giamGia": 0,
+  "tongTienThanhToan": 24540000,
+  "diaChiNhanHang": "23 Phạm Văn Đồng, Hiệp Bình Chánh, TP. Thủ Đức, TP. Hồ Chí Minh",
+  "paymentMethod": "COD",
+  "paymentStatus": "Chưa thanh toán",
+  "orderStatus": "Đang giao",
+  "ngayDat": {
+    "$date": "2025-07-09T08:08:59.286Z"
+  },
+  "ngayGiao": {
+    "$date": "2025-07-10T08:08:59.286Z"
+  },
+  "history": [
+    {
+      "status": "Chờ xử lý",
+      "date": "2025-07-09T08:08:59.286Z"
+    },
+    {
+      "status": "Đang giao",
+      "date": "2025-07-10T08:08:59.286Z"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "f49da4e970cc42579d7e39a4"
+  },
+  "user": {
+    "$oid": "68fca62ef0da11c8a7d03cc7"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b981"
+      },
+      "ten": "Vivo V9",
+      "gia": 7490000,
+      "soLuong": 2,
+      "promo": {
+        "name": "giamgia",
+        "value": 800000
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b96e"
+      },
+      "ten": "Mobiistar X",
+      "gia": 3490000,
+      "soLuong": 3,
+      "promo": {
+        "name": "tragop",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b968"
+      },
+      "ten": "iPhone X 256GB Silver",
+      "gia": 31990000,
+      "soLuong": 2,
+      "promo": {
+        "name": "giareonline",
+        "value": 27990000
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b97c"
+      },
+      "ten": "Realme 2 Pro 4GB/64GB",
+      "gia": 5590000,
+      "soLuong": 2,
+      "promo": {
+        "name": "moiramat",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b96b"
+      },
+      "ten": "iPad 2018 Wifi 32GB",
+      "gia": 8990000,
+      "soLuong": 3,
+      "promo": {
+        "name": "tragop",
+        "value": 0
+      }
+    }
+  ],
+  "tongTienHang": 127580000,
+  "giamGia": 800000,
+  "tongTienThanhToan": 126810000,
+  "diaChiNhanHang": "89 Lý Thường Kiệt, Phường 7, Quận Tân Bình, TP. Hồ Chí Minh",
+  "paymentMethod": "VietQr",
+  "paymentStatus": "Đã thanh toán",
+  "orderStatus": "Đang giao",
+  "ngayDat": {
+    "$date": "2025-09-11T21:45:12.669Z"
+  },
+  "ngayGiao": {
+    "$date": "2025-09-12T21:45:12.669Z"
+  },
+  "history": [
+    {
+      "status": "Chờ xử lý",
+      "date": "2025-09-11T21:45:12.669Z"
+    },
+    {
+      "status": "Đang giao",
+      "date": "2025-09-12T21:45:12.669Z"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "4855fb7c85bb4e18829c7eba"
+  },
+  "user": {
+    "$oid": "68fca62ef0da11c8a7d03cc4"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b98d"
+      },
+      "ten": "Coolpad N3 mini",
+      "gia": 1390000,
+      "soLuong": 1,
+      "promo": {
+        "name": "moiramat",
+        "value": 0
+      }
+    }
+  ],
+  "tongTienHang": 1390000,
+  "giamGia": 0,
+  "tongTienThanhToan": 1420000,
+  "diaChiNhanHang": "56 Trần Hưng Đạo, Phường Cầu Kho, Quận 1, TP. Hồ Chí Minh",
+  "paymentMethod": "COD",
+  "paymentStatus": "Chưa thanh toán",
+  "orderStatus": "Chờ xử lý",
+  "ngayDat": {
+    "$date": "2025-08-22T03:19:22.087Z"
+  },
+  "ngayGiao": {
+    "$date": "2025-08-23T03:19:22.087Z"
+  },
+  "history": [
+    {
+      "status": "Chờ xử lý",
+      "date": "2025-08-22T03:19:22.087Z"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "efff5e1a95a140d4b9d98535"
+  },
+  "user": {
+    "$oid": "68fca62ef0da11c8a7d03cce"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b968"
+      },
+      "ten": "iPhone X 256GB Silver",
+      "gia": 31990000,
+      "soLuong": 3,
+      "promo": {
+        "name": "giareonline",
+        "value": 27990000
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b98c"
+      },
+      "ten": "Coolpad N3",
+      "gia": 1890000,
+      "soLuong": 2,
+      "promo": {
+        "name": "moiramat",
+        "value": 0
+      }
+    }
+  ],
+  "tongTienHang": 99750000,
+  "giamGia": 0,
+  "tongTienThanhToan": 99780000,
+  "diaChiNhanHang": "15 Nguyễn Văn Trỗi, Phường 14, Quận Phú Nhuận, TP. Hồ Chí Minh",
+  "paymentMethod": "COD",
+  "paymentStatus": "Chưa thanh toán",
+  "orderStatus": "Đã hủy",
+  "ngayDat": {
+    "$date": "2025-07-25T21:08:09.496Z"
+  },
+  "ngayGiao": {
+    "$date": "2025-07-27T21:08:09.496Z"
+  },
+  "history": [
+    {
+      "status": "Chờ xử lý",
+      "date": "2025-07-25T21:08:09.496Z"
+    },
+    {
+      "status": "Đã hủy",
+      "date": "2025-07-27T21:08:09.496Z"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "803f75b1fb294895bffa3c6f"
+  },
+  "user": {
+    "$oid": "68fca62ef0da11c8a7d03ccf"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b975"
+      },
+      "ten": "Huawei Nova 3",
+      "gia": 9990000,
+      "soLuong": 1,
+      "promo": {
+        "name": "tragop",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b974"
+      },
+      "ten": "Huawei Mate 20 Pro",
+      "gia": 21990000,
+      "soLuong": 2,
+      "promo": {
+        "name": "tragop",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b980"
+      },
+      "ten": "Vivo V11",
+      "gia": 10990000,
+      "soLuong": 3,
+      "promo": {
+        "name": "tragop",
+        "value": 0
+      }
+    }
+  ],
+  "tongTienHang": 86940000,
+  "giamGia": 0,
+  "tongTienThanhToan": 86970000,
+  "diaChiNhanHang": "8 Hoàng Văn Thụ, Phường 9, Quận Phú Nhuận, TP. Hồ Chí Minh",
+  "paymentMethod": "VietQr",
+  "paymentStatus": "Đã thanh toán",
+  "orderStatus": "Đang giao",
+  "ngayDat": {
+    "$date": "2025-09-28T07:35:16.083Z"
+  },
+  "ngayGiao": {
+    "$date": "2025-10-01T07:35:16.083Z"
+  },
+  "history": [
+    {
+      "status": "Chờ xử lý",
+      "date": "2025-09-28T07:35:16.083Z"
+    },
+    {
+      "status": "Đang giao",
+      "date": "2025-10-01T07:35:16.083Z"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "907559708c794d92bde78100"
+  },
+  "user": {
+    "$oid": "68fca62ef0da11c8a7d03cca"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b977"
+      },
+      "ten": "Nokia black future",
+      "gia": 999999000,
+      "soLuong": 3,
+      "promo": {
+        "name": "giamgia",
+        "value": 1000
+      }
+    }
+  ],
+  "tongTienHang": {
+    "$numberLong": "2999997000"
+  },
+  "giamGia": 1000,
+  "tongTienThanhToan": {
+    "$numberLong": "3000026000"
+  },
+  "diaChiNhanHang": "91 Phạm Ngũ Lão, Phường 1, Quận Gò Vấp, TP. Hồ Chí Minh",
+  "paymentMethod": "COD",
+  "paymentStatus": "Chưa thanh toán",
+  "orderStatus": "Đã hủy",
+  "ngayDat": {
+    "$date": "2025-06-26T00:07:52.325Z"
+  },
+  "ngayGiao": {
+    "$date": "2025-06-28T00:07:52.325Z"
+  },
+  "history": [
+    {
+      "status": "Chờ xử lý",
+      "date": "2025-06-26T00:07:52.325Z"
+    },
+    {
+      "status": "Đã hủy",
+      "date": "2025-06-28T00:07:52.325Z"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "80888244873943739a546ff0"
+  },
+  "user": {
+    "$oid": "68fca62ef0da11c8a7d03ccc"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b97c"
+      },
+      "ten": "Realme 2 Pro 4GB/64GB",
+      "gia": 5590000,
+      "soLuong": 1,
+      "promo": {
+        "name": "moiramat",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b978"
+      },
+      "ten": "Samsung Galaxy A7 (2018)",
+      "gia": 8990000,
+      "soLuong": 2,
+      "promo": {
+        "name": "tragop",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b986"
+      },
+      "ten": "Mobell S60",
+      "gia": 1790000,
+      "soLuong": 1,
+      "promo": {
+        "name": "moiramat",
+        "value": 0
+      }
+    }
+  ],
+  "tongTienHang": 25360000,
+  "giamGia": 0,
+  "tongTienThanhToan": 25390000,
+  "diaChiNhanHang": "5 Lê Duẩn, Bến Nghé, Quận 1, TP. Hồ Chí Minh",
+  "paymentMethod": "COD",
+  "paymentStatus": "Chưa thanh toán",
+  "orderStatus": "Chờ xử lý",
+  "ngayDat": {
+    "$date": "2025-08-17T15:44:00.172Z"
+  },
+  "ngayGiao": {
+    "$date": "2025-08-18T15:44:00.172Z"
+  },
+  "history": [
+    {
+      "status": "Chờ xử lý",
+      "date": "2025-08-17T15:44:00.172Z"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "faa14a8ae0b546b094cb58ff"
+  },
+  "user": {
+    "$oid": "68fca62ef0da11c8a7d03cc6"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b96e"
+      },
+      "ten": "Mobiistar X",
+      "gia": 3490000,
+      "soLuong": 3,
+      "promo": {
+        "name": "tragop",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b97d"
+      },
+      "ten": "Philips E331",
+      "gia": 890000,
+      "soLuong": 1,
+      "promo": {
+        "name": "",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b98c"
+      },
+      "ten": "Coolpad N3",
+      "gia": 1890000,
+      "soLuong": 1,
+      "promo": {
+        "name": "moiramat",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b990"
+      },
+      "ten": "iPhone Xr 128GB",
+      "gia": 24990000,
+      "soLuong": 1,
+      "promo": {
+        "name": "giareonline",
+        "value": 22990000
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b98b"
+      },
+      "ten": "Coolpad N3D",
+      "gia": 2390000,
+      "soLuong": 2,
+      "promo": {
+        "name": "moiramat",
+        "value": 0
+      }
+    }
+  ],
+  "tongTienHang": 43020000,
+  "giamGia": 0,
+  "tongTienThanhToan": 43050000,
+  "diaChiNhanHang": "15 Nguyễn Văn Cừ, Phường Cô Giang, Quận 1, TP. Hồ Chí Minh",
+  "paymentMethod": "COD",
+  "paymentStatus": "Chưa thanh toán",
+  "orderStatus": "Hoàn trả",
+  "ngayDat": {
+    "$date": "2025-07-12T22:35:34.970Z"
+  },
+  "ngayGiao": {
+    "$date": "2025-07-16T22:35:34.970Z"
+  },
+  "history": [
+    {
+      "status": "Chờ xử lý",
+      "date": "2025-07-12T22:35:34.970Z"
+    },
+    {
+      "status": "Hoàn trả",
+      "date": "2025-07-16T22:35:34.970Z"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "20759a25db064b1ea2044bfb"
+  },
+  "user": {
+    "$oid": "68fca62ef0da11c8a7d03cd0"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b972"
+      },
+      "ten": "Xiaomi Redmi Note 5",
+      "gia": 5690000,
+      "soLuong": 2,
+      "promo": {
+        "name": "moiramat",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b97d"
+      },
+      "ten": "Philips E331",
+      "gia": 890000,
+      "soLuong": 2,
+      "promo": {
+        "name": "",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b97c"
+      },
+      "ten": "Realme 2 Pro 4GB/64GB",
+      "gia": 5590000,
+      "soLuong": 3,
+      "promo": {
+        "name": "moiramat",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b982"
+      },
+      "ten": "Vivo Y85",
+      "gia": 4990000,
+      "soLuong": 3,
+      "promo": {
+        "name": "giamgia",
+        "value": 500000
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b98b"
+      },
+      "ten": "Coolpad N3D",
+      "gia": 2390000,
+      "soLuong": 2,
+      "promo": {
+        "name": "moiramat",
+        "value": 0
+      }
+    }
+  ],
+  "tongTienHang": 49680000,
+  "giamGia": 500000,
+  "tongTienThanhToan": 49210000,
+  "diaChiNhanHang": "19 Phan Xích Long, Phường 2, Quận Phú Nhuận, TP. Hồ Chí Minh",
+  "paymentMethod": "COD",
+  "paymentStatus": "Chưa thanh toán",
+  "orderStatus": "Hoàn thành",
+  "ngayDat": {
+    "$date": "2025-07-03T16:10:08.504Z"
+  },
+  "ngayGiao": {
+    "$date": "2025-07-10T16:10:08.504Z"
+  },
+  "history": [
+    {
+      "status": "Chờ xử lý",
+      "date": "2025-07-03T16:10:08.504Z"
+    },
+    {
+      "status": "Hoàn thành",
+      "date": "2025-07-10T16:10:08.504Z"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "12144598a3bb4299a37c5ef4"
+  },
+  "user": {
+    "$oid": "68fca62ef0da11c8a7d03cc7"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b96d"
+      },
+      "ten": "Xiaomi Mi 8",
+      "gia": 12990000,
+      "soLuong": 2,
+      "promo": {
+        "name": "",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b969"
+      },
+      "ten": "Oppo A3s 32GB",
+      "gia": 4690000,
+      "soLuong": 1,
+      "promo": {
+        "name": "tragop",
+        "value": 0
+      }
+    }
+  ],
+  "tongTienHang": 30670000,
+  "giamGia": 0,
+  "tongTienThanhToan": 30700000,
+  "diaChiNhanHang": "89 Lý Thường Kiệt, Phường 7, Quận Tân Bình, TP. Hồ Chí Minh",
+  "paymentMethod": "VietQr",
+  "paymentStatus": "Đã thanh toán",
+  "orderStatus": "Đã hủy",
+  "ngayDat": {
+    "$date": "2025-07-20T20:44:22.255Z"
+  },
+  "ngayGiao": {
+    "$date": "2025-07-26T20:44:22.255Z"
+  },
+  "history": [
+    {
+      "status": "Chờ xử lý",
+      "date": "2025-07-20T20:44:22.255Z"
+    },
+    {
+      "status": "Đã hủy",
+      "date": "2025-07-26T20:44:22.255Z"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "bde6a017595f4df3b04f5380"
+  },
+  "user": {
+    "$oid": "68fca62ef0da11c8a7d03cd1"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b97c"
+      },
+      "ten": "Realme 2 Pro 4GB/64GB",
+      "gia": 5590000,
+      "soLuong": 2,
+      "promo": {
+        "name": "moiramat",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b984"
+      },
+      "ten": "Mobell M789",
+      "gia": 550000,
+      "soLuong": 2,
+      "promo": {
+        "name": "",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b970"
+      },
+      "ten": "Mobiistar E Selfie",
+      "gia": 2490000,
+      "soLuong": 3,
+      "promo": {
+        "name": "",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b965"
+      },
+      "ten": "Oppo F9",
+      "gia": 7690000,
+      "soLuong": 3,
+      "promo": {
+        "name": "giamgia",
+        "value": 500000
+      }
+    }
+  ],
+  "tongTienHang": 42820000,
+  "giamGia": 500000,
+  "tongTienThanhToan": 42350000,
+  "diaChiNhanHang": "72 Pasteur, Phường 8, Quận 3, TP. Hồ Chí Minh",
+  "paymentMethod": "COD",
+  "paymentStatus": "Chưa thanh toán",
+  "orderStatus": "Đang giao",
+  "ngayDat": {
+    "$date": "2025-10-09T19:02:58.938Z"
+  },
+  "ngayGiao": {
+    "$date": "2025-10-11T19:02:58.938Z"
+  },
+  "history": [
+    {
+      "status": "Chờ xử lý",
+      "date": "2025-10-09T19:02:58.938Z"
+    },
+    {
+      "status": "Đang giao",
+      "date": "2025-10-11T19:02:58.938Z"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "666b3535ce1e452185a0856e"
+  },
+  "user": {
+    "$oid": "68fca62ef0da11c8a7d03ccb"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b994"
+      },
+      "ten": "Huawei Nova 2i",
+      "gia": 4490000,
+      "soLuong": 1,
+      "promo": {
+        "name": "giareonline",
+        "value": 3990000
+      }
+    }
+  ],
+  "tongTienHang": 4490000,
+  "giamGia": 0,
+  "tongTienThanhToan": 4520000,
+  "diaChiNhanHang": "90 Cộng Hòa, Phường 4, Quận Tân Bình, TP. Hồ Chí Minh",
+  "paymentMethod": "VietQr",
+  "paymentStatus": "Đã thanh toán",
+  "orderStatus": "Đang giao",
+  "ngayDat": {
+    "$date": "2025-08-01T12:25:35.949Z"
+  },
+  "ngayGiao": {
+    "$date": "2025-08-06T12:25:35.949Z"
+  },
+  "history": [
+    {
+      "status": "Chờ xử lý",
+      "date": "2025-08-01T12:25:35.949Z"
+    },
+    {
+      "status": "Đang giao",
+      "date": "2025-08-06T12:25:35.949Z"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "f354ae099fd44537a00e1f97"
+  },
+  "user": {
+    "$oid": "68fca62ef0da11c8a7d03cd0"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b963"
+      },
+      "ten": "SamSung Galaxy J4+",
+      "gia": 3490000,
+      "soLuong": 2,
+      "promo": {
+        "name": "tragop",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b988"
+      },
+      "ten": "Itel A32F",
+      "gia": 1350000,
+      "soLuong": 3,
+      "promo": {
+        "name": "moiramat",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b96a"
+      },
+      "ten": "Samsung Galaxy J8",
+      "gia": 6290000,
+      "soLuong": 1,
+      "promo": {
+        "name": "giamgia",
+        "value": 500000
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b972"
+      },
+      "ten": "Xiaomi Redmi Note 5",
+      "gia": 5690000,
+      "soLuong": 1,
+      "promo": {
+        "name": "moiramat",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b968"
+      },
+      "ten": "iPhone X 256GB Silver",
+      "gia": 31990000,
+      "soLuong": 3,
+      "promo": {
+        "name": "giareonline",
+        "value": 27990000
+      }
+    }
+  ],
+  "tongTienHang": 118980000,
+  "giamGia": 500000,
+  "tongTienThanhToan": 118510000,
+  "diaChiNhanHang": "19 Phan Xích Long, Phường 2, Quận Phú Nhuận, TP. Hồ Chí Minh",
+  "paymentMethod": "COD",
+  "paymentStatus": "Chưa thanh toán",
+  "orderStatus": "Đang giao",
+  "ngayDat": {
+    "$date": "2025-06-14T13:30:29.307Z"
+  },
+  "ngayGiao": {
+    "$date": "2025-06-18T13:30:29.307Z"
+  },
+  "history": [
+    {
+      "status": "Chờ xử lý",
+      "date": "2025-06-14T13:30:29.307Z"
+    },
+    {
+      "status": "Đang giao",
+      "date": "2025-06-18T13:30:29.307Z"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "ee2b4bba816045f094b631f9"
+  },
+  "user": {
+    "$oid": "68fca62ef0da11c8a7d03cc3"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b96b"
+      },
+      "ten": "iPad 2018 Wifi 32GB",
+      "gia": 8990000,
+      "soLuong": 2,
+      "promo": {
+        "name": "tragop",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b981"
+      },
+      "ten": "Vivo V9",
+      "gia": 7490000,
+      "soLuong": 3,
+      "promo": {
+        "name": "giamgia",
+        "value": 800000
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b97c"
+      },
+      "ten": "Realme 2 Pro 4GB/64GB",
+      "gia": 5590000,
+      "soLuong": 3,
+      "promo": {
+        "name": "moiramat",
+        "value": 0
+      }
+    }
+  ],
+  "tongTienHang": 57220000,
+  "giamGia": 800000,
+  "tongTienThanhToan": 56450000,
+  "diaChiNhanHang": "9 Nguyễn Trãi, Phường 2, Quận 5, TP. Hồ Chí Minh",
+  "paymentMethod": "COD",
+  "paymentStatus": "Chưa thanh toán",
+  "orderStatus": "Hoàn trả",
+  "ngayDat": {
+    "$date": "2025-06-26T10:28:49.379Z"
+  },
+  "ngayGiao": {
+    "$date": "2025-06-27T10:28:49.379Z"
+  },
+  "history": [
+    {
+      "status": "Chờ xử lý",
+      "date": "2025-06-26T10:28:49.379Z"
+    },
+    {
+      "status": "Hoàn trả",
+      "date": "2025-06-27T10:28:49.379Z"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "796a07739c2047b8a7c2540c"
+  },
+  "user": {
+    "$oid": "68fca62ef0da11c8a7d03cd0"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b987"
+      },
+      "ten": "Itel P32",
+      "gia": 1890000,
+      "soLuong": 1,
+      "promo": {
+        "name": "",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b97e"
+      },
+      "ten": "Philips S329",
+      "gia": 2390000,
+      "soLuong": 2,
+      "promo": {
+        "name": "",
+        "value": 0
+      }
+    }
+  ],
+  "tongTienHang": 6670000,
+  "giamGia": 0,
+  "tongTienThanhToan": 6700000,
+  "diaChiNhanHang": "19 Phan Xích Long, Phường 2, Quận Phú Nhuận, TP. Hồ Chí Minh",
+  "paymentMethod": "VietQr",
+  "paymentStatus": "Đã thanh toán",
+  "orderStatus": "Đang giao",
+  "ngayDat": {
+    "$date": "2025-08-16T19:16:04.451Z"
+  },
+  "ngayGiao": {
+    "$date": "2025-08-17T19:16:04.451Z"
+  },
+  "history": [
+    {
+      "status": "Chờ xử lý",
+      "date": "2025-08-16T19:16:04.451Z"
+    },
+    {
+      "status": "Đang giao",
+      "date": "2025-08-17T19:16:04.451Z"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "cc1e42c8383f4d768aeb4852"
+  },
+  "user": {
+    "$oid": "68fca62ef0da11c8a7d03cc4"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b97a"
+      },
+      "ten": "Realme 2 4GB/64GB",
+      "gia": 4490000,
+      "soLuong": 2,
+      "promo": {
+        "name": "moiramat",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b963"
+      },
+      "ten": "SamSung Galaxy J4+",
+      "gia": 3490000,
+      "soLuong": 1,
+      "promo": {
+        "name": "tragop",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b994"
+      },
+      "ten": "Huawei Nova 2i",
+      "gia": 4490000,
+      "soLuong": 3,
+      "promo": {
+        "name": "giareonline",
+        "value": 3990000
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b98a"
+      },
+      "ten": "Itel it2161",
+      "gia": 170000,
+      "soLuong": 3,
+      "promo": {
+        "name": "moiramat",
+        "value": 0
+      }
+    }
+  ],
+  "tongTienHang": 26450000,
+  "giamGia": 0,
+  "tongTienThanhToan": 26480000,
+  "diaChiNhanHang": "56 Trần Hưng Đạo, Phường Cầu Kho, Quận 1, TP. Hồ Chí Minh",
+  "paymentMethod": "COD",
+  "paymentStatus": "Chưa thanh toán",
+  "orderStatus": "Chờ xử lý",
+  "ngayDat": {
+    "$date": "2025-08-14T03:35:04.692Z"
+  },
+  "ngayGiao": {
+    "$date": "2025-08-21T03:35:04.692Z"
+  },
+  "history": [
+    {
+      "status": "Chờ xử lý",
+      "date": "2025-08-14T03:35:04.692Z"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "66227f8ef98d46b9b24f4ef3"
+  },
+  "user": {
+    "$oid": "68fca62ef0da11c8a7d03ccf"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b981"
+      },
+      "ten": "Vivo V9",
+      "gia": 7490000,
+      "soLuong": 3,
+      "promo": {
+        "name": "giamgia",
+        "value": 800000
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b96d"
+      },
+      "ten": "Xiaomi Mi 8",
+      "gia": 12990000,
+      "soLuong": 1,
+      "promo": {
+        "name": "",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b982"
+      },
+      "ten": "Vivo Y85",
+      "gia": 4990000,
+      "soLuong": 3,
+      "promo": {
+        "name": "giamgia",
+        "value": 500000
+      }
+    }
+  ],
+  "tongTienHang": 50430000,
+  "giamGia": 1300000,
+  "tongTienThanhToan": 49160000,
+  "diaChiNhanHang": "8 Hoàng Văn Thụ, Phường 9, Quận Phú Nhuận, TP. Hồ Chí Minh",
+  "paymentMethod": "COD",
+  "paymentStatus": "Chưa thanh toán",
+  "orderStatus": "Đã hủy",
+  "ngayDat": {
+    "$date": "2025-07-29T08:43:23.249Z"
+  },
+  "ngayGiao": {
+    "$date": "2025-08-03T08:43:23.249Z"
+  },
+  "history": [
+    {
+      "status": "Chờ xử lý",
+      "date": "2025-07-29T08:43:23.249Z"
+    },
+    {
+      "status": "Đã hủy",
+      "date": "2025-08-03T08:43:23.249Z"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "0fb248d765084be99d7ecf5f"
+  },
+  "user": {
+    "$oid": "68fca62ef0da11c8a7d03ccf"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b98b"
+      },
+      "ten": "Coolpad N3D",
+      "gia": 2390000,
+      "soLuong": 2,
+      "promo": {
+        "name": "moiramat",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b98c"
+      },
+      "ten": "Coolpad N3",
+      "gia": 1890000,
+      "soLuong": 3,
+      "promo": {
+        "name": "moiramat",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b977"
+      },
+      "ten": "Nokia black future",
+      "gia": 999999000,
+      "soLuong": 3,
+      "promo": {
+        "name": "giamgia",
+        "value": 1000
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b976"
+      },
+      "ten": "Huawei Y5 2017",
+      "gia": 1990000,
+      "soLuong": 3,
+      "promo": {
+        "name": "",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b986"
+      },
+      "ten": "Mobell S60",
+      "gia": 1790000,
+      "soLuong": 1,
+      "promo": {
+        "name": "moiramat",
+        "value": 0
+      }
+    }
+  ],
+  "tongTienHang": {
+    "$numberLong": "3018207000"
+  },
+  "giamGia": 1000,
+  "tongTienThanhToan": {
+    "$numberLong": "3018236000"
+  },
+  "diaChiNhanHang": "8 Hoàng Văn Thụ, Phường 9, Quận Phú Nhuận, TP. Hồ Chí Minh",
+  "paymentMethod": "COD",
+  "paymentStatus": "Chưa thanh toán",
+  "orderStatus": "Đã hủy",
+  "ngayDat": {
+    "$date": "2025-06-18T22:40:17.743Z"
+  },
+  "ngayGiao": {
+    "$date": "2025-06-22T22:40:17.743Z"
+  },
+  "history": [
+    {
+      "status": "Chờ xử lý",
+      "date": "2025-06-18T22:40:17.743Z"
+    },
+    {
+      "status": "Đã hủy",
+      "date": "2025-06-22T22:40:17.743Z"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "9650360484654a129a0e01b2"
+  },
+  "user": {
+    "$oid": "68fca62ef0da11c8a7d03cc6"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b990"
+      },
+      "ten": "iPhone Xr 128GB",
+      "gia": 24990000,
+      "soLuong": 1,
+      "promo": {
+        "name": "giareonline",
+        "value": 22990000
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b97f"
+      },
+      "ten": "Philips E103",
+      "gia": 260000,
+      "soLuong": 3,
+      "promo": {
+        "name": "",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b969"
+      },
+      "ten": "Oppo A3s 32GB",
+      "gia": 4690000,
+      "soLuong": 2,
+      "promo": {
+        "name": "tragop",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b990"
+      },
+      "ten": "iPhone Xr 128GB",
+      "gia": 24990000,
+      "soLuong": 2,
+      "promo": {
+        "name": "giareonline",
+        "value": 22990000
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b991"
+      },
+      "ten": "iPhone 8 Plus 64GB",
+      "gia": 20990000,
+      "soLuong": 2,
+      "promo": {
+        "name": "tragop",
+        "value": 0
+      }
+    }
+  ],
+  "tongTienHang": 127110000,
+  "giamGia": 0,
+  "tongTienThanhToan": 127140000,
+  "diaChiNhanHang": "15 Nguyễn Văn Cừ, Phường Cô Giang, Quận 1, TP. Hồ Chí Minh",
+  "paymentMethod": "COD",
+  "paymentStatus": "Chưa thanh toán",
+  "orderStatus": "Hoàn trả",
+  "ngayDat": {
+    "$date": "2025-08-18T04:19:22.459Z"
+  },
+  "ngayGiao": {
+    "$date": "2025-08-23T04:19:22.459Z"
+  },
+  "history": [
+    {
+      "status": "Chờ xử lý",
+      "date": "2025-08-18T04:19:22.459Z"
+    },
+    {
+      "status": "Hoàn trả",
+      "date": "2025-08-23T04:19:22.459Z"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "b55b08042066404396963060"
+  },
+  "user": {
+    "$oid": "68fca62ef0da11c8a7d03ccb"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b97c"
+      },
+      "ten": "Realme 2 Pro 4GB/64GB",
+      "gia": 5590000,
+      "soLuong": 2,
+      "promo": {
+        "name": "moiramat",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b97f"
+      },
+      "ten": "Philips E103",
+      "gia": 260000,
+      "soLuong": 1,
+      "promo": {
+        "name": "",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b982"
+      },
+      "ten": "Vivo Y85",
+      "gia": 4990000,
+      "soLuong": 2,
+      "promo": {
+        "name": "giamgia",
+        "value": 500000
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b983"
+      },
+      "ten": "Vivo Y71",
+      "gia": 3290000,
+      "soLuong": 2,
+      "promo": {
+        "name": "tragop",
+        "value": 0
+      }
+    }
+  ],
+  "tongTienHang": 28000000,
+  "giamGia": 500000,
+  "tongTienThanhToan": 27530000,
+  "diaChiNhanHang": "90 Cộng Hòa, Phường 4, Quận Tân Bình, TP. Hồ Chí Minh",
+  "paymentMethod": "VietQr",
+  "paymentStatus": "Đã thanh toán",
+  "orderStatus": "Chờ xử lý",
+  "ngayDat": {
+    "$date": "2025-08-20T12:10:55.862Z"
+  },
+  "ngayGiao": {
+    "$date": "2025-08-21T12:10:55.862Z"
+  },
+  "history": [
+    {
+      "status": "Chờ xử lý",
+      "date": "2025-08-20T12:10:55.862Z"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "ab83444dd2554b45a80897ad"
+  },
+  "user": {
+    "$oid": "68fca62ef0da11c8a7d03cc3"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b984"
+      },
+      "ten": "Mobell M789",
+      "gia": 550000,
+      "soLuong": 2,
+      "promo": {
+        "name": "",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b992"
+      },
+      "ten": "iPhone 8 Plus 256GB",
+      "gia": 25790000,
+      "soLuong": 2,
+      "promo": {
+        "name": "giamgia",
+        "value": 500000
+      }
+    }
+  ],
+  "tongTienHang": 52680000,
+  "giamGia": 500000,
+  "tongTienThanhToan": 52210000,
+  "diaChiNhanHang": "45 Cách Mạng Tháng 8, Phường 11, Quận 3, TP. Hồ Chí Minh",
+  "paymentMethod": "VietQr",
+  "paymentStatus": "Đã thanh toán",
+  "orderStatus": "Hoàn trả",
+  "ngayDat": {
+    "$date": "2025-06-01T03:37:19.722Z"
+  },
+  "ngayGiao": {
+    "$date": "2025-06-06T03:37:19.722Z"
+  },
+  "history": [
+    {
+      "status": "Chờ xử lý",
+      "date": "2025-06-01T03:37:19.722Z"
+    },
+    {
+      "status": "Hoàn trả",
+      "date": "2025-06-06T03:37:19.722Z"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "381148a916314f95b4843418"
+  },
+  "user": {
+    "$oid": "68fca62ef0da11c8a7d03cc5"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b974"
+      },
+      "ten": "Huawei Mate 20 Pro",
+      "gia": 21990000,
+      "soLuong": 3,
+      "promo": {
+        "name": "tragop",
+        "value": 0
+      }
+    }
+  ],
+  "tongTienHang": 65970000,
+  "giamGia": 0,
+  "tongTienThanhToan": 66000000,
+  "diaChiNhanHang": "18 Hai Bà Trưng, Phường Tân Định, Quận 1, TP. Hồ Chí Minh",
+  "paymentMethod": "COD",
+  "paymentStatus": "Chưa thanh toán",
+  "orderStatus": "Chờ xử lý",
+  "ngayDat": {
+    "$date": "2025-08-04T05:56:18.043Z"
+  },
+  "ngayGiao": {
+    "$date": "2025-08-09T05:56:18.043Z"
+  },
+  "history": [
+    {
+      "status": "Chờ xử lý",
+      "date": "2025-08-04T05:56:18.043Z"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "21c6ddd41e2545c688efc9de"
+  },
+  "user": {
+    "$oid": "68fca62ef0da11c8a7d03cc5"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b992"
+      },
+      "ten": "iPhone 8 Plus 256GB",
+      "gia": 25790000,
+      "soLuong": 3,
+      "promo": {
+        "name": "giamgia",
+        "value": 500000
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b978"
+      },
+      "ten": "Samsung Galaxy A7 (2018)",
+      "gia": 8990000,
+      "soLuong": 1,
+      "promo": {
+        "name": "tragop",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b992"
+      },
+      "ten": "iPhone 8 Plus 256GB",
+      "gia": 25790000,
+      "soLuong": 1,
+      "promo": {
+        "name": "giamgia",
+        "value": 500000
+      }
+    }
+  ],
+  "tongTienHang": 112150000,
+  "giamGia": 1000000,
+  "tongTienThanhToan": 111180000,
+  "diaChiNhanHang": "120 Điện Biên Phủ, Phường 7, Quận 3, TP. Hồ Chí Minh",
+  "paymentMethod": "VietQr",
+  "paymentStatus": "Đã thanh toán",
+  "orderStatus": "Chờ xử lý",
+  "ngayDat": {
+    "$date": "2025-09-27T04:20:56.238Z"
+  },
+  "ngayGiao": {
+    "$date": "2025-09-29T04:20:56.238Z"
+  },
+  "history": [
+    {
+      "status": "Chờ xử lý",
+      "date": "2025-09-27T04:20:56.238Z"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "c751129ab9ae484b94b541bc"
+  },
+  "user": {
+    "$oid": "68fca62ef0da11c8a7d03cca"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b963"
+      },
+      "ten": "SamSung Galaxy J4+",
+      "gia": 3490000,
+      "soLuong": 2,
+      "promo": {
+        "name": "tragop",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b97f"
+      },
+      "ten": "Philips E103",
+      "gia": 260000,
+      "soLuong": 1,
+      "promo": {
+        "name": "",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b992"
+      },
+      "ten": "iPhone 8 Plus 256GB",
+      "gia": 25790000,
+      "soLuong": 1,
+      "promo": {
+        "name": "giamgia",
+        "value": 500000
+      }
+    }
+  ],
+  "tongTienHang": 33030000,
+  "giamGia": 500000,
+  "tongTienThanhToan": 32560000,
+  "diaChiNhanHang": "91 Phạm Ngũ Lão, Phường 1, Quận Gò Vấp, TP. Hồ Chí Minh",
+  "paymentMethod": "COD",
+  "paymentStatus": "Chưa thanh toán",
+  "orderStatus": "Hoàn thành",
+  "ngayDat": {
+    "$date": "2025-07-31T08:29:30.961Z"
+  },
+  "ngayGiao": {
+    "$date": "2025-08-04T08:29:30.961Z"
+  },
+  "history": [
+    {
+      "status": "Chờ xử lý",
+      "date": "2025-07-31T08:29:30.961Z"
+    },
+    {
+      "status": "Hoàn thành",
+      "date": "2025-08-04T08:29:30.961Z"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "e79740e39d0b4389bcf0b8aa"
+  },
+  "user": {
+    "$oid": "68fca62ef0da11c8a7d03ccc"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b971"
+      },
+      "ten": "Mobiistar B310",
+      "gia": 260000,
+      "soLuong": 3,
+      "promo": {
+        "name": "moiramat",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b975"
+      },
+      "ten": "Huawei Nova 3",
+      "gia": 9990000,
+      "soLuong": 3,
+      "promo": {
+        "name": "tragop",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b98a"
+      },
+      "ten": "Itel it2161",
+      "gia": 170000,
+      "soLuong": 3,
+      "promo": {
+        "name": "moiramat",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b964"
+      },
+      "ten": "Xiaomi Mi 8 Lite",
+      "gia": 6690000,
+      "soLuong": 1,
+      "promo": {
+        "name": "tragop",
+        "value": 0
+      }
+    }
+  ],
+  "tongTienHang": 37950000,
+  "giamGia": 0,
+  "tongTienThanhToan": 37980000,
+  "diaChiNhanHang": "5 Lê Duẩn, Bến Nghé, Quận 1, TP. Hồ Chí Minh",
+  "paymentMethod": "VietQr",
+  "paymentStatus": "Đã thanh toán",
+  "orderStatus": "Hoàn thành",
+  "ngayDat": {
+    "$date": "2025-08-02T22:54:32.070Z"
+  },
+  "ngayGiao": {
+    "$date": "2025-08-06T22:54:32.070Z"
+  },
+  "history": [
+    {
+      "status": "Chờ xử lý",
+      "date": "2025-08-02T22:54:32.070Z"
+    },
+    {
+      "status": "Hoàn thành",
+      "date": "2025-08-06T22:54:32.070Z"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "f9440965535041d08b52eeb1"
+  },
+  "user": {
+    "$oid": "68fca62ef0da11c8a7d03cc3"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b964"
+      },
+      "ten": "Xiaomi Mi 8 Lite",
+      "gia": 6690000,
+      "soLuong": 1,
+      "promo": {
+        "name": "tragop",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b969"
+      },
+      "ten": "Oppo A3s 32GB",
+      "gia": 4690000,
+      "soLuong": 1,
+      "promo": {
+        "name": "tragop",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b98f"
+      },
+      "ten": "Motorola Moto C 4G",
+      "gia": 1290000,
+      "soLuong": 2,
+      "promo": {
+        "name": "",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b96e"
+      },
+      "ten": "Mobiistar X",
+      "gia": 3490000,
+      "soLuong": 1,
+      "promo": {
+        "name": "tragop",
+        "value": 0
+      }
+    }
+  ],
+  "tongTienHang": 17450000,
+  "giamGia": 0,
+  "tongTienThanhToan": 17480000,
+  "diaChiNhanHang": "9 Nguyễn Trãi, Phường 2, Quận 5, TP. Hồ Chí Minh",
+  "paymentMethod": "VietQr",
+  "paymentStatus": "Đã thanh toán",
+  "orderStatus": "Đã hủy",
+  "ngayDat": {
+    "$date": "2025-07-24T01:01:42.020Z"
+  },
+  "ngayGiao": {
+    "$date": "2025-07-27T01:01:42.020Z"
+  },
+  "history": [
+    {
+      "status": "Chờ xử lý",
+      "date": "2025-07-24T01:01:42.020Z"
+    },
+    {
+      "status": "Đã hủy",
+      "date": "2025-07-27T01:01:42.020Z"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "127ed259b7f24020ba38fefe"
+  },
+  "user": {
+    "$oid": "68fca62ef0da11c8a7d03ccf"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b970"
+      },
+      "ten": "Mobiistar E Selfie",
+      "gia": 2490000,
+      "soLuong": 2,
+      "promo": {
+        "name": "",
+        "value": 0
+      }
+    }
+  ],
+  "tongTienHang": 4980000,
+  "giamGia": 0,
+  "tongTienThanhToan": 5010000,
+  "diaChiNhanHang": "8 Hoàng Văn Thụ, Phường 9, Quận Phú Nhuận, TP. Hồ Chí Minh",
+  "paymentMethod": "VietQr",
+  "paymentStatus": "Đã thanh toán",
+  "orderStatus": "Hoàn trả",
+  "ngayDat": {
+    "$date": "2025-07-03T03:32:45.701Z"
+  },
+  "ngayGiao": {
+    "$date": "2025-07-08T03:32:45.701Z"
+  },
+  "history": [
+    {
+      "status": "Chờ xử lý",
+      "date": "2025-07-03T03:32:45.701Z"
+    },
+    {
+      "status": "Hoàn trả",
+      "date": "2025-07-08T03:32:45.701Z"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "56e67a0928a843eb90d5a922"
+  },
+  "user": {
+    "$oid": "68fca62ef0da11c8a7d03cc6"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b97d"
+      },
+      "ten": "Philips E331",
+      "gia": 890000,
+      "soLuong": 2,
+      "promo": {
+        "name": "",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b96d"
+      },
+      "ten": "Xiaomi Mi 8",
+      "gia": 12990000,
+      "soLuong": 1,
+      "promo": {
+        "name": "",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b990"
+      },
+      "ten": "iPhone Xr 128GB",
+      "gia": 24990000,
+      "soLuong": 1,
+      "promo": {
+        "name": "giareonline",
+        "value": 22990000
+      }
+    }
+  ],
+  "tongTienHang": 39760000,
+  "giamGia": 0,
+  "tongTienThanhToan": 39790000,
+  "diaChiNhanHang": "15 Nguyễn Văn Cừ, Phường Cô Giang, Quận 1, TP. Hồ Chí Minh",
+  "paymentMethod": "COD",
+  "paymentStatus": "Chưa thanh toán",
+  "orderStatus": "Chờ xử lý",
+  "ngayDat": {
+    "$date": "2025-06-24T14:28:15.128Z"
+  },
+  "ngayGiao": {
+    "$date": "2025-06-25T14:28:15.128Z"
+  },
+  "history": [
+    {
+      "status": "Chờ xử lý",
+      "date": "2025-06-24T14:28:15.128Z"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "5f05d541387b4094914866bb"
+  },
+  "user": {
+    "$oid": "68fca62ef0da11c8a7d03cd0"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b987"
+      },
+      "ten": "Itel P32",
+      "gia": 1890000,
+      "soLuong": 1,
+      "promo": {
+        "name": "",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b981"
+      },
+      "ten": "Vivo V9",
+      "gia": 7490000,
+      "soLuong": 3,
+      "promo": {
+        "name": "giamgia",
+        "value": 800000
+      }
+    }
+  ],
+  "tongTienHang": 24360000,
+  "giamGia": 800000,
+  "tongTienThanhToan": 23590000,
+  "diaChiNhanHang": "19 Phan Xích Long, Phường 2, Quận Phú Nhuận, TP. Hồ Chí Minh",
+  "paymentMethod": "COD",
+  "paymentStatus": "Chưa thanh toán",
+  "orderStatus": "Đã hủy",
+  "ngayDat": {
+    "$date": "2025-06-02T00:20:25.117Z"
+  },
+  "ngayGiao": {
+    "$date": "2025-06-05T00:20:25.117Z"
+  },
+  "history": [
+    {
+      "status": "Chờ xử lý",
+      "date": "2025-06-02T00:20:25.117Z"
+    },
+    {
+      "status": "Đã hủy",
+      "date": "2025-06-05T00:20:25.117Z"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "0e64c240ec924cdcb05963ba"
+  },
+  "user": {
+    "$oid": "68fca62ef0da11c8a7d03cc8"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b971"
+      },
+      "ten": "Mobiistar B310",
+      "gia": 260000,
+      "soLuong": 1,
+      "promo": {
+        "name": "moiramat",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b987"
+      },
+      "ten": "Itel P32",
+      "gia": 1890000,
+      "soLuong": 2,
+      "promo": {
+        "name": "",
+        "value": 0
+      }
+    }
+  ],
+  "tongTienHang": 4040000,
+  "giamGia": 0,
+  "tongTienThanhToan": 4070000,
+  "diaChiNhanHang": "15 Phạm Văn Chiêu, Phường 14, Quận Gò Vấp, TP. Hồ Chí Minh",
+  "paymentMethod": "COD",
+  "paymentStatus": "Chưa thanh toán",
+  "orderStatus": "Đã hủy",
+  "ngayDat": {
+    "$date": "2025-08-30T02:15:37.775Z"
+  },
+  "ngayGiao": {
+    "$date": "2025-09-03T02:15:37.775Z"
+  },
+  "history": [
+    {
+      "status": "Chờ xử lý",
+      "date": "2025-08-30T02:15:37.775Z"
+    },
+    {
+      "status": "Đã hủy",
+      "date": "2025-09-03T02:15:37.775Z"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "c9feb476fdf74def8df9ca21"
+  },
+  "user": {
+    "$oid": "68fca62ef0da11c8a7d03ccd"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b985"
+      },
+      "ten": "Mobell Rock 3",
+      "gia": 590000,
+      "soLuong": 2,
+      "promo": {
+        "name": "",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b970"
+      },
+      "ten": "Mobiistar E Selfie",
+      "gia": 2490000,
+      "soLuong": 3,
+      "promo": {
+        "name": "",
+        "value": 0
+      }
+    }
+  ],
+  "tongTienHang": 8650000,
+  "giamGia": 0,
+  "tongTienThanhToan": 8680000,
+  "diaChiNhanHang": "150 Trường Chinh, Phường 13, Quận Tân Bình, TP. Hồ Chí Minh",
+  "paymentMethod": "COD",
+  "paymentStatus": "Chưa thanh toán",
+  "orderStatus": "Đang giao",
+  "ngayDat": {
+    "$date": "2025-08-17T03:42:17.854Z"
+  },
+  "ngayGiao": {
+    "$date": "2025-08-22T03:42:17.854Z"
+  },
+  "history": [
+    {
+      "status": "Chờ xử lý",
+      "date": "2025-08-17T03:42:17.854Z"
+    },
+    {
+      "status": "Đang giao",
+      "date": "2025-08-22T03:42:17.854Z"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "4e9db8d505a64c79994c3690"
+  },
+  "user": {
+    "$oid": "68fca62ef0da11c8a7d03cca"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b981"
+      },
+      "ten": "Vivo V9",
+      "gia": 7490000,
+      "soLuong": 1,
+      "promo": {
+        "name": "giamgia",
+        "value": 800000
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b987"
+      },
+      "ten": "Itel P32",
+      "gia": 1890000,
+      "soLuong": 2,
+      "promo": {
+        "name": "",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b974"
+      },
+      "ten": "Huawei Mate 20 Pro",
+      "gia": 21990000,
+      "soLuong": 1,
+      "promo": {
+        "name": "tragop",
+        "value": 0
+      }
+    }
+  ],
+  "tongTienHang": 33260000,
+  "giamGia": 800000,
+  "tongTienThanhToan": 32490000,
+  "diaChiNhanHang": "67 Nguyễn Kiệm, Phường 3, Quận Gò Vấp, TP. Hồ Chí Minh",
+  "paymentMethod": "VietQr",
+  "paymentStatus": "Đã thanh toán",
+  "orderStatus": "Chờ xử lý",
+  "ngayDat": {
+    "$date": "2025-07-09T02:06:45.454Z"
+  },
+  "ngayGiao": {
+    "$date": "2025-07-11T02:06:45.454Z"
+  },
+  "history": [
+    {
+      "status": "Chờ xử lý",
+      "date": "2025-07-09T02:06:45.454Z"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "ba486bf10cbe408eb2bd0465"
+  },
+  "user": {
+    "$oid": "68fca62ef0da11c8a7d03cc7"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b964"
+      },
+      "ten": "Xiaomi Mi 8 Lite",
+      "gia": 6690000,
+      "soLuong": 3,
+      "promo": {
+        "name": "tragop",
+        "value": 0
+      }
+    }
+  ],
+  "tongTienHang": 20070000,
+  "giamGia": 0,
+  "tongTienThanhToan": 20100000,
+  "diaChiNhanHang": "89 Lý Thường Kiệt, Phường 7, Quận Tân Bình, TP. Hồ Chí Minh",
+  "paymentMethod": "VietQr",
+  "paymentStatus": "Đã thanh toán",
+  "orderStatus": "Hoàn trả",
+  "ngayDat": {
+    "$date": "2025-08-27T00:11:30.879Z"
+  },
+  "ngayGiao": {
+    "$date": "2025-09-02T00:11:30.879Z"
+  },
+  "history": [
+    {
+      "status": "Chờ xử lý",
+      "date": "2025-08-27T00:11:30.879Z"
+    },
+    {
+      "status": "Hoàn trả",
+      "date": "2025-09-02T00:11:30.879Z"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "531678863e7a46829356dd62"
+  },
+  "user": {
+    "$oid": "68fca62ef0da11c8a7d03ccf"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b97e"
+      },
+      "ten": "Philips S329",
+      "gia": 2390000,
+      "soLuong": 3,
+      "promo": {
+        "name": "",
+        "value": 0
+      }
+    }
+  ],
+  "tongTienHang": 7170000,
+  "giamGia": 0,
+  "tongTienThanhToan": 7200000,
+  "diaChiNhanHang": "8 Hoàng Văn Thụ, Phường 9, Quận Phú Nhuận, TP. Hồ Chí Minh",
+  "paymentMethod": "VietQr",
+  "paymentStatus": "Đã thanh toán",
+  "orderStatus": "Chờ xử lý",
+  "ngayDat": {
+    "$date": "2025-08-09T03:57:57.393Z"
+  },
+  "ngayGiao": {
+    "$date": "2025-08-14T03:57:57.393Z"
+  },
+  "history": [
+    {
+      "status": "Chờ xử lý",
+      "date": "2025-08-09T03:57:57.393Z"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "ae3270fc349240009fb9823a"
+  },
+  "user": {
+    "$oid": "68fca62ef0da11c8a7d03ccd"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b966"
+      },
+      "ten": "Nokia 5.1 Plus",
+      "gia": 4790000,
+      "soLuong": 1,
+      "promo": {
+        "name": "giamgia",
+        "value": 250000
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b985"
+      },
+      "ten": "Mobell Rock 3",
+      "gia": 590000,
+      "soLuong": 1,
+      "promo": {
+        "name": "",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b985"
+      },
+      "ten": "Mobell Rock 3",
+      "gia": 590000,
+      "soLuong": 2,
+      "promo": {
+        "name": "",
+        "value": 0
+      }
+    }
+  ],
+  "tongTienHang": 6560000,
+  "giamGia": 250000,
+  "tongTienThanhToan": 6340000,
+  "diaChiNhanHang": "150 Trường Chinh, Phường 13, Quận Tân Bình, TP. Hồ Chí Minh",
+  "paymentMethod": "VietQr",
+  "paymentStatus": "Đã thanh toán",
+  "orderStatus": "Hoàn thành",
+  "ngayDat": {
+    "$date": "2025-10-08T16:18:09.190Z"
+  },
+  "ngayGiao": {
+    "$date": "2025-10-10T16:18:09.190Z"
+  },
+  "history": [
+    {
+      "status": "Chờ xử lý",
+      "date": "2025-10-08T16:18:09.190Z"
+    },
+    {
+      "status": "Hoàn thành",
+      "date": "2025-10-10T16:18:09.190Z"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "282db3c5f9f84cf0b5f3b937"
+  },
+  "user": {
+    "$oid": "68fca62ef0da11c8a7d03cc8"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b96f"
+      },
+      "ten": "Mobiistar Zumbo S2 Dual",
+      "gia": 2850000,
+      "soLuong": 1,
+      "promo": {
+        "name": "moiramat",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b97f"
+      },
+      "ten": "Philips E103",
+      "gia": 260000,
+      "soLuong": 3,
+      "promo": {
+        "name": "",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b977"
+      },
+      "ten": "Nokia black future",
+      "gia": 999999000,
+      "soLuong": 3,
+      "promo": {
+        "name": "giamgia",
+        "value": 1000
+      }
+    }
+  ],
+  "tongTienHang": {
+    "$numberLong": "3003627000"
+  },
+  "giamGia": 1000,
+  "tongTienThanhToan": {
+    "$numberLong": "3003656000"
+  },
+  "diaChiNhanHang": "15 Phạm Văn Chiêu, Phường 14, Quận Gò Vấp, TP. Hồ Chí Minh",
+  "paymentMethod": "COD",
+  "paymentStatus": "Chưa thanh toán",
+  "orderStatus": "Chờ xử lý",
+  "ngayDat": {
+    "$date": "2025-06-07T12:34:19.996Z"
+  },
+  "ngayGiao": {
+    "$date": "2025-06-11T12:34:19.996Z"
+  },
+  "history": [
+    {
+      "status": "Chờ xử lý",
+      "date": "2025-06-07T12:34:19.996Z"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "0f674743db364d4385f5a33f"
+  },
+  "user": {
+    "$oid": "68fca62ef0da11c8a7d03cd0"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b977"
+      },
+      "ten": "Nokia black future",
+      "gia": 999999000,
+      "soLuong": 1,
+      "promo": {
+        "name": "giamgia",
+        "value": 1000
+      }
+    }
+  ],
+  "tongTienHang": 999999000,
+  "giamGia": 1000,
+  "tongTienThanhToan": 1000028000,
+  "diaChiNhanHang": "19 Phan Xích Long, Phường 2, Quận Phú Nhuận, TP. Hồ Chí Minh",
+  "paymentMethod": "VietQr",
+  "paymentStatus": "Đã thanh toán",
+  "orderStatus": "Đang giao",
+  "ngayDat": {
+    "$date": "2025-08-19T05:44:51.593Z"
+  },
+  "ngayGiao": {
+    "$date": "2025-08-26T05:44:51.593Z"
+  },
+  "history": [
+    {
+      "status": "Chờ xử lý",
+      "date": "2025-08-19T05:44:51.593Z"
+    },
+    {
+      "status": "Đang giao",
+      "date": "2025-08-26T05:44:51.593Z"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "e7f69dd8459b4c8bb7ce9f64"
+  },
+  "user": {
+    "$oid": "68fca62ef0da11c8a7d03ccd"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b974"
+      },
+      "ten": "Huawei Mate 20 Pro",
+      "gia": 21990000,
+      "soLuong": 1,
+      "promo": {
+        "name": "tragop",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b971"
+      },
+      "ten": "Mobiistar B310",
+      "gia": 260000,
+      "soLuong": 1,
+      "promo": {
+        "name": "moiramat",
+        "value": 0
+      }
+    }
+  ],
+  "tongTienHang": 22250000,
+  "giamGia": 0,
+  "tongTienThanhToan": 22280000,
+  "diaChiNhanHang": "150 Trường Chinh, Phường 13, Quận Tân Bình, TP. Hồ Chí Minh",
+  "paymentMethod": "COD",
+  "paymentStatus": "Chưa thanh toán",
+  "orderStatus": "Đang giao",
+  "ngayDat": {
+    "$date": "2025-09-11T16:33:14.366Z"
+  },
+  "ngayGiao": {
+    "$date": "2025-09-18T16:33:14.366Z"
+  },
+  "history": [
+    {
+      "status": "Chờ xử lý",
+      "date": "2025-09-11T16:33:14.366Z"
+    },
+    {
+      "status": "Đang giao",
+      "date": "2025-09-18T16:33:14.366Z"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "9b2e910f3fad425d8ebed761"
+  },
+  "user": {
+    "$oid": "68fca62ef0da11c8a7d03cc6"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b98b"
+      },
+      "ten": "Coolpad N3D",
+      "gia": 2390000,
+      "soLuong": 2,
+      "promo": {
+        "name": "moiramat",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b983"
+      },
+      "ten": "Vivo Y71",
+      "gia": 3290000,
+      "soLuong": 2,
+      "promo": {
+        "name": "tragop",
+        "value": 0
+      }
+    }
+  ],
+  "tongTienHang": 11360000,
+  "giamGia": 0,
+  "tongTienThanhToan": 11390000,
+  "diaChiNhanHang": "22 Trường Sa, Phường 13, Quận 3, TP. Hồ Chí Minh",
+  "paymentMethod": "VietQr",
+  "paymentStatus": "Đã thanh toán",
+  "orderStatus": "Hoàn trả",
+  "ngayDat": {
+    "$date": "2025-06-07T15:54:39.115Z"
+  },
+  "ngayGiao": {
+    "$date": "2025-06-11T15:54:39.115Z"
+  },
+  "history": [
+    {
+      "status": "Chờ xử lý",
+      "date": "2025-06-07T15:54:39.115Z"
+    },
+    {
+      "status": "Hoàn trả",
+      "date": "2025-06-11T15:54:39.115Z"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "2271ae35685949558dbabbad"
+  },
+  "user": {
+    "$oid": "68fca62ef0da11c8a7d03cc5"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b988"
+      },
+      "ten": "Itel A32F",
+      "gia": 1350000,
+      "soLuong": 1,
+      "promo": {
+        "name": "moiramat",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b964"
+      },
+      "ten": "Xiaomi Mi 8 Lite",
+      "gia": 6690000,
+      "soLuong": 2,
+      "promo": {
+        "name": "tragop",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b97e"
+      },
+      "ten": "Philips S329",
+      "gia": 2390000,
+      "soLuong": 2,
+      "promo": {
+        "name": "",
+        "value": 0
+      }
+    }
+  ],
+  "tongTienHang": 19510000,
+  "giamGia": 0,
+  "tongTienThanhToan": 19540000,
+  "diaChiNhanHang": "120 Điện Biên Phủ, Phường 7, Quận 3, TP. Hồ Chí Minh",
+  "paymentMethod": "COD",
+  "paymentStatus": "Chưa thanh toán",
+  "orderStatus": "Đã hủy",
+  "ngayDat": {
+    "$date": "2025-09-26T07:33:16.310Z"
+  },
+  "ngayGiao": {
+    "$date": "2025-09-29T07:33:16.310Z"
+  },
+  "history": [
+    {
+      "status": "Chờ xử lý",
+      "date": "2025-09-26T07:33:16.310Z"
+    },
+    {
+      "status": "Đã hủy",
+      "date": "2025-09-29T07:33:16.310Z"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "96cbfa24f3bc49ddb388dda9"
+  },
+  "user": {
+    "$oid": "68fca62ef0da11c8a7d03cd1"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b968"
+      },
+      "ten": "iPhone X 256GB Silver",
+      "gia": 31990000,
+      "soLuong": 2,
+      "promo": {
+        "name": "giareonline",
+        "value": 27990000
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b98c"
+      },
+      "ten": "Coolpad N3",
+      "gia": 1890000,
+      "soLuong": 1,
+      "promo": {
+        "name": "moiramat",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b966"
+      },
+      "ten": "Nokia 5.1 Plus",
+      "gia": 4790000,
+      "soLuong": 3,
+      "promo": {
+        "name": "giamgia",
+        "value": 250000
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b986"
+      },
+      "ten": "Mobell S60",
+      "gia": 1790000,
+      "soLuong": 3,
+      "promo": {
+        "name": "moiramat",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b970"
+      },
+      "ten": "Mobiistar E Selfie",
+      "gia": 2490000,
+      "soLuong": 3,
+      "promo": {
+        "name": "",
+        "value": 0
+      }
+    }
+  ],
+  "tongTienHang": 93080000,
+  "giamGia": 250000,
+  "tongTienThanhToan": 92860000,
+  "diaChiNhanHang": "72 Pasteur, Phường 8, Quận 3, TP. Hồ Chí Minh",
+  "paymentMethod": "COD",
+  "paymentStatus": "Chưa thanh toán",
+  "orderStatus": "Hoàn trả",
+  "ngayDat": {
+    "$date": "2025-07-08T07:27:36.245Z"
+  },
+  "ngayGiao": {
+    "$date": "2025-07-15T07:27:36.245Z"
+  },
+  "history": [
+    {
+      "status": "Chờ xử lý",
+      "date": "2025-07-08T07:27:36.245Z"
+    },
+    {
+      "status": "Hoàn trả",
+      "date": "2025-07-15T07:27:36.245Z"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "af564a9ec746424db079a232"
+  },
+  "user": {
+    "$oid": "68fca62ef0da11c8a7d03cc7"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b97e"
+      },
+      "ten": "Philips S329",
+      "gia": 2390000,
+      "soLuong": 3,
+      "promo": {
+        "name": "",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b991"
+      },
+      "ten": "iPhone 8 Plus 64GB",
+      "gia": 20990000,
+      "soLuong": 3,
+      "promo": {
+        "name": "tragop",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b982"
+      },
+      "ten": "Vivo Y85",
+      "gia": 4990000,
+      "soLuong": 2,
+      "promo": {
+        "name": "giamgia",
+        "value": 500000
+      }
+    }
+  ],
+  "tongTienHang": 80120000,
+  "giamGia": 500000,
+  "tongTienThanhToan": 79650000,
+  "diaChiNhanHang": "89 Lý Thường Kiệt, Phường 7, Quận Tân Bình, TP. Hồ Chí Minh",
+  "paymentMethod": "VietQr",
+  "paymentStatus": "Đã thanh toán",
+  "orderStatus": "Chờ xử lý",
+  "ngayDat": {
+    "$date": "2025-09-23T10:47:39.134Z"
+  },
+  "ngayGiao": {
+    "$date": "2025-09-27T10:47:39.134Z"
+  },
+  "history": [
+    {
+      "status": "Chờ xử lý",
+      "date": "2025-09-23T10:47:39.134Z"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "d1cad5cfd00540dc9bcdba86"
+  },
+  "user": {
+    "$oid": "68fca62ef0da11c8a7d03cc6"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b979"
+      },
+      "ten": "Realme 2 Pro 8GB/128GB",
+      "gia": 6990000,
+      "soLuong": 1,
+      "promo": {
+        "name": "moiramat",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b977"
+      },
+      "ten": "Nokia black future",
+      "gia": 999999000,
+      "soLuong": 1,
+      "promo": {
+        "name": "giamgia",
+        "value": 1000
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b972"
+      },
+      "ten": "Xiaomi Redmi Note 5",
+      "gia": 5690000,
+      "soLuong": 3,
+      "promo": {
+        "name": "moiramat",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b979"
+      },
+      "ten": "Realme 2 Pro 8GB/128GB",
+      "gia": 6990000,
+      "soLuong": 2,
+      "promo": {
+        "name": "moiramat",
+        "value": 0
+      }
+    }
+  ],
+  "tongTienHang": 1038039000,
+  "giamGia": 1000,
+  "tongTienThanhToan": 1038068000,
+  "diaChiNhanHang": "22 Trường Sa, Phường 13, Quận 3, TP. Hồ Chí Minh",
+  "paymentMethod": "VietQr",
+  "paymentStatus": "Đã thanh toán",
+  "orderStatus": "Hoàn trả",
+  "ngayDat": {
+    "$date": "2025-10-08T20:16:34.624Z"
+  },
+  "ngayGiao": {
+    "$date": "2025-10-15T20:16:34.624Z"
+  },
+  "history": [
+    {
+      "status": "Chờ xử lý",
+      "date": "2025-10-08T20:16:34.624Z"
+    },
+    {
+      "status": "Hoàn trả",
+      "date": "2025-10-15T20:16:34.624Z"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "8e269f7c6ae74c0f8b5e057b"
+  },
+  "user": {
+    "$oid": "68fca62ef0da11c8a7d03cc7"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b975"
+      },
+      "ten": "Huawei Nova 3",
+      "gia": 9990000,
+      "soLuong": 1,
+      "promo": {
+        "name": "tragop",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b970"
+      },
+      "ten": "Mobiistar E Selfie",
+      "gia": 2490000,
+      "soLuong": 1,
+      "promo": {
+        "name": "",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b97d"
+      },
+      "ten": "Philips E331",
+      "gia": 890000,
+      "soLuong": 1,
+      "promo": {
+        "name": "",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b97a"
+      },
+      "ten": "Realme 2 4GB/64GB",
+      "gia": 4490000,
+      "soLuong": 3,
+      "promo": {
+        "name": "moiramat",
+        "value": 0
+      }
+    }
+  ],
+  "tongTienHang": 26840000,
+  "giamGia": 0,
+  "tongTienThanhToan": 26870000,
+  "diaChiNhanHang": "89 Lý Thường Kiệt, Phường 7, Quận Tân Bình, TP. Hồ Chí Minh",
+  "paymentMethod": "COD",
+  "paymentStatus": "Chưa thanh toán",
+  "orderStatus": "Chờ xử lý",
+  "ngayDat": {
+    "$date": "2025-08-30T17:43:54.380Z"
+  },
+  "ngayGiao": {
+    "$date": "2025-08-31T17:43:54.380Z"
+  },
+  "history": [
+    {
+      "status": "Chờ xử lý",
+      "date": "2025-08-30T17:43:54.380Z"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "2d710702d67c41e1a4546774"
+  },
+  "user": {
+    "$oid": "68fca62ef0da11c8a7d03cc6"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b96f"
+      },
+      "ten": "Mobiistar Zumbo S2 Dual",
+      "gia": 2850000,
+      "soLuong": 1,
+      "promo": {
+        "name": "moiramat",
+        "value": 0
+      }
+    }
+  ],
+  "tongTienHang": 2850000,
+  "giamGia": 0,
+  "tongTienThanhToan": 2880000,
+  "diaChiNhanHang": "15 Nguyễn Văn Cừ, Phường Cô Giang, Quận 1, TP. Hồ Chí Minh",
+  "paymentMethod": "COD",
+  "paymentStatus": "Chưa thanh toán",
+  "orderStatus": "Chờ xử lý",
+  "ngayDat": {
+    "$date": "2025-07-09T15:56:26.157Z"
+  },
+  "ngayGiao": {
+    "$date": "2025-07-16T15:56:26.157Z"
+  },
+  "history": [
+    {
+      "status": "Chờ xử lý",
+      "date": "2025-07-09T15:56:26.157Z"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "ecd9106524684f9cbfbf924e"
+  },
+  "user": {
+    "$oid": "68fca62ef0da11c8a7d03cc6"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b992"
+      },
+      "ten": "iPhone 8 Plus 256GB",
+      "gia": 25790000,
+      "soLuong": 2,
+      "promo": {
+        "name": "giamgia",
+        "value": 500000
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b96b"
+      },
+      "ten": "iPad 2018 Wifi 32GB",
+      "gia": 8990000,
+      "soLuong": 3,
+      "promo": {
+        "name": "tragop",
+        "value": 0
+      }
+    }
+  ],
+  "tongTienHang": 78550000,
+  "giamGia": 500000,
+  "tongTienThanhToan": 78080000,
+  "diaChiNhanHang": "15 Nguyễn Văn Cừ, Phường Cô Giang, Quận 1, TP. Hồ Chí Minh",
+  "paymentMethod": "COD",
+  "paymentStatus": "Chưa thanh toán",
+  "orderStatus": "Đang giao",
+  "ngayDat": {
+    "$date": "2025-08-16T21:01:45.487Z"
+  },
+  "ngayGiao": {
+    "$date": "2025-08-21T21:01:45.487Z"
+  },
+  "history": [
+    {
+      "status": "Chờ xử lý",
+      "date": "2025-08-16T21:01:45.487Z"
+    },
+    {
+      "status": "Đang giao",
+      "date": "2025-08-21T21:01:45.487Z"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "f274f646e403421ebbbb6f65"
+  },
+  "user": {
+    "$oid": "68fca62ef0da11c8a7d03cd1"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b96e"
+      },
+      "ten": "Mobiistar X",
+      "gia": 3490000,
+      "soLuong": 2,
+      "promo": {
+        "name": "tragop",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b96c"
+      },
+      "ten": "iPhone 7 Plus 32GB",
+      "gia": 17000000,
+      "soLuong": 1,
+      "promo": {
+        "name": "giareonline",
+        "value": 16990000
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b994"
+      },
+      "ten": "Huawei Nova 2i",
+      "gia": 4490000,
+      "soLuong": 3,
+      "promo": {
+        "name": "giareonline",
+        "value": 3990000
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b969"
+      },
+      "ten": "Oppo A3s 32GB",
+      "gia": 4690000,
+      "soLuong": 2,
+      "promo": {
+        "name": "tragop",
+        "value": 0
+      }
+    }
+  ],
+  "tongTienHang": 46830000,
+  "giamGia": 0,
+  "tongTienThanhToan": 46860000,
+  "diaChiNhanHang": "72 Pasteur, Phường 8, Quận 3, TP. Hồ Chí Minh",
+  "paymentMethod": "VietQr",
+  "paymentStatus": "Đã thanh toán",
+  "orderStatus": "Hoàn trả",
+  "ngayDat": {
+    "$date": "2025-10-24T08:38:55.031Z"
+  },
+  "ngayGiao": {
+    "$date": "2025-10-28T08:38:55.031Z"
+  },
+  "history": [
+    {
+      "status": "Chờ xử lý",
+      "date": "2025-10-24T08:38:55.031Z"
+    },
+    {
+      "status": "Hoàn trả",
+      "date": "2025-10-28T08:38:55.031Z"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "42304b1c018a41d79cafffeb"
+  },
+  "user": {
+    "$oid": "68fca62ef0da11c8a7d03cc5"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b98b"
+      },
+      "ten": "Coolpad N3D",
+      "gia": 2390000,
+      "soLuong": 1,
+      "promo": {
+        "name": "moiramat",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b97f"
+      },
+      "ten": "Philips E103",
+      "gia": 260000,
+      "soLuong": 3,
+      "promo": {
+        "name": "",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b982"
+      },
+      "ten": "Vivo Y85",
+      "gia": 4990000,
+      "soLuong": 3,
+      "promo": {
+        "name": "giamgia",
+        "value": 500000
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b989"
+      },
+      "ten": "Itel it2123",
+      "gia": 160000,
+      "soLuong": 1,
+      "promo": {
+        "name": "",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b984"
+      },
+      "ten": "Mobell M789",
+      "gia": 550000,
+      "soLuong": 1,
+      "promo": {
+        "name": "",
+        "value": 0
+      }
+    }
+  ],
+  "tongTienHang": 18850000,
+  "giamGia": 500000,
+  "tongTienThanhToan": 18380000,
+  "diaChiNhanHang": "120 Điện Biên Phủ, Phường 7, Quận 3, TP. Hồ Chí Minh",
+  "paymentMethod": "COD",
+  "paymentStatus": "Chưa thanh toán",
+  "orderStatus": "Chờ xử lý",
+  "ngayDat": {
+    "$date": "2025-09-06T01:07:09.138Z"
+  },
+  "ngayGiao": {
+    "$date": "2025-09-13T01:07:09.138Z"
+  },
+  "history": [
+    {
+      "status": "Chờ xử lý",
+      "date": "2025-09-06T01:07:09.138Z"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "16bb9e7076484a52bfacd30b"
+  },
+  "user": {
+    "$oid": "68fca62ef0da11c8a7d03cc4"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b96a"
+      },
+      "ten": "Samsung Galaxy J8",
+      "gia": 6290000,
+      "soLuong": 1,
+      "promo": {
+        "name": "giamgia",
+        "value": 500000
+      }
+    }
+  ],
+  "tongTienHang": 6290000,
+  "giamGia": 500000,
+  "tongTienThanhToan": 5820000,
+  "diaChiNhanHang": "56 Trần Hưng Đạo, Phường Cầu Kho, Quận 1, TP. Hồ Chí Minh",
+  "paymentMethod": "COD",
+  "paymentStatus": "Chưa thanh toán",
+  "orderStatus": "Hoàn thành",
+  "ngayDat": {
+    "$date": "2025-08-26T22:12:51.451Z"
+  },
+  "ngayGiao": {
+    "$date": "2025-08-30T22:12:51.451Z"
+  },
+  "history": [
+    {
+      "status": "Chờ xử lý",
+      "date": "2025-08-26T22:12:51.451Z"
+    },
+    {
+      "status": "Hoàn thành",
+      "date": "2025-08-30T22:12:51.451Z"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "5201bcde644c4db9b8dad64f"
+  },
+  "user": {
+    "$oid": "68fca62ef0da11c8a7d03cca"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b97c"
+      },
+      "ten": "Realme 2 Pro 4GB/64GB",
+      "gia": 5590000,
+      "soLuong": 1,
+      "promo": {
+        "name": "moiramat",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b993"
+      },
+      "ten": "iPhone Xr 64GB",
+      "gia": 22990000,
+      "soLuong": 3,
+      "promo": {
+        "name": "giareonline",
+        "value": 19990000
+      }
+    }
+  ],
+  "tongTienHang": 74560000,
+  "giamGia": 0,
+  "tongTienThanhToan": 74590000,
+  "diaChiNhanHang": "91 Phạm Ngũ Lão, Phường 1, Quận Gò Vấp, TP. Hồ Chí Minh",
+  "paymentMethod": "COD",
+  "paymentStatus": "Chưa thanh toán",
+  "orderStatus": "Chờ xử lý",
+  "ngayDat": {
+    "$date": "2025-08-07T06:21:03.703Z"
+  },
+  "ngayGiao": {
+    "$date": "2025-08-12T06:21:03.703Z"
+  },
+  "history": [
+    {
+      "status": "Chờ xử lý",
+      "date": "2025-08-07T06:21:03.703Z"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "37c2e631caa14f059c48847b"
+  },
+  "user": {
+    "$oid": "68fca62ef0da11c8a7d03cc7"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b970"
+      },
+      "ten": "Mobiistar E Selfie",
+      "gia": 2490000,
+      "soLuong": 1,
+      "promo": {
+        "name": "",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b993"
+      },
+      "ten": "iPhone Xr 64GB",
+      "gia": 22990000,
+      "soLuong": 2,
+      "promo": {
+        "name": "giareonline",
+        "value": 19990000
+      }
+    }
+  ],
+  "tongTienHang": 48470000,
+  "giamGia": 0,
+  "tongTienThanhToan": 48500000,
+  "diaChiNhanHang": "89 Lý Thường Kiệt, Phường 7, Quận Tân Bình, TP. Hồ Chí Minh",
+  "paymentMethod": "VietQr",
+  "paymentStatus": "Đã thanh toán",
+  "orderStatus": "Chờ xử lý",
+  "ngayDat": {
+    "$date": "2025-07-25T23:22:35.997Z"
+  },
+  "ngayGiao": {
+    "$date": "2025-07-27T23:22:35.997Z"
+  },
+  "history": [
+    {
+      "status": "Chờ xử lý",
+      "date": "2025-07-25T23:22:35.997Z"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "e15427fb971d486599c6a6eb"
+  },
+  "user": {
+    "$oid": "68fca62ef0da11c8a7d03cc8"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b972"
+      },
+      "ten": "Xiaomi Redmi Note 5",
+      "gia": 5690000,
+      "soLuong": 3,
+      "promo": {
+        "name": "moiramat",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b963"
+      },
+      "ten": "SamSung Galaxy J4+",
+      "gia": 3490000,
+      "soLuong": 2,
+      "promo": {
+        "name": "tragop",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b968"
+      },
+      "ten": "iPhone X 256GB Silver",
+      "gia": 31990000,
+      "soLuong": 3,
+      "promo": {
+        "name": "giareonline",
+        "value": 27990000
+      }
+    }
+  ],
+  "tongTienHang": 120020000,
+  "giamGia": 0,
+  "tongTienThanhToan": 120050000,
+  "diaChiNhanHang": "56 Nguyễn Oanh, Phường 7, Quận Gò Vấp, TP. Hồ Chí Minh",
+  "paymentMethod": "COD",
+  "paymentStatus": "Chưa thanh toán",
+  "orderStatus": "Hoàn thành",
+  "ngayDat": {
+    "$date": "2025-07-31T14:37:13.680Z"
+  },
+  "ngayGiao": {
+    "$date": "2025-08-03T14:37:13.680Z"
+  },
+  "history": [
+    {
+      "status": "Chờ xử lý",
+      "date": "2025-07-31T14:37:13.680Z"
+    },
+    {
+      "status": "Hoàn thành",
+      "date": "2025-08-03T14:37:13.680Z"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "c890217d479640b8a79a33a9"
+  },
+  "user": {
+    "$oid": "68fca62ef0da11c8a7d03ccd"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b969"
+      },
+      "ten": "Oppo A3s 32GB",
+      "gia": 4690000,
+      "soLuong": 3,
+      "promo": {
+        "name": "tragop",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b975"
+      },
+      "ten": "Huawei Nova 3",
+      "gia": 9990000,
+      "soLuong": 1,
+      "promo": {
+        "name": "tragop",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b986"
+      },
+      "ten": "Mobell S60",
+      "gia": 1790000,
+      "soLuong": 3,
+      "promo": {
+        "name": "moiramat",
+        "value": 0
+      }
+    }
+  ],
+  "tongTienHang": 29430000,
+  "giamGia": 0,
+  "tongTienThanhToan": 29460000,
+  "diaChiNhanHang": "150 Trường Chinh, Phường 13, Quận Tân Bình, TP. Hồ Chí Minh",
+  "paymentMethod": "COD",
+  "paymentStatus": "Chưa thanh toán",
+  "orderStatus": "Hoàn thành",
+  "ngayDat": {
+    "$date": "2025-07-20T18:33:33.797Z"
+  },
+  "ngayGiao": {
+    "$date": "2025-07-24T18:33:33.797Z"
+  },
+  "history": [
+    {
+      "status": "Chờ xử lý",
+      "date": "2025-07-20T18:33:33.797Z"
+    },
+    {
+      "status": "Hoàn thành",
+      "date": "2025-07-24T18:33:33.797Z"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "ab6842b96b5e4b978be0237e"
+  },
+  "user": {
+    "$oid": "68fca62ef0da11c8a7d03cc4"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b981"
+      },
+      "ten": "Vivo V9",
+      "gia": 7490000,
+      "soLuong": 1,
+      "promo": {
+        "name": "giamgia",
+        "value": 800000
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b974"
+      },
+      "ten": "Huawei Mate 20 Pro",
+      "gia": 21990000,
+      "soLuong": 2,
+      "promo": {
+        "name": "tragop",
+        "value": 0
+      }
+    }
+  ],
+  "tongTienHang": 51470000,
+  "giamGia": 800000,
+  "tongTienThanhToan": 50700000,
+  "diaChiNhanHang": "56 Trần Hưng Đạo, Phường Cầu Kho, Quận 1, TP. Hồ Chí Minh",
+  "paymentMethod": "VietQr",
+  "paymentStatus": "Đã thanh toán",
+  "orderStatus": "Chờ xử lý",
+  "ngayDat": {
+    "$date": "2025-08-04T13:02:37.613Z"
+  },
+  "ngayGiao": {
+    "$date": "2025-08-11T13:02:37.613Z"
+  },
+  "history": [
+    {
+      "status": "Chờ xử lý",
+      "date": "2025-08-04T13:02:37.613Z"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "81d073b7344745928c50ca7f"
+  },
+  "user": {
+    "$oid": "68fca62ef0da11c8a7d03ccc"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b973"
+      },
+      "ten": "Xiaomi Redmi 5 Plus 4GB",
+      "gia": 4790000,
+      "soLuong": 2,
+      "promo": {
+        "name": "",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b97c"
+      },
+      "ten": "Realme 2 Pro 4GB/64GB",
+      "gia": 5590000,
+      "soLuong": 3,
+      "promo": {
+        "name": "moiramat",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b988"
+      },
+      "ten": "Itel A32F",
+      "gia": 1350000,
+      "soLuong": 3,
+      "promo": {
+        "name": "moiramat",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b97f"
+      },
+      "ten": "Philips E103",
+      "gia": 260000,
+      "soLuong": 3,
+      "promo": {
+        "name": "",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b97f"
+      },
+      "ten": "Philips E103",
+      "gia": 260000,
+      "soLuong": 2,
+      "promo": {
+        "name": "",
+        "value": 0
+      }
+    }
+  ],
+  "tongTienHang": 31700000,
+  "giamGia": 0,
+  "tongTienThanhToan": 31730000,
+  "diaChiNhanHang": "77 Võ Văn Tần, Phường 6, Quận 3, TP. Hồ Chí Minh",
+  "paymentMethod": "VietQr",
+  "paymentStatus": "Đã thanh toán",
+  "orderStatus": "Chờ xử lý",
+  "ngayDat": {
+    "$date": "2025-07-27T13:16:39.310Z"
+  },
+  "ngayGiao": {
+    "$date": "2025-07-31T13:16:39.310Z"
+  },
+  "history": [
+    {
+      "status": "Chờ xử lý",
+      "date": "2025-07-27T13:16:39.310Z"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a32546e9b8a4798bc0cc0b3"
+  },
+  "user": {
+    "$oid": "68fca62ef0da11c8a7d03ccd"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b96a"
+      },
+      "ten": "Samsung Galaxy J8",
+      "gia": 6290000,
+      "soLuong": 3,
+      "promo": {
+        "name": "giamgia",
+        "value": 500000
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b98f"
+      },
+      "ten": "Motorola Moto C 4G",
+      "gia": 1290000,
+      "soLuong": 3,
+      "promo": {
+        "name": "",
+        "value": 0
+      }
+    }
+  ],
+  "tongTienHang": 22740000,
+  "giamGia": 500000,
+  "tongTienThanhToan": 22270000,
+  "diaChiNhanHang": "150 Trường Chinh, Phường 13, Quận Tân Bình, TP. Hồ Chí Minh",
+  "paymentMethod": "COD",
+  "paymentStatus": "Chưa thanh toán",
+  "orderStatus": "Hoàn thành",
+  "ngayDat": {
+    "$date": "2025-10-06T14:03:16.771Z"
+  },
+  "ngayGiao": {
+    "$date": "2025-10-13T14:03:16.771Z"
+  },
+  "history": [
+    {
+      "status": "Chờ xử lý",
+      "date": "2025-10-06T14:03:16.771Z"
+    },
+    {
+      "status": "Hoàn thành",
+      "date": "2025-10-13T14:03:16.771Z"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "995242c6de344ddaafe39c11"
+  },
+  "user": {
+    "$oid": "68fca62ef0da11c8a7d03ccd"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b991"
+      },
+      "ten": "iPhone 8 Plus 64GB",
+      "gia": 20990000,
+      "soLuong": 2,
+      "promo": {
+        "name": "tragop",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b987"
+      },
+      "ten": "Itel P32",
+      "gia": 1890000,
+      "soLuong": 1,
+      "promo": {
+        "name": "",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b963"
+      },
+      "ten": "SamSung Galaxy J4+",
+      "gia": 3490000,
+      "soLuong": 3,
+      "promo": {
+        "name": "tragop",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b98c"
+      },
+      "ten": "Coolpad N3",
+      "gia": 1890000,
+      "soLuong": 3,
+      "promo": {
+        "name": "moiramat",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b963"
+      },
+      "ten": "SamSung Galaxy J4+",
+      "gia": 3490000,
+      "soLuong": 1,
+      "promo": {
+        "name": "tragop",
+        "value": 0
+      }
+    }
+  ],
+  "tongTienHang": 63500000,
+  "giamGia": 0,
+  "tongTienThanhToan": 63530000,
+  "diaChiNhanHang": "150 Trường Chinh, Phường 13, Quận Tân Bình, TP. Hồ Chí Minh",
+  "paymentMethod": "COD",
+  "paymentStatus": "Chưa thanh toán",
+  "orderStatus": "Đang giao",
+  "ngayDat": {
+    "$date": "2025-10-03T00:38:49.956Z"
+  },
+  "ngayGiao": {
+    "$date": "2025-10-10T00:38:49.956Z"
+  },
+  "history": [
+    {
+      "status": "Chờ xử lý",
+      "date": "2025-10-03T00:38:49.956Z"
+    },
+    {
+      "status": "Đang giao",
+      "date": "2025-10-10T00:38:49.956Z"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "8bccf21947d4448bab544b87"
+  },
+  "user": {
+    "$oid": "68fca62ef0da11c8a7d03cca"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b97c"
+      },
+      "ten": "Realme 2 Pro 4GB/64GB",
+      "gia": 5590000,
+      "soLuong": 1,
+      "promo": {
+        "name": "moiramat",
+        "value": 0
+      }
+    }
+  ],
+  "tongTienHang": 5590000,
+  "giamGia": 0,
+  "tongTienThanhToan": 5620000,
+  "diaChiNhanHang": "67 Nguyễn Kiệm, Phường 3, Quận Gò Vấp, TP. Hồ Chí Minh",
+  "paymentMethod": "VietQr",
+  "paymentStatus": "Đã thanh toán",
+  "orderStatus": "Đang giao",
+  "ngayDat": {
+    "$date": "2025-06-12T10:47:51.278Z"
+  },
+  "ngayGiao": {
+    "$date": "2025-06-17T10:47:51.278Z"
+  },
+  "history": [
+    {
+      "status": "Chờ xử lý",
+      "date": "2025-06-12T10:47:51.278Z"
+    },
+    {
+      "status": "Đang giao",
+      "date": "2025-06-17T10:47:51.278Z"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6dfcab876daa4c50813791c3"
+  },
+  "user": {
+    "$oid": "68fca62ef0da11c8a7d03cc9"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b97a"
+      },
+      "ten": "Realme 2 4GB/64GB",
+      "gia": 4490000,
+      "soLuong": 3,
+      "promo": {
+        "name": "moiramat",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b98f"
+      },
+      "ten": "Motorola Moto C 4G",
+      "gia": 1290000,
+      "soLuong": 2,
+      "promo": {
+        "name": "",
+        "value": 0
+      }
+    }
+  ],
+  "tongTienHang": 16050000,
+  "giamGia": 0,
+  "tongTienThanhToan": 16080000,
+  "diaChiNhanHang": "23 Phạm Văn Đồng, Hiệp Bình Chánh, TP. Thủ Đức, TP. Hồ Chí Minh",
+  "paymentMethod": "COD",
+  "paymentStatus": "Chưa thanh toán",
+  "orderStatus": "Đã hủy",
+  "ngayDat": {
+    "$date": "2025-08-16T19:07:33.519Z"
+  },
+  "ngayGiao": {
+    "$date": "2025-08-20T19:07:33.519Z"
+  },
+  "history": [
+    {
+      "status": "Chờ xử lý",
+      "date": "2025-08-16T19:07:33.519Z"
+    },
+    {
+      "status": "Đã hủy",
+      "date": "2025-08-20T19:07:33.519Z"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "d25d8789cd3a4ed782f326b9"
+  },
+  "user": {
+    "$oid": "68fca62ef0da11c8a7d03cc8"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b97a"
+      },
+      "ten": "Realme 2 4GB/64GB",
+      "gia": 4490000,
+      "soLuong": 1,
+      "promo": {
+        "name": "moiramat",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b982"
+      },
+      "ten": "Vivo Y85",
+      "gia": 4990000,
+      "soLuong": 2,
+      "promo": {
+        "name": "giamgia",
+        "value": 500000
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b978"
+      },
+      "ten": "Samsung Galaxy A7 (2018)",
+      "gia": 8990000,
+      "soLuong": 1,
+      "promo": {
+        "name": "tragop",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b978"
+      },
+      "ten": "Samsung Galaxy A7 (2018)",
+      "gia": 8990000,
+      "soLuong": 1,
+      "promo": {
+        "name": "tragop",
+        "value": 0
+      }
+    }
+  ],
+  "tongTienHang": 32450000,
+  "giamGia": 500000,
+  "tongTienThanhToan": 31980000,
+  "diaChiNhanHang": "15 Phạm Văn Chiêu, Phường 14, Quận Gò Vấp, TP. Hồ Chí Minh",
+  "paymentMethod": "COD",
+  "paymentStatus": "Chưa thanh toán",
+  "orderStatus": "Đã hủy",
+  "ngayDat": {
+    "$date": "2025-06-30T10:34:10.162Z"
+  },
+  "ngayGiao": {
+    "$date": "2025-07-07T10:34:10.162Z"
+  },
+  "history": [
+    {
+      "status": "Chờ xử lý",
+      "date": "2025-06-30T10:34:10.162Z"
+    },
+    {
+      "status": "Đã hủy",
+      "date": "2025-07-07T10:34:10.162Z"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "f346bd332aeb49a68bdcd9c0"
+  },
+  "user": {
+    "$oid": "68fca62ef0da11c8a7d03cc5"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b971"
+      },
+      "ten": "Mobiistar B310",
+      "gia": 260000,
+      "soLuong": 2,
+      "promo": {
+        "name": "moiramat",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b96c"
+      },
+      "ten": "iPhone 7 Plus 32GB",
+      "gia": 17000000,
+      "soLuong": 1,
+      "promo": {
+        "name": "giareonline",
+        "value": 16990000
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b98c"
+      },
+      "ten": "Coolpad N3",
+      "gia": 1890000,
+      "soLuong": 1,
+      "promo": {
+        "name": "moiramat",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b98c"
+      },
+      "ten": "Coolpad N3",
+      "gia": 1890000,
+      "soLuong": 2,
+      "promo": {
+        "name": "moiramat",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b98a"
+      },
+      "ten": "Itel it2161",
+      "gia": 170000,
+      "soLuong": 1,
+      "promo": {
+        "name": "moiramat",
+        "value": 0
+      }
+    }
+  ],
+  "tongTienHang": 23360000,
+  "giamGia": 0,
+  "tongTienThanhToan": 23390000,
+  "diaChiNhanHang": "120 Điện Biên Phủ, Phường 7, Quận 3, TP. Hồ Chí Minh",
+  "paymentMethod": "VietQr",
+  "paymentStatus": "Đã thanh toán",
+  "orderStatus": "Chờ xử lý",
+  "ngayDat": {
+    "$date": "2025-10-22T01:37:08.078Z"
+  },
+  "ngayGiao": {
+    "$date": "2025-10-26T01:37:08.078Z"
+  },
+  "history": [
+    {
+      "status": "Chờ xử lý",
+      "date": "2025-10-22T01:37:08.078Z"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "61c50c36111c4e86b7f828be"
+  },
+  "user": {
+    "$oid": "68fca62ef0da11c8a7d03cc6"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b973"
+      },
+      "ten": "Xiaomi Redmi 5 Plus 4GB",
+      "gia": 4790000,
+      "soLuong": 3,
+      "promo": {
+        "name": "",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b993"
+      },
+      "ten": "iPhone Xr 64GB",
+      "gia": 22990000,
+      "soLuong": 3,
+      "promo": {
+        "name": "giareonline",
+        "value": 19990000
+      }
+    }
+  ],
+  "tongTienHang": 83340000,
+  "giamGia": 0,
+  "tongTienThanhToan": 83370000,
+  "diaChiNhanHang": "15 Nguyễn Văn Cừ, Phường Cô Giang, Quận 1, TP. Hồ Chí Minh",
+  "paymentMethod": "VietQr",
+  "paymentStatus": "Đã thanh toán",
+  "orderStatus": "Đã hủy",
+  "ngayDat": {
+    "$date": "2025-09-12T08:01:42.574Z"
+  },
+  "ngayGiao": {
+    "$date": "2025-09-19T08:01:42.574Z"
+  },
+  "history": [
+    {
+      "status": "Chờ xử lý",
+      "date": "2025-09-12T08:01:42.574Z"
+    },
+    {
+      "status": "Đã hủy",
+      "date": "2025-09-19T08:01:42.574Z"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "7d3381fecb434400a4097191"
+  },
+  "user": {
+    "$oid": "68fca62ef0da11c8a7d03cc3"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b978"
+      },
+      "ten": "Samsung Galaxy A7 (2018)",
+      "gia": 8990000,
+      "soLuong": 3,
+      "promo": {
+        "name": "tragop",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b983"
+      },
+      "ten": "Vivo Y71",
+      "gia": 3290000,
+      "soLuong": 3,
+      "promo": {
+        "name": "tragop",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b991"
+      },
+      "ten": "iPhone 8 Plus 64GB",
+      "gia": 20990000,
+      "soLuong": 2,
+      "promo": {
+        "name": "tragop",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b968"
+      },
+      "ten": "iPhone X 256GB Silver",
+      "gia": 31990000,
+      "soLuong": 3,
+      "promo": {
+        "name": "giareonline",
+        "value": 27990000
+      }
+    }
+  ],
+  "tongTienHang": 174790000,
+  "giamGia": 0,
+  "tongTienThanhToan": 174820000,
+  "diaChiNhanHang": "45 Cách Mạng Tháng 8, Phường 11, Quận 3, TP. Hồ Chí Minh",
+  "paymentMethod": "COD",
+  "paymentStatus": "Chưa thanh toán",
+  "orderStatus": "Hoàn thành",
+  "ngayDat": {
+    "$date": "2025-10-13T23:22:39.832Z"
+  },
+  "ngayGiao": {
+    "$date": "2025-10-18T23:22:39.832Z"
+  },
+  "history": [
+    {
+      "status": "Chờ xử lý",
+      "date": "2025-10-13T23:22:39.832Z"
+    },
+    {
+      "status": "Hoàn thành",
+      "date": "2025-10-18T23:22:39.832Z"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "833ccd466c684fc3bc95c1e7"
+  },
+  "user": {
+    "$oid": "68fca62ef0da11c8a7d03cc4"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b97d"
+      },
+      "ten": "Philips E331",
+      "gia": 890000,
+      "soLuong": 1,
+      "promo": {
+        "name": "",
+        "value": 0
+      }
+    }
+  ],
+  "tongTienHang": 890000,
+  "giamGia": 0,
+  "tongTienThanhToan": 920000,
+  "diaChiNhanHang": "56 Trần Hưng Đạo, Phường Cầu Kho, Quận 1, TP. Hồ Chí Minh",
+  "paymentMethod": "COD",
+  "paymentStatus": "Chưa thanh toán",
+  "orderStatus": "Hoàn thành",
+  "ngayDat": {
+    "$date": "2025-07-17T14:47:15.334Z"
+  },
+  "ngayGiao": {
+    "$date": "2025-07-19T14:47:15.334Z"
+  },
+  "history": [
+    {
+      "status": "Chờ xử lý",
+      "date": "2025-07-17T14:47:15.334Z"
+    },
+    {
+      "status": "Hoàn thành",
+      "date": "2025-07-19T14:47:15.334Z"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "02257db90b284a48992cd526"
+  },
+  "user": {
+    "$oid": "68fca62ef0da11c8a7d03cca"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b98a"
+      },
+      "ten": "Itel it2161",
+      "gia": 170000,
+      "soLuong": 1,
+      "promo": {
+        "name": "moiramat",
+        "value": 0
+      }
+    }
+  ],
+  "tongTienHang": 170000,
+  "giamGia": 0,
+  "tongTienThanhToan": 200000,
+  "diaChiNhanHang": "67 Nguyễn Kiệm, Phường 3, Quận Gò Vấp, TP. Hồ Chí Minh",
+  "paymentMethod": "VietQr",
+  "paymentStatus": "Đã thanh toán",
+  "orderStatus": "Đã hủy",
+  "ngayDat": {
+    "$date": "2025-08-03T11:05:12.050Z"
+  },
+  "ngayGiao": {
+    "$date": "2025-08-10T11:05:12.050Z"
+  },
+  "history": [
+    {
+      "status": "Chờ xử lý",
+      "date": "2025-08-03T11:05:12.050Z"
+    },
+    {
+      "status": "Đã hủy",
+      "date": "2025-08-10T11:05:12.050Z"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "0499dd59ee8e44e7a70101f1"
+  },
+  "user": {
+    "$oid": "68fca62ef0da11c8a7d03cc4"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b98d"
+      },
+      "ten": "Coolpad N3 mini",
+      "gia": 1390000,
+      "soLuong": 2,
+      "promo": {
+        "name": "moiramat",
+        "value": 0
+      }
+    }
+  ],
+  "tongTienHang": 2780000,
+  "giamGia": 0,
+  "tongTienThanhToan": 2810000,
+  "diaChiNhanHang": "56 Trần Hưng Đạo, Phường Cầu Kho, Quận 1, TP. Hồ Chí Minh",
+  "paymentMethod": "VietQr",
+  "paymentStatus": "Đã thanh toán",
+  "orderStatus": "Hoàn thành",
+  "ngayDat": {
+    "$date": "2025-09-16T19:46:09.736Z"
+  },
+  "ngayGiao": {
+    "$date": "2025-09-19T19:46:09.736Z"
+  },
+  "history": [
+    {
+      "status": "Chờ xử lý",
+      "date": "2025-09-16T19:46:09.736Z"
+    },
+    {
+      "status": "Hoàn thành",
+      "date": "2025-09-19T19:46:09.736Z"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "ba19f61ac3d845948cf80d47"
+  },
+  "user": {
+    "$oid": "68fca62ef0da11c8a7d03cc6"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b986"
+      },
+      "ten": "Mobell S60",
+      "gia": 1790000,
+      "soLuong": 3,
+      "promo": {
+        "name": "moiramat",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b987"
+      },
+      "ten": "Itel P32",
+      "gia": 1890000,
+      "soLuong": 1,
+      "promo": {
+        "name": "",
+        "value": 0
+      }
+    }
+  ],
+  "tongTienHang": 7260000,
+  "giamGia": 0,
+  "tongTienThanhToan": 7290000,
+  "diaChiNhanHang": "22 Trường Sa, Phường 13, Quận 3, TP. Hồ Chí Minh",
+  "paymentMethod": "VietQr",
+  "paymentStatus": "Đã thanh toán",
+  "orderStatus": "Chờ xử lý",
+  "ngayDat": {
+    "$date": "2025-08-22T21:57:37.378Z"
+  },
+  "ngayGiao": {
+    "$date": "2025-08-23T21:57:37.378Z"
+  },
+  "history": [
+    {
+      "status": "Chờ xử lý",
+      "date": "2025-08-22T21:57:37.378Z"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "bd5a2841be5a4c26a740004c"
+  },
+  "user": {
+    "$oid": "68fca62ef0da11c8a7d03cc9"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b966"
+      },
+      "ten": "Nokia 5.1 Plus",
+      "gia": 4790000,
+      "soLuong": 1,
+      "promo": {
+        "name": "giamgia",
+        "value": 250000
+      }
+    }
+  ],
+  "tongTienHang": 4790000,
+  "giamGia": 250000,
+  "tongTienThanhToan": 4570000,
+  "diaChiNhanHang": "23 Phạm Văn Đồng, Hiệp Bình Chánh, TP. Thủ Đức, TP. Hồ Chí Minh",
+  "paymentMethod": "VietQr",
+  "paymentStatus": "Đã thanh toán",
+  "orderStatus": "Đang giao",
+  "ngayDat": {
+    "$date": "2025-08-23T03:52:01.601Z"
+  },
+  "ngayGiao": {
+    "$date": "2025-08-25T03:52:01.601Z"
+  },
+  "history": [
+    {
+      "status": "Chờ xử lý",
+      "date": "2025-08-23T03:52:01.601Z"
+    },
+    {
+      "status": "Đang giao",
+      "date": "2025-08-25T03:52:01.601Z"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "ea745b88b36541bba2815eb7"
+  },
+  "user": {
+    "$oid": "68fca62ef0da11c8a7d03cc8"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b971"
+      },
+      "ten": "Mobiistar B310",
+      "gia": 260000,
+      "soLuong": 2,
+      "promo": {
+        "name": "moiramat",
+        "value": 0
+      }
+    }
+  ],
+  "tongTienHang": 520000,
+  "giamGia": 0,
+  "tongTienThanhToan": 550000,
+  "diaChiNhanHang": "15 Phạm Văn Chiêu, Phường 14, Quận Gò Vấp, TP. Hồ Chí Minh",
+  "paymentMethod": "COD",
+  "paymentStatus": "Chưa thanh toán",
+  "orderStatus": "Hoàn thành",
+  "ngayDat": {
+    "$date": "2025-07-21T23:22:58.719Z"
+  },
+  "ngayGiao": {
+    "$date": "2025-07-24T23:22:58.719Z"
+  },
+  "history": [
+    {
+      "status": "Chờ xử lý",
+      "date": "2025-07-21T23:22:58.719Z"
+    },
+    {
+      "status": "Hoàn thành",
+      "date": "2025-07-24T23:22:58.719Z"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "b03bc89e40fb44b69389fe82"
+  },
+  "user": {
+    "$oid": "68fca62ef0da11c8a7d03cc4"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b981"
+      },
+      "ten": "Vivo V9",
+      "gia": 7490000,
+      "soLuong": 1,
+      "promo": {
+        "name": "giamgia",
+        "value": 800000
+      }
+    }
+  ],
+  "tongTienHang": 7490000,
+  "giamGia": 800000,
+  "tongTienThanhToan": 6720000,
+  "diaChiNhanHang": "56 Trần Hưng Đạo, Phường Cầu Kho, Quận 1, TP. Hồ Chí Minh",
+  "paymentMethod": "VietQr",
+  "paymentStatus": "Đã thanh toán",
+  "orderStatus": "Chờ xử lý",
+  "ngayDat": {
+    "$date": "2025-08-15T03:18:42.663Z"
+  },
+  "ngayGiao": {
+    "$date": "2025-08-22T03:18:42.663Z"
+  },
+  "history": [
+    {
+      "status": "Chờ xử lý",
+      "date": "2025-08-15T03:18:42.663Z"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "201c63f352b04835960787f2"
+  },
+  "user": {
+    "$oid": "68fca62ef0da11c8a7d03cca"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b988"
+      },
+      "ten": "Itel A32F",
+      "gia": 1350000,
+      "soLuong": 3,
+      "promo": {
+        "name": "moiramat",
+        "value": 0
+      }
+    }
+  ],
+  "tongTienHang": 4050000,
+  "giamGia": 0,
+  "tongTienThanhToan": 4080000,
+  "diaChiNhanHang": "67 Nguyễn Kiệm, Phường 3, Quận Gò Vấp, TP. Hồ Chí Minh",
+  "paymentMethod": "COD",
+  "paymentStatus": "Chưa thanh toán",
+  "orderStatus": "Đã hủy",
+  "ngayDat": {
+    "$date": "2025-08-12T04:59:07.539Z"
+  },
+  "ngayGiao": {
+    "$date": "2025-08-15T04:59:07.539Z"
+  },
+  "history": [
+    {
+      "status": "Chờ xử lý",
+      "date": "2025-08-12T04:59:07.539Z"
+    },
+    {
+      "status": "Đã hủy",
+      "date": "2025-08-15T04:59:07.539Z"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "b46ce48b0e844aa99b0a9361"
+  },
+  "user": {
+    "$oid": "68fca62ef0da11c8a7d03cc3"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b96e"
+      },
+      "ten": "Mobiistar X",
+      "gia": 3490000,
+      "soLuong": 2,
+      "promo": {
+        "name": "tragop",
+        "value": 0
+      }
+    }
+  ],
+  "tongTienHang": 6980000,
+  "giamGia": 0,
+  "tongTienThanhToan": 7010000,
+  "diaChiNhanHang": "45 Cách Mạng Tháng 8, Phường 11, Quận 3, TP. Hồ Chí Minh",
+  "paymentMethod": "COD",
+  "paymentStatus": "Chưa thanh toán",
+  "orderStatus": "Chờ xử lý",
+  "ngayDat": {
+    "$date": "2025-09-29T19:50:54.909Z"
+  },
+  "ngayGiao": {
+    "$date": "2025-10-06T19:50:54.909Z"
+  },
+  "history": [
+    {
+      "status": "Chờ xử lý",
+      "date": "2025-09-29T19:50:54.909Z"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "4e6d26d2a72e41f3a5e9d1fc"
+  },
+  "user": {
+    "$oid": "68fca62ef0da11c8a7d03cc4"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b972"
+      },
+      "ten": "Xiaomi Redmi Note 5",
+      "gia": 5690000,
+      "soLuong": 1,
+      "promo": {
+        "name": "moiramat",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b975"
+      },
+      "ten": "Huawei Nova 3",
+      "gia": 9990000,
+      "soLuong": 3,
+      "promo": {
+        "name": "tragop",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b981"
+      },
+      "ten": "Vivo V9",
+      "gia": 7490000,
+      "soLuong": 1,
+      "promo": {
+        "name": "giamgia",
+        "value": 800000
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b980"
+      },
+      "ten": "Vivo V11",
+      "gia": 10990000,
+      "soLuong": 2,
+      "promo": {
+        "name": "tragop",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b987"
+      },
+      "ten": "Itel P32",
+      "gia": 1890000,
+      "soLuong": 3,
+      "promo": {
+        "name": "",
+        "value": 0
+      }
+    }
+  ],
+  "tongTienHang": 70800000,
+  "giamGia": 800000,
+  "tongTienThanhToan": 70030000,
+  "diaChiNhanHang": "56 Trần Hưng Đạo, Phường Cầu Kho, Quận 1, TP. Hồ Chí Minh",
+  "paymentMethod": "VietQr",
+  "paymentStatus": "Đã thanh toán",
+  "orderStatus": "Hoàn thành",
+  "ngayDat": {
+    "$date": "2025-07-28T02:13:40.596Z"
+  },
+  "ngayGiao": {
+    "$date": "2025-08-01T02:13:40.596Z"
+  },
+  "history": [
+    {
+      "status": "Chờ xử lý",
+      "date": "2025-07-28T02:13:40.596Z"
+    },
+    {
+      "status": "Hoàn thành",
+      "date": "2025-08-01T02:13:40.596Z"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "4051cf88c5b24142b6473fa6"
+  },
+  "user": {
+    "$oid": "68fca62ef0da11c8a7d03cc6"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b987"
+      },
+      "ten": "Itel P32",
+      "gia": 1890000,
+      "soLuong": 2,
+      "promo": {
+        "name": "",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b96d"
+      },
+      "ten": "Xiaomi Mi 8",
+      "gia": 12990000,
+      "soLuong": 3,
+      "promo": {
+        "name": "",
+        "value": 0
+      }
+    }
+  ],
+  "tongTienHang": 42750000,
+  "giamGia": 0,
+  "tongTienThanhToan": 42780000,
+  "diaChiNhanHang": "15 Nguyễn Văn Cừ, Phường Cô Giang, Quận 1, TP. Hồ Chí Minh",
+  "paymentMethod": "COD",
+  "paymentStatus": "Chưa thanh toán",
+  "orderStatus": "Chờ xử lý",
+  "ngayDat": {
+    "$date": "2025-06-17T23:23:46.084Z"
+  },
+  "ngayGiao": {
+    "$date": "2025-06-19T23:23:46.084Z"
+  },
+  "history": [
+    {
+      "status": "Chờ xử lý",
+      "date": "2025-06-17T23:23:46.084Z"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "90c743557144426ab90e57be"
+  },
+  "user": {
+    "$oid": "68fca62ef0da11c8a7d03ccb"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b985"
+      },
+      "ten": "Mobell Rock 3",
+      "gia": 590000,
+      "soLuong": 1,
+      "promo": {
+        "name": "",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b97f"
+      },
+      "ten": "Philips E103",
+      "gia": 260000,
+      "soLuong": 1,
+      "promo": {
+        "name": "",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b981"
+      },
+      "ten": "Vivo V9",
+      "gia": 7490000,
+      "soLuong": 2,
+      "promo": {
+        "name": "giamgia",
+        "value": 800000
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b977"
+      },
+      "ten": "Nokia black future",
+      "gia": 999999000,
+      "soLuong": 3,
+      "promo": {
+        "name": "giamgia",
+        "value": 1000
+      }
+    }
+  ],
+  "tongTienHang": {
+    "$numberLong": "3015827000"
+  },
+  "giamGia": 801000,
+  "tongTienThanhToan": {
+    "$numberLong": "3015056000"
+  },
+  "diaChiNhanHang": "90 Cộng Hòa, Phường 4, Quận Tân Bình, TP. Hồ Chí Minh",
+  "paymentMethod": "COD",
+  "paymentStatus": "Chưa thanh toán",
+  "orderStatus": "Đã hủy",
+  "ngayDat": {
+    "$date": "2025-09-05T12:15:41.323Z"
+  },
+  "ngayGiao": {
+    "$date": "2025-09-07T12:15:41.323Z"
+  },
+  "history": [
+    {
+      "status": "Chờ xử lý",
+      "date": "2025-09-05T12:15:41.323Z"
+    },
+    {
+      "status": "Đã hủy",
+      "date": "2025-09-07T12:15:41.323Z"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "88921364be374137b9c35964"
+  },
+  "user": {
+    "$oid": "68fca62ef0da11c8a7d03ccd"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b988"
+      },
+      "ten": "Itel A32F",
+      "gia": 1350000,
+      "soLuong": 3,
+      "promo": {
+        "name": "moiramat",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b984"
+      },
+      "ten": "Mobell M789",
+      "gia": 550000,
+      "soLuong": 3,
+      "promo": {
+        "name": "",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b969"
+      },
+      "ten": "Oppo A3s 32GB",
+      "gia": 4690000,
+      "soLuong": 3,
+      "promo": {
+        "name": "tragop",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b972"
+      },
+      "ten": "Xiaomi Redmi Note 5",
+      "gia": 5690000,
+      "soLuong": 2,
+      "promo": {
+        "name": "moiramat",
+        "value": 0
+      }
+    }
+  ],
+  "tongTienHang": 31150000,
+  "giamGia": 0,
+  "tongTienThanhToan": 31180000,
+  "diaChiNhanHang": "150 Trường Chinh, Phường 13, Quận Tân Bình, TP. Hồ Chí Minh",
+  "paymentMethod": "COD",
+  "paymentStatus": "Chưa thanh toán",
+  "orderStatus": "Hoàn thành",
+  "ngayDat": {
+    "$date": "2025-06-15T15:49:14.256Z"
+  },
+  "ngayGiao": {
+    "$date": "2025-06-16T15:49:14.256Z"
+  },
+  "history": [
+    {
+      "status": "Chờ xử lý",
+      "date": "2025-06-15T15:49:14.256Z"
+    },
+    {
+      "status": "Hoàn thành",
+      "date": "2025-06-16T15:49:14.256Z"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "93ce2106cb624b1f9f05c811"
+  },
+  "user": {
+    "$oid": "68fca62ef0da11c8a7d03ccd"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b964"
+      },
+      "ten": "Xiaomi Mi 8 Lite",
+      "gia": 6690000,
+      "soLuong": 2,
+      "promo": {
+        "name": "tragop",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b974"
+      },
+      "ten": "Huawei Mate 20 Pro",
+      "gia": 21990000,
+      "soLuong": 3,
+      "promo": {
+        "name": "tragop",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b96d"
+      },
+      "ten": "Xiaomi Mi 8",
+      "gia": 12990000,
+      "soLuong": 3,
+      "promo": {
+        "name": "",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b981"
+      },
+      "ten": "Vivo V9",
+      "gia": 7490000,
+      "soLuong": 1,
+      "promo": {
+        "name": "giamgia",
+        "value": 800000
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b97e"
+      },
+      "ten": "Philips S329",
+      "gia": 2390000,
+      "soLuong": 3,
+      "promo": {
+        "name": "",
+        "value": 0
+      }
+    }
+  ],
+  "tongTienHang": 132980000,
+  "giamGia": 800000,
+  "tongTienThanhToan": 132210000,
+  "diaChiNhanHang": "150 Trường Chinh, Phường 13, Quận Tân Bình, TP. Hồ Chí Minh",
+  "paymentMethod": "VietQr",
+  "paymentStatus": "Đã thanh toán",
+  "orderStatus": "Chờ xử lý",
+  "ngayDat": {
+    "$date": "2025-07-26T05:16:57.815Z"
+  },
+  "ngayGiao": {
+    "$date": "2025-07-31T05:16:57.815Z"
+  },
+  "history": [
+    {
+      "status": "Chờ xử lý",
+      "date": "2025-07-26T05:16:57.815Z"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "1139aaf482934f8fb12a50c9"
+  },
+  "user": {
+    "$oid": "68fca62ef0da11c8a7d03cc7"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b963"
+      },
+      "ten": "SamSung Galaxy J4+",
+      "gia": 3490000,
+      "soLuong": 1,
+      "promo": {
+        "name": "tragop",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b978"
+      },
+      "ten": "Samsung Galaxy A7 (2018)",
+      "gia": 8990000,
+      "soLuong": 1,
+      "promo": {
+        "name": "tragop",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b979"
+      },
+      "ten": "Realme 2 Pro 8GB/128GB",
+      "gia": 6990000,
+      "soLuong": 2,
+      "promo": {
+        "name": "moiramat",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b97e"
+      },
+      "ten": "Philips S329",
+      "gia": 2390000,
+      "soLuong": 1,
+      "promo": {
+        "name": "",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b967"
+      },
+      "ten": "Samsung Galaxy A8+ (2018)",
+      "gia": 11990000,
+      "soLuong": 3,
+      "promo": {
+        "name": "giamgia",
+        "value": 1500000
+      }
+    }
+  ],
+  "tongTienHang": 64820000,
+  "giamGia": 1500000,
+  "tongTienThanhToan": 63350000,
+  "diaChiNhanHang": "89 Lý Thường Kiệt, Phường 7, Quận Tân Bình, TP. Hồ Chí Minh",
+  "paymentMethod": "COD",
+  "paymentStatus": "Chưa thanh toán",
+  "orderStatus": "Đang giao",
+  "ngayDat": {
+    "$date": "2025-08-07T23:03:00.470Z"
+  },
+  "ngayGiao": {
+    "$date": "2025-08-13T23:03:00.470Z"
+  },
+  "history": [
+    {
+      "status": "Chờ xử lý",
+      "date": "2025-08-07T23:03:00.470Z"
+    },
+    {
+      "status": "Đang giao",
+      "date": "2025-08-13T23:03:00.470Z"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "9e7e2248f79845a1ae15330e"
+  },
+  "user": {
+    "$oid": "68fca62ef0da11c8a7d03cc8"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b97e"
+      },
+      "ten": "Philips S329",
+      "gia": 2390000,
+      "soLuong": 1,
+      "promo": {
+        "name": "",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b96d"
+      },
+      "ten": "Xiaomi Mi 8",
+      "gia": 12990000,
+      "soLuong": 3,
+      "promo": {
+        "name": "",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b978"
+      },
+      "ten": "Samsung Galaxy A7 (2018)",
+      "gia": 8990000,
+      "soLuong": 1,
+      "promo": {
+        "name": "tragop",
+        "value": 0
+      }
+    }
+  ],
+  "tongTienHang": 50350000,
+  "giamGia": 0,
+  "tongTienThanhToan": 50380000,
+  "diaChiNhanHang": "56 Nguyễn Oanh, Phường 7, Quận Gò Vấp, TP. Hồ Chí Minh",
+  "paymentMethod": "VietQr",
+  "paymentStatus": "Đã thanh toán",
+  "orderStatus": "Hoàn thành",
+  "ngayDat": {
+    "$date": "2025-06-02T03:57:39.171Z"
+  },
+  "ngayGiao": {
+    "$date": "2025-06-08T03:57:39.171Z"
+  },
+  "history": [
+    {
+      "status": "Chờ xử lý",
+      "date": "2025-06-02T03:57:39.171Z"
+    },
+    {
+      "status": "Hoàn thành",
+      "date": "2025-06-08T03:57:39.171Z"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "a4d6f07c4ba140b3a18017c0"
+  },
+  "user": {
+    "$oid": "68fca62ef0da11c8a7d03cc4"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b983"
+      },
+      "ten": "Vivo Y71",
+      "gia": 3290000,
+      "soLuong": 2,
+      "promo": {
+        "name": "tragop",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b972"
+      },
+      "ten": "Xiaomi Redmi Note 5",
+      "gia": 5690000,
+      "soLuong": 3,
+      "promo": {
+        "name": "moiramat",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b98b"
+      },
+      "ten": "Coolpad N3D",
+      "gia": 2390000,
+      "soLuong": 3,
+      "promo": {
+        "name": "moiramat",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b990"
+      },
+      "ten": "iPhone Xr 128GB",
+      "gia": 24990000,
+      "soLuong": 1,
+      "promo": {
+        "name": "giareonline",
+        "value": 22990000
+      }
+    }
+  ],
+  "tongTienHang": 55810000,
+  "giamGia": 0,
+  "tongTienThanhToan": 55840000,
+  "diaChiNhanHang": "56 Trần Hưng Đạo, Phường Cầu Kho, Quận 1, TP. Hồ Chí Minh",
+  "paymentMethod": "COD",
+  "paymentStatus": "Chưa thanh toán",
+  "orderStatus": "Hoàn trả",
+  "ngayDat": {
+    "$date": "2025-07-17T11:06:12.031Z"
+  },
+  "ngayGiao": {
+    "$date": "2025-07-18T11:06:12.031Z"
+  },
+  "history": [
+    {
+      "status": "Chờ xử lý",
+      "date": "2025-07-17T11:06:12.031Z"
+    },
+    {
+      "status": "Hoàn trả",
+      "date": "2025-07-18T11:06:12.031Z"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "433396abf7a641358fe850fd"
+  },
+  "user": {
+    "$oid": "68fca62ef0da11c8a7d03ccc"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b972"
+      },
+      "ten": "Xiaomi Redmi Note 5",
+      "gia": 5690000,
+      "soLuong": 2,
+      "promo": {
+        "name": "moiramat",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b96d"
+      },
+      "ten": "Xiaomi Mi 8",
+      "gia": 12990000,
+      "soLuong": 1,
+      "promo": {
+        "name": "",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b989"
+      },
+      "ten": "Itel it2123",
+      "gia": 160000,
+      "soLuong": 3,
+      "promo": {
+        "name": "",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b984"
+      },
+      "ten": "Mobell M789",
+      "gia": 550000,
+      "soLuong": 2,
+      "promo": {
+        "name": "",
+        "value": 0
+      }
+    }
+  ],
+  "tongTienHang": 25950000,
+  "giamGia": 0,
+  "tongTienThanhToan": 25980000,
+  "diaChiNhanHang": "5 Lê Duẩn, Bến Nghé, Quận 1, TP. Hồ Chí Minh",
+  "paymentMethod": "VietQr",
+  "paymentStatus": "Đã thanh toán",
+  "orderStatus": "Hoàn trả",
+  "ngayDat": {
+    "$date": "2025-08-19T06:46:38.777Z"
+  },
+  "ngayGiao": {
+    "$date": "2025-08-23T06:46:38.777Z"
+  },
+  "history": [
+    {
+      "status": "Chờ xử lý",
+      "date": "2025-08-19T06:46:38.777Z"
+    },
+    {
+      "status": "Hoàn trả",
+      "date": "2025-08-23T06:46:38.777Z"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "dd80937f0b454d468500eaa5"
+  },
+  "user": {
+    "$oid": "68fca62ef0da11c8a7d03cc4"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b965"
+      },
+      "ten": "Oppo F9",
+      "gia": 7690000,
+      "soLuong": 3,
+      "promo": {
+        "name": "giamgia",
+        "value": 500000
+      }
+    }
+  ],
+  "tongTienHang": 23070000,
+  "giamGia": 500000,
+  "tongTienThanhToan": 22600000,
+  "diaChiNhanHang": "56 Trần Hưng Đạo, Phường Cầu Kho, Quận 1, TP. Hồ Chí Minh",
+  "paymentMethod": "VietQr",
+  "paymentStatus": "Đã thanh toán",
+  "orderStatus": "Đã hủy",
+  "ngayDat": {
+    "$date": "2025-10-03T11:45:40.424Z"
+  },
+  "ngayGiao": {
+    "$date": "2025-10-04T11:45:40.424Z"
+  },
+  "history": [
+    {
+      "status": "Chờ xử lý",
+      "date": "2025-10-03T11:45:40.424Z"
+    },
+    {
+      "status": "Đã hủy",
+      "date": "2025-10-04T11:45:40.424Z"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "8f2937f555d0414ca157f4ca"
+  },
+  "user": {
+    "$oid": "68fca62ef0da11c8a7d03cc3"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b98f"
+      },
+      "ten": "Motorola Moto C 4G",
+      "gia": 1290000,
+      "soLuong": 2,
+      "promo": {
+        "name": "",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b967"
+      },
+      "ten": "Samsung Galaxy A8+ (2018)",
+      "gia": 11990000,
+      "soLuong": 2,
+      "promo": {
+        "name": "giamgia",
+        "value": 1500000
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b97b"
+      },
+      "ten": "Realme C1",
+      "gia": 2490000,
+      "soLuong": 2,
+      "promo": {
+        "name": "moiramat",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b965"
+      },
+      "ten": "Oppo F9",
+      "gia": 7690000,
+      "soLuong": 3,
+      "promo": {
+        "name": "giamgia",
+        "value": 500000
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b97f"
+      },
+      "ten": "Philips E103",
+      "gia": 260000,
+      "soLuong": 3,
+      "promo": {
+        "name": "",
+        "value": 0
+      }
+    }
+  ],
+  "tongTienHang": 55390000,
+  "giamGia": 2000000,
+  "tongTienThanhToan": 53420000,
+  "diaChiNhanHang": "45 Cách Mạng Tháng 8, Phường 11, Quận 3, TP. Hồ Chí Minh",
+  "paymentMethod": "VietQr",
+  "paymentStatus": "Đã thanh toán",
+  "orderStatus": "Hoàn trả",
+  "ngayDat": {
+    "$date": "2025-09-28T11:37:58.670Z"
+  },
+  "ngayGiao": {
+    "$date": "2025-10-03T11:37:58.670Z"
+  },
+  "history": [
+    {
+      "status": "Chờ xử lý",
+      "date": "2025-09-28T11:37:58.670Z"
+    },
+    {
+      "status": "Hoàn trả",
+      "date": "2025-10-03T11:37:58.670Z"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "b9abe3b212a345c08c481cb0"
+  },
+  "user": {
+    "$oid": "68fca62ef0da11c8a7d03cc5"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b96b"
+      },
+      "ten": "iPad 2018 Wifi 32GB",
+      "gia": 8990000,
+      "soLuong": 1,
+      "promo": {
+        "name": "tragop",
+        "value": 0
+      }
+    }
+  ],
+  "tongTienHang": 8990000,
+  "giamGia": 0,
+  "tongTienThanhToan": 9020000,
+  "diaChiNhanHang": "120 Điện Biên Phủ, Phường 7, Quận 3, TP. Hồ Chí Minh",
+  "paymentMethod": "COD",
+  "paymentStatus": "Chưa thanh toán",
+  "orderStatus": "Đang giao",
+  "ngayDat": {
+    "$date": "2025-09-18T12:55:34.823Z"
+  },
+  "ngayGiao": {
+    "$date": "2025-09-21T12:55:34.823Z"
+  },
+  "history": [
+    {
+      "status": "Chờ xử lý",
+      "date": "2025-09-18T12:55:34.823Z"
+    },
+    {
+      "status": "Đang giao",
+      "date": "2025-09-21T12:55:34.823Z"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "d79aed38c98f4cf3babbe248"
+  },
+  "user": {
+    "$oid": "68fca62ef0da11c8a7d03cd1"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b96d"
+      },
+      "ten": "Xiaomi Mi 8",
+      "gia": 12990000,
+      "soLuong": 2,
+      "promo": {
+        "name": "",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b984"
+      },
+      "ten": "Mobell M789",
+      "gia": 550000,
+      "soLuong": 2,
+      "promo": {
+        "name": "",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b979"
+      },
+      "ten": "Realme 2 Pro 8GB/128GB",
+      "gia": 6990000,
+      "soLuong": 1,
+      "promo": {
+        "name": "moiramat",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b97b"
+      },
+      "ten": "Realme C1",
+      "gia": 2490000,
+      "soLuong": 2,
+      "promo": {
+        "name": "moiramat",
+        "value": 0
+      }
+    }
+  ],
+  "tongTienHang": 39050000,
+  "giamGia": 0,
+  "tongTienThanhToan": 39080000,
+  "diaChiNhanHang": "72 Pasteur, Phường 8, Quận 3, TP. Hồ Chí Minh",
+  "paymentMethod": "VietQr",
+  "paymentStatus": "Đã thanh toán",
+  "orderStatus": "Hoàn trả",
+  "ngayDat": {
+    "$date": "2025-08-31T03:18:52.214Z"
+  },
+  "ngayGiao": {
+    "$date": "2025-09-01T03:18:52.214Z"
+  },
+  "history": [
+    {
+      "status": "Chờ xử lý",
+      "date": "2025-08-31T03:18:52.214Z"
+    },
+    {
+      "status": "Hoàn trả",
+      "date": "2025-09-01T03:18:52.214Z"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "9ebf2a7e2a60461fac18b315"
+  },
+  "user": {
+    "$oid": "68fca62ef0da11c8a7d03cc6"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b982"
+      },
+      "ten": "Vivo Y85",
+      "gia": 4990000,
+      "soLuong": 1,
+      "promo": {
+        "name": "giamgia",
+        "value": 500000
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b98c"
+      },
+      "ten": "Coolpad N3",
+      "gia": 1890000,
+      "soLuong": 3,
+      "promo": {
+        "name": "moiramat",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b993"
+      },
+      "ten": "iPhone Xr 64GB",
+      "gia": 22990000,
+      "soLuong": 2,
+      "promo": {
+        "name": "giareonline",
+        "value": 19990000
+      }
+    }
+  ],
+  "tongTienHang": 56640000,
+  "giamGia": 500000,
+  "tongTienThanhToan": 56170000,
+  "diaChiNhanHang": "15 Nguyễn Văn Cừ, Phường Cô Giang, Quận 1, TP. Hồ Chí Minh",
+  "paymentMethod": "VietQr",
+  "paymentStatus": "Đã thanh toán",
+  "orderStatus": "Hoàn trả",
+  "ngayDat": {
+    "$date": "2025-08-01T08:09:20.805Z"
+  },
+  "ngayGiao": {
+    "$date": "2025-08-08T08:09:20.805Z"
+  },
+  "history": [
+    {
+      "status": "Chờ xử lý",
+      "date": "2025-08-01T08:09:20.805Z"
+    },
+    {
+      "status": "Hoàn trả",
+      "date": "2025-08-08T08:09:20.805Z"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "339872ac380046d7ae39894f"
+  },
+  "user": {
+    "$oid": "68fca62ef0da11c8a7d03cc7"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b97c"
+      },
+      "ten": "Realme 2 Pro 4GB/64GB",
+      "gia": 5590000,
+      "soLuong": 3,
+      "promo": {
+        "name": "moiramat",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b97f"
+      },
+      "ten": "Philips E103",
+      "gia": 260000,
+      "soLuong": 1,
+      "promo": {
+        "name": "",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b97c"
+      },
+      "ten": "Realme 2 Pro 4GB/64GB",
+      "gia": 5590000,
+      "soLuong": 2,
+      "promo": {
+        "name": "moiramat",
+        "value": 0
+      }
+    }
+  ],
+  "tongTienHang": 28210000,
+  "giamGia": 0,
+  "tongTienThanhToan": 28240000,
+  "diaChiNhanHang": "89 Lý Thường Kiệt, Phường 7, Quận Tân Bình, TP. Hồ Chí Minh",
+  "paymentMethod": "VietQr",
+  "paymentStatus": "Đã thanh toán",
+  "orderStatus": "Hoàn thành",
+  "ngayDat": {
+    "$date": "2025-07-31T09:02:14.020Z"
+  },
+  "ngayGiao": {
+    "$date": "2025-08-01T09:02:14.020Z"
+  },
+  "history": [
+    {
+      "status": "Chờ xử lý",
+      "date": "2025-07-31T09:02:14.020Z"
+    },
+    {
+      "status": "Hoàn thành",
+      "date": "2025-08-01T09:02:14.020Z"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "f569e2be28f440178e6b62ba"
+  },
+  "user": {
+    "$oid": "68fca62ef0da11c8a7d03cc3"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b97c"
+      },
+      "ten": "Realme 2 Pro 4GB/64GB",
+      "gia": 5590000,
+      "soLuong": 1,
+      "promo": {
+        "name": "moiramat",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b96b"
+      },
+      "ten": "iPad 2018 Wifi 32GB",
+      "gia": 8990000,
+      "soLuong": 3,
+      "promo": {
+        "name": "tragop",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b971"
+      },
+      "ten": "Mobiistar B310",
+      "gia": 260000,
+      "soLuong": 3,
+      "promo": {
+        "name": "moiramat",
+        "value": 0
+      }
+    }
+  ],
+  "tongTienHang": 33340000,
+  "giamGia": 0,
+  "tongTienThanhToan": 33370000,
+  "diaChiNhanHang": "45 Cách Mạng Tháng 8, Phường 11, Quận 3, TP. Hồ Chí Minh",
+  "paymentMethod": "VietQr",
+  "paymentStatus": "Đã thanh toán",
+  "orderStatus": "Đang giao",
+  "ngayDat": {
+    "$date": "2025-10-04T21:19:53.280Z"
+  },
+  "ngayGiao": {
+    "$date": "2025-10-08T21:19:53.280Z"
+  },
+  "history": [
+    {
+      "status": "Chờ xử lý",
+      "date": "2025-10-04T21:19:53.280Z"
+    },
+    {
+      "status": "Đang giao",
+      "date": "2025-10-08T21:19:53.280Z"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "8c84879ce18641e1a363a0f5"
+  },
+  "user": {
+    "$oid": "68fca62ef0da11c8a7d03cce"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b979"
+      },
+      "ten": "Realme 2 Pro 8GB/128GB",
+      "gia": 6990000,
+      "soLuong": 3,
+      "promo": {
+        "name": "moiramat",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b992"
+      },
+      "ten": "iPhone 8 Plus 256GB",
+      "gia": 25790000,
+      "soLuong": 2,
+      "promo": {
+        "name": "giamgia",
+        "value": 500000
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b977"
+      },
+      "ten": "Nokia black future",
+      "gia": 999999000,
+      "soLuong": 1,
+      "promo": {
+        "name": "giamgia",
+        "value": 1000
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b98a"
+      },
+      "ten": "Itel it2161",
+      "gia": 170000,
+      "soLuong": 2,
+      "promo": {
+        "name": "moiramat",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b988"
+      },
+      "ten": "Itel A32F",
+      "gia": 1350000,
+      "soLuong": 1,
+      "promo": {
+        "name": "moiramat",
+        "value": 0
+      }
+    }
+  ],
+  "tongTienHang": 1074239000,
+  "giamGia": 501000,
+  "tongTienThanhToan": 1073768000,
+  "diaChiNhanHang": "15 Nguyễn Văn Trỗi, Phường 14, Quận Phú Nhuận, TP. Hồ Chí Minh",
+  "paymentMethod": "COD",
+  "paymentStatus": "Chưa thanh toán",
+  "orderStatus": "Hoàn trả",
+  "ngayDat": {
+    "$date": "2025-08-27T16:08:55.704Z"
+  },
+  "ngayGiao": {
+    "$date": "2025-09-01T16:08:55.704Z"
+  },
+  "history": [
+    {
+      "status": "Chờ xử lý",
+      "date": "2025-08-27T16:08:55.704Z"
+    },
+    {
+      "status": "Hoàn trả",
+      "date": "2025-09-01T16:08:55.704Z"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "c6bd1c04207044ba89ea308e"
+  },
+  "user": {
+    "$oid": "68fca62ef0da11c8a7d03ccf"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b967"
+      },
+      "ten": "Samsung Galaxy A8+ (2018)",
+      "gia": 11990000,
+      "soLuong": 2,
+      "promo": {
+        "name": "giamgia",
+        "value": 1500000
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b972"
+      },
+      "ten": "Xiaomi Redmi Note 5",
+      "gia": 5690000,
+      "soLuong": 1,
+      "promo": {
+        "name": "moiramat",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b994"
+      },
+      "ten": "Huawei Nova 2i",
+      "gia": 4490000,
+      "soLuong": 2,
+      "promo": {
+        "name": "giareonline",
+        "value": 3990000
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b98d"
+      },
+      "ten": "Coolpad N3 mini",
+      "gia": 1390000,
+      "soLuong": 2,
+      "promo": {
+        "name": "moiramat",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b986"
+      },
+      "ten": "Mobell S60",
+      "gia": 1790000,
+      "soLuong": 1,
+      "promo": {
+        "name": "moiramat",
+        "value": 0
+      }
+    }
+  ],
+  "tongTienHang": 43220000,
+  "giamGia": 1500000,
+  "tongTienThanhToan": 41750000,
+  "diaChiNhanHang": "8 Hoàng Văn Thụ, Phường 9, Quận Phú Nhuận, TP. Hồ Chí Minh",
+  "paymentMethod": "COD",
+  "paymentStatus": "Chưa thanh toán",
+  "orderStatus": "Đang giao",
+  "ngayDat": {
+    "$date": "2025-10-16T02:33:18.077Z"
+  },
+  "ngayGiao": {
+    "$date": "2025-10-17T02:33:18.077Z"
+  },
+  "history": [
+    {
+      "status": "Chờ xử lý",
+      "date": "2025-10-16T02:33:18.077Z"
+    },
+    {
+      "status": "Đang giao",
+      "date": "2025-10-17T02:33:18.077Z"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "0f25c61b523f4729bd70f407"
+  },
+  "user": {
+    "$oid": "68fca62ef0da11c8a7d03ccc"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b96f"
+      },
+      "ten": "Mobiistar Zumbo S2 Dual",
+      "gia": 2850000,
+      "soLuong": 3,
+      "promo": {
+        "name": "moiramat",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b98f"
+      },
+      "ten": "Motorola Moto C 4G",
+      "gia": 1290000,
+      "soLuong": 2,
+      "promo": {
+        "name": "",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b98e"
+      },
+      "ten": "HTC U12 life",
+      "gia": 7690000,
+      "soLuong": 1,
+      "promo": {
+        "name": "moiramat",
+        "value": 0
+      }
+    }
+  ],
+  "tongTienHang": 18820000,
+  "giamGia": 0,
+  "tongTienThanhToan": 18850000,
+  "diaChiNhanHang": "5 Lê Duẩn, Bến Nghé, Quận 1, TP. Hồ Chí Minh",
+  "paymentMethod": "VietQr",
+  "paymentStatus": "Đã thanh toán",
+  "orderStatus": "Hoàn trả",
+  "ngayDat": {
+    "$date": "2025-08-29T19:35:35.862Z"
+  },
+  "ngayGiao": {
+    "$date": "2025-09-03T19:35:35.862Z"
+  },
+  "history": [
+    {
+      "status": "Chờ xử lý",
+      "date": "2025-08-29T19:35:35.862Z"
+    },
+    {
+      "status": "Hoàn trả",
+      "date": "2025-09-03T19:35:35.862Z"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "b3681487050d4644af899c40"
+  },
+  "user": {
+    "$oid": "68fca62ef0da11c8a7d03cd1"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b98b"
+      },
+      "ten": "Coolpad N3D",
+      "gia": 2390000,
+      "soLuong": 2,
+      "promo": {
+        "name": "moiramat",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b983"
+      },
+      "ten": "Vivo Y71",
+      "gia": 3290000,
+      "soLuong": 3,
+      "promo": {
+        "name": "tragop",
+        "value": 0
+      }
+    }
+  ],
+  "tongTienHang": 14650000,
+  "giamGia": 0,
+  "tongTienThanhToan": 14680000,
+  "diaChiNhanHang": "88 Võ Thị Sáu, Phường 6, Quận 3, TP. Hồ Chí Minh",
+  "paymentMethod": "VietQr",
+  "paymentStatus": "Đã thanh toán",
+  "orderStatus": "Chờ xử lý",
+  "ngayDat": {
+    "$date": "2025-09-28T07:18:05.708Z"
+  },
+  "ngayGiao": {
+    "$date": "2025-10-05T07:18:05.708Z"
+  },
+  "history": [
+    {
+      "status": "Chờ xử lý",
+      "date": "2025-09-28T07:18:05.708Z"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "31addc7601044ee18d1f982d"
+  },
+  "user": {
+    "$oid": "68fca62ef0da11c8a7d03cc5"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b98c"
+      },
+      "ten": "Coolpad N3",
+      "gia": 1890000,
+      "soLuong": 2,
+      "promo": {
+        "name": "moiramat",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b98e"
+      },
+      "ten": "HTC U12 life",
+      "gia": 7690000,
+      "soLuong": 1,
+      "promo": {
+        "name": "moiramat",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b986"
+      },
+      "ten": "Mobell S60",
+      "gia": 1790000,
+      "soLuong": 3,
+      "promo": {
+        "name": "moiramat",
+        "value": 0
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b96a"
+      },
+      "ten": "Samsung Galaxy J8",
+      "gia": 6290000,
+      "soLuong": 3,
+      "promo": {
+        "name": "giamgia",
+        "value": 500000
+      }
+    },
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b993"
+      },
+      "ten": "iPhone Xr 64GB",
+      "gia": 22990000,
+      "soLuong": 1,
+      "promo": {
+        "name": "giareonline",
+        "value": 19990000
+      }
+    }
+  ],
+  "tongTienHang": 58700000,
+  "giamGia": 500000,
+  "tongTienThanhToan": 58230000,
+  "diaChiNhanHang": "120 Điện Biên Phủ, Phường 7, Quận 3, TP. Hồ Chí Minh",
+  "paymentMethod": "COD",
+  "paymentStatus": "Chưa thanh toán",
+  "orderStatus": "Đang giao",
+  "ngayDat": {
+    "$date": "2025-07-07T17:09:15.466Z"
+  },
+  "ngayGiao": {
+    "$date": "2025-07-08T17:09:15.466Z"
+  },
+  "history": [
+    {
+      "status": "Chờ xử lý",
+      "date": "2025-07-07T17:09:15.466Z"
+    },
+    {
+      "status": "Đang giao",
+      "date": "2025-07-08T17:09:15.466Z"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "68fcc68579172f21596fbf65"
+  },
+  "user": {
+    "$oid": "68fcba39122f0464a51a9cfe"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b972"
+      },
+      "ten": "Xiaomi Redmi Note 5",
+      "gia": 5690000,
+      "soLuong": 1,
+      "_id": {
+        "$oid": "68fcc68579172f21596fbf66"
+      }
+    }
+  ],
+  "tongTienHang": 5690000,
+  "giamGia": 0,
+  "tongTienThanhToan": 5720000,
+  "diaChiNhanHang": "số nhà 02, Xã Vạn Phúc, Huyện Thanh Trì, Thành phố Hà Nội",
+  "paymentMethod": "COD",
+  "paymentStatus": "Chưa thanh toán",
+  "orderStatus": "Chờ xử lý",
+  "ngayDat": {
+    "$date": "2025-10-25T12:45:57.592Z"
+  },
+  "history": [],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68fcc6ef79172f21596fc062"
+  },
+  "user": {
+    "$oid": "68fcba39122f0464a51a9cfe"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "68fca565624bb1098640b973"
+      },
+      "ten": "Xiaomi Redmi 5 Plus 4GB",
+      "gia": 4790000,
+      "soLuong": 1,
+      "_id": {
+        "$oid": "68fcc6ef79172f21596fc063"
+      }
+    }
+  ],
+  "tongTienHang": 4790000,
+  "giamGia": 0,
+  "tongTienThanhToan": 4820000,
+  "diaChiNhanHang": "số nhà 02, Xã Vạn Phúc, Huyện Thanh Trì, Thành phố Hà Nội",
+  "paymentMethod": "COD",
+  "paymentStatus": "Chưa thanh toán",
+  "orderStatus": "Đã hủy",
+  "ngayDat": {
+    "$date": "2025-10-25T12:47:43.756Z"
+  },
+  "history": [
+    {
+      "status": "Đã hủy",
+      "note": "Hủy bởi user",
+      "_id": {
+        "$oid": "68fcc7e897f1b76976b3f777"
+      },
+      "date": {
+        "$date": "2025-10-25T12:51:52.154Z"
+      }
+    },
+    {
+      "status": "Đã hủy",
+      "date": {
+        "$date": "2025-10-25T12:51:52.163Z"
+      },
+      "note": "Hủy bởi user",
+      "_id": {
+        "$oid": "68fcc7e897f1b76976b3f779"
+      }
+    }
+  ],
+  "__v": 2
+}]

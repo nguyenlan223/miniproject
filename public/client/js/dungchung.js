@@ -1,10 +1,13 @@
 var currentUser=null;
 // Hàm khởi tạo, tất cả các trang đều cần
+document.addEventListener('DOMContentLoaded', () => {
+    setupEventTaiKhoan();
+});
 async function khoiTao() {
      try {
     const res = await fetch("http://localhost:5000/api/products");
     list_products = await res.json();
-    setupEventTaiKhoan();
+   
     await capNhat_ThongTin_CurrentUser();
     addEventCloseAlertButton();
     //  Kiểm tra role người dùng
@@ -104,7 +107,7 @@ function animateCartNumber() {
 }
 
 async function themVaoGioHang(masp,tensp) {
-    var user = getCurrentUser();
+    var user = await getCurrentUser();
     if (!user) {
         alert('Bạn cần đăng nhập để mua hàng !');
         showTaiKhoan(true);
@@ -158,21 +161,26 @@ async function getCurrentUser() {
             method: 'GET',
             credentials: 'include'
         });
+
+        // Nếu không đăng nhập hoặc lỗi server
+        if (!res.ok) return null;
+
         const data = await res.json();
-        if (data.success) {
+        if (data && data.success && data.user) {
             return data.user;
         }
     } catch (err) {
         console.error('Lỗi lấy user hiện tại:', err);
     }
+
+    // Không có user hợp lệ
     return null;
 }
 
-// Không cần setLocalStorage nữa, chỉ lưu tạm trong biến toàn cục
+
 function setCurrentUser(u) {
     currentUser = u;
 }
-
 
 async function logIn(form,event) {
     event.preventDefault(); // Ngăn form reload
@@ -212,8 +220,8 @@ async function logIn(form,event) {
     
  }
 
-
-async function signUp(form) {
+async function signUp(form, event) {
+    event.preventDefault();
     const data = {
         ho: form.ho.value,
         ten: form.ten.value,
@@ -318,7 +326,6 @@ function setupEventTaiKhoan() {
         var a = tab[i].getElementsByTagName('a')[0];
         a.addEventListener('click', function (e) {
             e.preventDefault(); // tắt event mặc định
-
             // Thêm active(màu xanh lá) cho li chứa tag a này => ấn login thì login xanh, signup thì signup sẽ xanh
             this.parentElement.classList.add('active');
 
@@ -345,7 +352,6 @@ function setupEventTaiKhoan() {
     // Đoạn code tạo event trên được chuyển về js thuần từ code jquery
     // Code jquery cho phần tài khoản được lưu ở cuối file này
 }
-
 
 // Cập nhật số lượng hàng trong giỏ hàng + Tên current user
 async function capNhat_ThongTin_CurrentUser() {
@@ -382,7 +388,6 @@ async function capNhat_ThongTin_CurrentUser() {
        
 }
     
-
 
 // ==================== Những hàm khác ===================== 
 function numToString(num, char) {
@@ -511,259 +516,211 @@ function autocomplete(inp, arr) {
 // Thêm từ khóa tìm kiếm
 function addTags(nameTag, link) {
     var new_tag = `<a href=` + link + `>` + nameTag + `</a>`;
-
+    
     // Thêm <a> vừa tạo vào khung tìm kiếm
     var khung_tags = document.getElementsByClassName('tags')[0];
+    if (!khung_tags) return; // bỏ qua nếu element chưa có
     khung_tags.innerHTML += new_tag;
 }
 
 // Thêm sản phẩm vào trang
 function addProduct(p, ele, returnString) {
-	promo = new Promo(p.promo.name, p.promo.value); // class Promo
-	product = new Product(p.masp, p.name, p.img, p.price, p.star, p.rateCount, promo); // Class product
+    promo = new Promo(p.promo.name, p.promo.value); // class Promo
+    product = new Product(p.masp, p.name, p.img, p.price, p.star, p.rateCount, promo); // Class product
     
-	return addToWeb(product, ele, returnString);
+    return addToWeb(product, ele, returnString);
 }
 
-// Thêm topnav vào trang
+// =================== Thêm topnav ===================
 function addTopNav() {
-    document.write(`    
-	<div class="top-nav group">
+    if (document.querySelector('.top-nav')) return; // tránh append nhiều lần
+    const div = document.createElement('div');
+    div.className = 'top-nav group';
+    div.innerHTML = `
         <section>
             <div class="social-top-nav">
                 <a class="fa fa-facebook"></a>
                 <a class="fa fa-twitter"></a>
                 <a class="fa fa-google"></a>
                 <a class="fa fa-youtube"></a>
-            </div> <!-- End Social Topnav -->
-
+            </div>
             <ul class="top-nav-quicklink flexContain">
                 <li><a href="index.html"><i class="fa fa-home"></i> Trang chủ</a></li>
                 <li><a href="tintuc.html"><i class="fa fa-newspaper-o"></i> Tin tức</a></li>
-                <li><a href="tuyendung.html"><i class="fa fa-handshake-o"></i> Tuyển dụng</a></li>
                 <li><a href="gioithieu.html"><i class="fa fa-info-circle"></i> Giới thiệu</a></li>
                 <li><a href="trungtambaohanh.html"><i class="fa fa-wrench"></i> Bảo hành</a></li>
                 <li><a href="lienhe.html"><i class="fa fa-phone"></i> Liên hệ</a></li>
-            </ul> <!-- End Quick link -->
-        </section><!-- End Section -->
-    </div><!-- End Top Nav  -->`);
+            </ul>
+        </section>`;
+    document.body.prepend(div); // đưa lên đầu body
 }
 
-// Thêm header
+// =================== Thêm header ===================
 function addHeader() {
-    document.write(`        
-	<div class="header group">
+    if (document.querySelector('.header')) return;
+    const div = document.createElement('div');
+    div.className = 'header group';
+    div.innerHTML = `
         <div class="logo">
             <a href="index.html">
-                <img src="img/logo.jpg" alt="Trang chủ Smartphone Store" title="Trang chủ Smartphone Store">
+                <img src="img/logo.png" alt="Trang chủ Smartphone Store" title="Trang chủ Smartphone Store">
             </a>
-        </div> <!-- End Logo -->
-
+        </div>
         <div class="content">
             <div class="search-header" style="position: relative; left: 162px; top: 1px;">
                 <form class="input-search" method="get" action="index.html">
                     <div class="autocomplete">
                         <input id="search-box" name="search" autocomplete="off" type="text" placeholder="Nhập từ khóa tìm kiếm...">
                         <button type="submit">
-                            <i class="fa fa-search"></i>
-                            Tìm kiếm
+                            <i class="fa fa-search"></i> Tìm kiếm
                         </button>
                     </div>
-                </form> <!-- End Form search -->
+                </form>
                 <div class="tags">
                     <strong>Từ khóa: </strong>
                 </div>
-            </div> <!-- End Search header -->
-
+            </div>
             <div class="tools-member">
                 <div class="member">
                     <a onclick="checkTaiKhoan()">
-                        <i class="fa fa-user"></i>
-                        Tài khoản
+                        <i class="fa fa-user"></i> Tài khoản
                     </a>
                     <div class="menuMember hide">
                         <a href="nguoidung.html">Trang người dùng</a>
                         <a href="donhang.html">Đơn hàng của tôi</a>
                         <a onclick="if(window.confirm('Xác nhận đăng xuất ?')) logOut();">Đăng xuất</a>
                     </div>
-
-                </div> <!-- End Member -->
-
+                </div>
                 <div class="cart">
                     <a href="giohang.html">
                         <i class="fa fa-shopping-cart"></i>
                         <span>Giỏ hàng</span>
                         <span class="cart-number"></span>
                     </a>
-                </div> <!-- End Cart -->
-
-                <!--<div class="check-order">
-                    <a>
-                        <i class="fa fa-truck"></i>
-                        <span>Đơn hàng</span>
-                    </a>
-                </div> -->
-            </div><!-- End Tools Member -->
-        </div> <!-- End Content -->
-    </div> <!-- End Header -->`)
+                </div>
+            </div>
+        </div>`;
+    document.body.prepend(div);
 }
 
-// Thêm header2
+// =================== Thêm header2 (không có search) ===================
 function addHeader2() {
-    document.write(`        
-	<div class="header group">
+    if (document.querySelector('.header')) return;
+    const div = document.createElement('div');
+    div.className = 'header group';
+    div.innerHTML = `
         <div class="logo">
             <a href="index.html">
-                <img src="img/logo.jpg" alt="Trang chủ Smartphone Store" title="Trang chủ Smartphone Store">
+                <img src="img/logo.png" alt="Trang chủ Smartphone Store" title="Trang chủ Smartphone Store">
             </a>
-        </div> <!-- End Logo -->
-
+        </div>
         <div class="content">
-           
-
             <div class="tools-member">
                 <div class="member">
                     <a onclick="checkTaiKhoan()">
-                        <i class="fa fa-user"></i>
-                        Tài khoản
+                        <i class="fa fa-user"></i> Tài khoản
                     </a>
                     <div class="menuMember hide">
                         <a href="nguoidung.html">Trang người dùng</a>
                         <a href="donhang.html">Đơn hàng của tôi</a>
                         <a onclick="if(window.confirm('Xác nhận đăng xuất ?')) logOut();">Đăng xuất</a>
                     </div>
-
-                </div> <!-- End Member -->
-
+                </div>
                 <div class="cart">
                     <a href="giohang.html">
                         <i class="fa fa-shopping-cart"></i>
                         <span>Giỏ hàng</span>
                         <span class="cart-number"></span>
                     </a>
-                </div> <!-- End Cart -->
-
-                <!--<div class="check-order">
-                    <a>
-                        <i class="fa fa-truck"></i>
-                        <span>Đơn hàng</span>
-                    </a>
-                </div> -->
-            </div><!-- End Tools Member -->
-        </div> <!-- End Content -->
-    </div> <!-- End Header -->`)
+                </div>
+            </div>
+        </div>`;
+    document.body.prepend(div);
 }
 
+// =================== Thêm footer ===================
 function addFooter() {
-    document.write(`
-    <!-- ============== Alert Box ============= -->
-    <div id="alert">
-        <span id="closebtn">&otimes;</span>
-    </div>
-
-    <!-- ============== Footer ============= -->
-    <div class="copy-right">
-        <p><a href="index.html">LDD Phone Store</a> - All rights reserved © 2021 - Designed by
-            <span style="color: #eee; font-weight: bold">group 15th</span></p>
-    </div>`);
+    if (document.querySelector('.copy-right')) return;
+    const div = document.createElement('div');
+    div.innerHTML = `
+        <div id="alert">
+            <span id="closebtn">&times;</span>
+        </div>
+        <div class="copy-right">
+            <p><a href="index.html">LDD Phone Store</a> - All rights reserved © 2021 - Designed by
+                <span style="color: #eee; font-weight: bold">group 15th</span>
+            </p>
+        </div>`;
+    document.body.appendChild(div);
 }
 
-// Thêm contain Taikhoan
+// =================== Thêm contain tài khoản ===================
 function addContainTaiKhoan() {
-    document.write(`
-	<div class="containTaikhoan">
+    if (document.querySelector('.containTaikhoan')) return;
+    const div = document.createElement('div');
+    div.className = 'containTaikhoan';
+    div.innerHTML = `
         <span class="close" onclick="showTaiKhoan(false);">&times;</span>
         <div class="taikhoan">
-
             <ul class="tab-group">
                 <li class="tab active"><a href="#login">Đăng nhập</a></li>
                 <li class="tab"><a href="#signup">Đăng kí</a></li>
-            </ul> <!-- /tab group -->
-
+            </ul>
             <div class="tab-content">
                 <div id="login">
                     <h1>Chào mừng bạn trở lại!</h1>
-
                     <form onsubmit="return logIn(this,event);">
-
                         <div class="field-wrap">
-                            <label>
-                                Tên đăng nhập<span class="req">*</span>
-                            </label>
+                            <label>Tên đăng nhập<span class="req">*</span></label>
                             <input name='username' type="text" required autocomplete="off" />
-                        </div> <!-- /user name -->
-
+                        </div>
                         <div class="field-wrap">
-                            <label>
-                                Mật khẩu<span class="req">*</span>
-                            </label>
+                            <label>Mật khẩu<span class="req">*</span></label>
                             <input name="pass" type="password" required autocomplete="off" />
-                        </div> <!-- pass -->
-
+                        </div>
                         <p class="forgot"><a href="#">Quên mật khẩu?</a></p>
-
                         <button type="submit" class="button button-block">Tiếp tục</button>
-
-                    </form> <!-- /form -->
-
-                </div> <!-- /log in -->
-
+                    </form>
+                </div>
                 <div id="signup">
                     <h1>Đăng kí miễn phí</h1>
-
-                    <form onsubmit="return signUp(this);">
-
+                    <form onsubmit="return signUp(this,event);">
                         <div class="top-row">
                             <div class="field-wrap">
-                                <label>
-                                    Họ<span class="req">*</span>
-                                </label>
+                                <label>Họ<span class="req">*</span></label>
                                 <input name="ho" type="text" required autocomplete="off" />
                             </div>
-
                             <div class="field-wrap">
-                                <label>
-                                    Tên<span class="req">*</span>
-                                </label>
+                                <label>Tên<span class="req">*</span></label>
                                 <input name="ten" type="text" required autocomplete="off" />
                             </div>
-                        </div> <!-- / ho ten -->
-
+                        </div>
                         <div class="field-wrap">
-                            <label>
-                                Địa chỉ Email<span class="req">*</span>
-                            </label>
+                            <label>Địa chỉ Email<span class="req">*</span></label>
                             <input name="email" type="email" required autocomplete="off" />
-                        </div> <!-- /email -->
-
+                        </div>
                         <div class="field-wrap">
-                            <label>
-                                Tên đăng nhập<span class="req">*</span>
-                            </label>
+                            <label>Tên đăng nhập<span class="req">*</span></label>
                             <input name="newUser" type="text" required autocomplete="off" />
-                        </div> <!-- /user name -->
-
+                        </div>
                         <div class="field-wrap">
-                            <label>
-                                Mật khẩu<span class="req">*</span>
-                            </label>
+                            <label>Mật khẩu<span class="req">*</span></label>
                             <input name="newPass" type="password" required autocomplete="off" />
-                        </div> <!-- /pass -->
-
-                        <button type="submit" class="button button-block" />Tạo tài khoản</button>
-
-                    </form> <!-- /form -->
-
-                </div> <!-- /sign up -->
-            </div><!-- tab-content -->
-
-        </div> <!-- /taikhoan -->
-    </div>`);
+                        </div>
+                        <button type="submit" class="button button-block">Tạo tài khoản</button>
+                    </form>
+                </div>
+            </div>
+        </div>`;
+    document.body.appendChild(div);
 }
-// Thêm plc (phần giới thiệu trước footer)
+
+// =================== Thêm PLC ===================
 function addPlc() {
-    document.write(`
-    <div class="plc">
+    if (document.querySelector('.plc')) return;
+    const div = document.createElement('div');
+    div.className = 'plc';
+    div.innerHTML = `
         <section>
             <ul class="flexContain">
                 <li>Giao hàng hỏa tốc trong 1 giờ</li>
@@ -771,13 +728,13 @@ function addPlc() {
                 <li>Trải nghiệm sản phẩm tại nhà</li>
                 <li>Lỗi đổi tại nhà trong 1 ngày</li>
                 <li>Hỗ trợ suốt thời gian sử dụng.
-                    <br>Hotline:
-                    <a href="tel:12345678" style="color: #288ad6;">12345678</a>
+                    <br>Hotline: <a href="tel:12345678" style="color: #288ad6;">12345678</a>
                 </li>
             </ul>
-        </section>
-    </div>`);
+        </section>`;
+    document.body.appendChild(div);
 }
+
 
 // https://stackoverflow.com/a/2450976/11898496
 function shuffleArray(array) {
@@ -856,50 +813,49 @@ function getThongTinSanPhamFrom_TheGioiDiDong() {
     javascript: (function () {
         var s = document.createElement('script');
         s.innerHTML = `
-			(function () {
-				var ul = document.getElementsByClassName('parameter')[0];
-				var li_s = ul.getElementsByTagName('li');
-				var result = {};
-				result.detail = {};
-	
-				for (var li of li_s) {
-					var loai = li.getElementsByTagName('span')[0].innerText;
-					var giatri = li.getElementsByTagName('div')[0].innerText;
-	
-					switch (loai) {
-						case "Màn hình:":
-							result.detail.screen = giatri.replace('"', "'");
-							break;
-						case "Hệ điều hành:":
-							result.detail.os = giatri;
-							break;
-						case "Camera sau:":
-							result.detail.camara = giatri;
-							break;
-						case "Camera trước:":
-							result.detail.camaraFront = giatri;
-							break;
-						case "CPU:":
-							result.detail.cpu = giatri;
-							break;
-						case "RAM:":
-							result.detail.ram = giatri;
-							break;
-						case "Bộ nhớ trong:":
-							result.detail.rom = giatri;
-							break;
-						case "Thẻ nhớ:":
-							result.detail.microUSB = giatri;
-							break;
-						case "Dung lượng pin:":
-							result.detail.battery = giatri;
-							break;
-					}
-				}
-	
-				console.log(JSON.stringify(result, null, "\t"));
-			})();`;
+            (function () {
+                var ul = document.getElementsByClassName('parameter')[0];
+                var li_s = ul.getElementsByTagName('li');
+                var result = {};
+                result.detail = {};
+    
+                for (var li of li_s) {
+                    var loai = li.getElementsByTagName('span')[0].innerText;
+                    var giatri = li.getElementsByTagName('div')[0].innerText;
+    
+                    switch (loai) {
+                        case "Màn hình:":
+                            result.detail.screen = giatri.replace('"', "'");
+                            break;
+                        case "Hệ điều hành:":
+                            result.detail.os = giatri;
+                            break;
+                        case "Camera sau:":
+                            result.detail.camara = giatri;
+                            break;
+                        case "Camera trước:":
+                            result.detail.camaraFront = giatri;
+                            break;
+                        case "CPU:":
+                            result.detail.cpu = giatri;
+                            break;
+                        case "RAM:":
+                            result.detail.ram = giatri;
+                            break;
+                        case "Bộ nhớ trong:":
+                            result.detail.rom = giatri;
+                            break;
+                        case "Thẻ nhớ:":
+                            result.detail.microUSB = giatri;
+                            break;
+                        case "Dung lượng pin:":
+                            result.detail.battery = giatri;
+                            break;
+                    }
+                }
+    
+                console.log(JSON.stringify(result, null, "\t"));
+            })();`;
         document.body.appendChild(s);
     })();
 }
-

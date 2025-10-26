@@ -2,7 +2,7 @@ const Cart = require("../models/Cart");
 const Product = require("../models/Product");
 const express = require("express");
 const router = express.Router();
-const authMiddleware = require("../middleware/authMiddleware");
+const { authMiddleware} = require("../middleware/authMiddleware");
 
 // 🟢 Thêm sản phẩm vào giỏ (hoặc tăng số lượng)
 router.post("/add", authMiddleware, async (req, res) => {

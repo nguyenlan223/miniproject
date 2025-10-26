@@ -37,84 +37,162 @@ window.onload = async function () {
     }
 };
 
+async function changeAvatar(event) {
+  const file = event.target.files[0];
+  if (!file) return;
 
-// Phần Thông tin người dùng
+  // Preview ảnh ngay lập tức trên giao diện
+  const img = document.querySelector('.avatar-box img');
+  img.src = URL.createObjectURL(file);
+
+  // Gửi formData lên server
+  const formData = new FormData();
+  formData.append("avatar", file);
+
+  try {
+    const res = await fetch("http://localhost:5000/api/users/avatar", {
+      method: "PUT",
+      body: formData,
+      credentials: "include"
+    });
+
+    const data = await res.json();
+
+    if (res.ok && data.success) {
+      // ✅ Cập nhật user hiện tại
+      currentUser.avatar = data.user.avatar;
+      setCurrentUser(currentUser);
+
+      addAlertBox("Cập nhật ảnh đại diện thành công!", "#5f5", "#000", 3000);
+    } else {
+      addAlertBox(data.error || "Lỗi khi cập nhật ảnh đại diện!", "#ff6b6b", "#fff", 3000);
+    }
+  } catch (err) {
+    console.error("Lỗi khi upload avatar:", err);
+    addAlertBox("Không thể kết nối tới server!", "#ff6b6b", "#fff", 3000);
+  }
+}
+
+
+function toggleAvatarMenu() {
+  const menu = document.getElementById("avatarMenu");
+  menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+}
+
+function openFileInput() {
+  document.getElementById("avatarFile").click();
+  document.getElementById("avatarMenu").style.display = "none";
+}
+
+async function removeAvatar() {
+  if (!confirm("Bạn có chắc muốn xóa ảnh đại diện?")) return;
+
+  try {
+    const res = await fetch("http://localhost:5000/api/users/avatar", {
+      method: "DELETE",
+      credentials: "include"
+    });
+    const data = await res.json();
+
+    if (res.ok && data.success) {
+      currentUser.avatar = null;
+      setCurrentUser(currentUser);
+      document.querySelector(".avatar-box img").src = "https://placehold.co/140x140";
+      document.querySelector(".avatar-box img").alt = "Avatar";
+      addAlertBox("Đã xóa ảnh đại diện!", "#5f5", "#000", 3000);
+    } else {
+      addAlertBox(data.error || "Không thể xóa ảnh đại diện!", "#ff6b6b", "#fff", 3000);
+    }
+  } catch (err) {
+    console.error(err);
+    addAlertBox("Lỗi kết nối server!", "#ff6b6b", "#fff", 3000);
+  }
+
+  document.getElementById("avatarMenu").style.display = "none";
+}
+
+// Đóng menu nếu click ra ngoài
+document.addEventListener("click", (e) => {
+  const menu = document.getElementById("avatarMenu");
+  const avatarBox = document.querySelector(".avatar-box");
+  if (menu && avatarBox && !avatarBox.contains(e.target)) {
+    menu.style.display = "none";
+  }
+});
+
 function addInfoUser(user) {
     if (!user) return;
+
     document.getElementsByClassName('infoUser')[0].innerHTML = `
-    <hr>
-    <table>
-    <tr>
-            <th>Tài khoản</th>
-        </tr>
-        <tr>
-            <th colspan="3">Hồ sơ của tôi</th>
-        </tr>
-        <tr>
-            <td>Tên tài khoản: </td>
-            <td> <input type="text" value="` + user.username + `" readonly> </td>
-        </tr>
-        <tr>
-        <tr>
-            <td>Họ: </td>
-            <td> <input type="text" value="` + user.ho + `" readonly> </td>
-            <td> <i class="fa fa-pencil" onclick="changeInfo(this, 'ho')"></i> </td>
-        </tr>
-        <tr>
-            <td>Tên: </td>
-            <td> <input type="text" value="` + user.ten + `" readonly> </td>
-            <td> <i class="fa fa-pencil" onclick="changeInfo(this, 'ten')"></i> </td>
-        </tr>
-        <tr>
-            <td>Email: </td>
-            <td> <input type="text" value="` + user.email + `" readonly> </td>
-            <td> <i class="fa fa-pencil" onclick="changeInfo(this, 'email')"></i> </td>
-        </tr>
-        <tr>
-            <td>Mật khẩu: </td>
-            <td style="text-align: center;"> 
-                <i class="fa fa-pencil" id="butDoiMatKhau" onclick="openChangePass()"> Đổi mật khẩu</i> 
-            </td>
-            <td></td>
-        </tr>
-        <tr>
-            <td colspan="3" id="khungDoiMatKhau">
-                <table>
-                    <tr>
-                        <td> <div>Mật khẩu cũ:</div> </td>
-                        <td> <div><input type="password"></div> </td>
-                    </tr>
-                    <tr>
-                        <td> <div>Mật khẩu mới:</div> </td>
-                        <td> <div><input type="password"></div> </td>
-                    </tr>
-                    <tr>
-                        <td> <div>Xác nhận mật khẩu:</div> </td>
-                        <td> <div><input type="password"></div> </td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td> 
-                            <div><button onclick="changePass()">Đồng ý</button></div> 
-                        </td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-            <td>Địa chỉ: </td>
-            <td> 
-                <div id="diachiList"></div>
-                <button id="btnThemDiaChi" onclick="openAddDiachiModal()" style="margin-top: 10px; padding: 8px 15px; background: linear-gradient(135deg, #4CAF50, #45a049); color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 14px; font-weight: bold;">
+    <div class="user-container">
+        <!-- LEFT: Avatar -->
+        <div class="user-left avatar-box">
+  <div class="avatar-wrapper" onclick="toggleAvatarMenu()">
+    <img src="${user.avatar || 'https://cdn-icons-png.flaticon.com/512/149/149071.png'}" alt="Avatar">
+    <div class="avatar-overlay">
+      <i class="fa fa-camera"></i>
+    </div>
+  </div>
+
+  <div class="avatar-menu" id="avatarMenu">
+    <button onclick="openFileInput()"><i class="fa fa-upload"></i> Đổi ảnh đại diện</button>
+    <button onclick="removeAvatar()"><i class="fa fa-trash"></i> Xóa ảnh đại diện</button>
+  </div>
+
+  <input type="file" id="avatarFile" accept="image/*" style="display:none" onchange="changeAvatar(event)">
+</div>
+
+
+        <!-- RIGHT: Thông tin -->
+        <div class="user-right info-card">
+            <h2>Hồ sơ của tôi</h2>
+
+            <div class="info-row">
+                <label>Tài khoản</label>
+                <input type="text" value="${user.username}" readonly>
+            </div>
+
+            <div class="info-row editable">
+                <label>Họ</label>
+                <input type="text" value="${user.ho}" readonly>
+                <i class="fa fa-pencil" onclick="changeInfo(this, 'ho')"></i>
+            </div>
+
+            <div class="info-row editable">
+                <label>Tên</label>
+                <input type="text" value="${user.ten}" readonly>
+                <i class="fa fa-pencil" onclick="changeInfo(this, 'ten')"></i>
+            </div>
+
+            <div class="info-row editable">
+                <label>Email</label>
+                <input type="text" value="${user.email}" readonly>
+                <i class="fa fa-pencil" onclick="changeInfo(this, 'email')"></i>
+            </div>
+
+            <div class="info-row password-row">
+                <label>Mật khẩu</label>
+                <i class="fa fa-pencil" onclick="openChangePass()">Đổi mật khẩu</i>
+            </div>
+
+            <div id="khungDoiMatKhau">
+                <div class="pass-row"><label>Mật khẩu cũ:</label><input type="password"></div>
+                <div class="pass-row"><label>Mật khẩu mới:</label><input type="password"></div>
+                <div class="pass-row"><label>Xác nhận mật khẩu:</label><input type="password"></div>
+                <div class="pass-row" id="btn_container"><button onclick="changePass()">Đồng ý</button></div>
+            </div>
+
+            <div class="info-row">
+                <label>Địa chỉ</label>
+                <div id="diachiList" id="diaChi_container"></div>
+                <button id="btnThemDiaChi" onclick="openAddDiachiModal()" class="btn-them-diachi">
                     <i class="fa fa-plus"></i> Thêm địa chỉ
                 </button>
-            </td>
-            <td></td>
-        </tr>
-    </table>`;
-
-    // Không cần setTimeout nữa vì đã dùng onclick trực tiếp
-    console.log('Nút Thêm địa chỉ đã được render với onclick trực tiếp.');
+            </div>
+        </div>
+    </div>`;
 }
+
 
 function openChangePass() {
     var khungChangePass = document.getElementById('khungDoiMatKhau');
@@ -124,33 +202,37 @@ function openChangePass() {
 }
 
 async function changePass() {
-    var khungChangePass = document.getElementById('khungDoiMatKhau');
-    var inps = khungChangePass.getElementsByTagName('input');
-    if (inps[0].value != currentUser.pass) {
-        alert('Sai mật khẩu !!');
+    const khungChangePass = document.getElementById('khungDoiMatKhau');
+    const inps = khungChangePass.getElementsByTagName('input');
+    const oldPassword = inps[0].value.trim();
+    const newPassword = inps[1].value.trim();
+    const confirmPassword = inps[2].value.trim();
+
+    if (!oldPassword) {
+        alert('Vui lòng nhập mật khẩu cũ');
         inps[0].focus();
         return;
     }
-    if (inps[1] == '') {
+    if (!newPassword) {
+        alert('Vui lòng nhập mật khẩu mới');
         inps[1].focus();
-        alert('Chưa nhập mật khẩu mới !');
+        return;
     }
-    if (inps[1].value != inps[2].value) {
-        alert('Mật khẩu không khớp');
+    if (newPassword !== confirmPassword) {
+        alert('Mật khẩu xác nhận không khớp');
         inps[2].focus();
         return;
     }
 
-   try {
-        const res = await fetch(`http://localhost:5000/api/users/change-password`, {
-            method: 'POST',
+    try {
+        const res = await fetch('http://localhost:5000/api/users/change-password', {
+            method: 'PUT', // dùng PUT vì backend là PUT
             headers: { 'Content-Type': 'application/json' },
-            credentials: 'include', // gửi session cookie
-            body: JSON.stringify({ body: JSON.stringify({
-              oldPassword: inps[0].value,
-              newPassword: inps[1].value
-})
-})
+            credentials: 'include', // gửi cookie session
+            body: JSON.stringify({
+                oldPassword,
+                newPassword
+            })
         });
 
         const data = await res.json();
@@ -159,15 +241,15 @@ async function changePass() {
             alert(data.error || 'Lỗi khi đổi mật khẩu');
             return;
         }
-       currentUser = data.user; // dữ liệu mới từ server
-       capNhat_ThongTin_CurrentUser();
-       addAlertBox('Thay đổi mật khẩu thành công.', '#5f5', '#000', 4000);
-       openChangePass();
-       } catch (err) {
+
+        alert('Đổi mật khẩu thành công!');
+        openChangePass(); // đóng khung đổi mật khẩu
+    } catch (err) {
         console.error(err);
         alert('Lỗi kết nối server!');
     }
 }
+
 
 async function changeInfo(iTag, field) {
     const inp = iTag.parentElement.previousElementSibling.querySelector('input');
@@ -237,7 +319,6 @@ function renderDiachiList(user) {
 
 // Mở modal thêm địa chỉ mới
 function openAddDiachiModal() {
-    console.log('openAddDiachiModal called');
     if (!currentUser) {
         console.error('currentUser is not defined');
         addAlertBox('Lỗi: Không tìm thấy thông tin người dùng!', '#ff6b6b', '#fff', 3000);
@@ -247,48 +328,38 @@ function openAddDiachiModal() {
     // Tạo modal HTML
     var modal = document.createElement('div');
     modal.id = 'addDiachiModal';
-    modal.style.position = 'fixed';
-    modal.style.top = '0';
-    modal.style.left = '0';
-    modal.style.width = '100%';
-    modal.style.height = '100%';
-    modal.style.backgroundColor = 'rgba(0,0,0,0.5)';
-    modal.style.display = 'flex';
-    modal.style.justifyContent = 'center';
-    modal.style.alignItems = 'center';
-    modal.style.zIndex = '1000';
-
+    modal.className = 'modal-backdrop';
     modal.innerHTML = `
-        <div style="background: white; padding: 20px; border-radius: 10px; width: 400px; max-width: 90%;">
+        <div class="modal-box">
             <h3>Thêm địa chỉ mới</h3>
-            <div>
-                <select class="form-select form-select-sm mb-3" id="city" aria-label=".form-select-sm">
-                    <option value="" selected>Chọn tỉnh thành</option>           
-                </select>
-                  
-                <select class="form-select form-select-sm mb-3" id="district" aria-label=".form-select-sm">
-                    <option value="" selected>Chọn quận huyện</option>
-                </select>
-
-                <select class="form-select form-select-sm mb-3" id="ward" aria-label=".form-select-sm">
-                    <option value="" selected>Chọn phường xã</option>
-                </select>
+            <select class="form-select" id="city">
+                <option value="" selected>Chọn tỉnh thành</option>
+            </select>
+            <select class="form-select" id="district">
+                <option value="" selected>Chọn quận huyện</option>
+            </select>
+            <select class="form-select" id="ward">
+                <option value="" selected>Chọn phường xã</option>
+            </select>
+            <input type="text" id="diachiChiTiet" placeholder="Địa chỉ chi tiết (số nhà, đường, ...)">
+            <div class="btn-group">
+                <button class="btn-success" onclick="submitAddDiachi()">Thêm</button>
+                <button class="btn-danger" onclick="closeAddDiachiModal()">Hủy</button>
             </div>
-            <input type="text" id="diachiChiTiet" placeholder="Địa chỉ chi tiết (số nhà, đường, ...)" style="width: 100%; padding: 10px; margin-bottom: 10px;">
-            <button onclick="submitAddDiachi()" style="background: #4CAF50; color: white; padding: 10px; border: none; border-radius: 5px; cursor: pointer;">Thêm</button>
-            <button onclick="closeAddDiachiModal()" style="background: #f44336; color: white; padding: 10px; border: none; border-radius: 5px; cursor: pointer; margin-left: 10px;">Hủy</button>
         </div>
     `;
 
     document.body.appendChild(modal);
 
+    modal.addEventListener('click', function(e){
+        if (e.target === modal) closeAddDiachiModal();
+    });
+
     // Load axios nếu chưa có
     if (typeof axios === 'undefined') {
         var script = document.createElement('script');
         script.src = 'https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js';
-        script.onload = function() {
-            loadVietnamData();
-        };
+        script.onload = function() { loadVietnamData(); };
         document.head.appendChild(script);
     } else {
         loadVietnamData();
@@ -304,7 +375,7 @@ function loadVietnamData() {
     var Parameter = {
         url: "https://raw.githubusercontent.com/kenzouno1/DiaGioiHanhChinhVN/master/data.json", 
         method: "GET", 
-        responseType: "application/json", 
+        responseType: 'json', 
     };
 
     axios(Parameter).then(function (result) {
@@ -391,10 +462,7 @@ function closeAddDiachiModal() {
     }
 }
 
-// Mở modal sửa địa chỉ (tương tự thêm, nhưng preload dữ liệu)
 function openEditDiachiModal(index) {
-    // Để preload, cần parse địa chỉ cũ, nhưng để đơn giản, sử dụng modal tương tự và cho edit
-    // Giả sử địa chỉ format "chi tiết, xã, huyện, tỉnh"
     var diachiCu = currentUser.diaChi[index];
     var chiTiet = diachiCu.diaChiChiTiet || '';
     var xa = diachiCu.phuongXa || '';
@@ -414,31 +482,49 @@ function openEditDiachiModal(index) {
     modal.style.justifyContent = 'center';
     modal.style.alignItems = 'center';
     modal.style.zIndex = '1000';
+    modal.style.animation = 'fadeIn 0.3s ease';
 
     modal.innerHTML = `
-        <div style="background: white; padding: 20px; border-radius: 10px; width: 400px; max-width: 90%;">
-            <h3>Sửa địa chỉ</h3>
-            <div>
-                <select class="form-select form-select-sm mb-3" id="city" aria-label=".form-select-sm">
+        <div style="
+            background: #fff; 
+            padding: 25px 30px; 
+            border-radius: 16px; 
+            width: 420px; 
+            max-width: 90%; 
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+            font-family: 'Segoe UI', sans-serif;
+        ">
+            <h3 style="margin-bottom: 20px; color: #333; font-weight: 600; font-size: 20px;">Sửa địa chỉ</h3>
+            <div style="display: flex; flex-direction: column; gap: 12px; margin-bottom: 15px;">
+                <select class="form-select" id="city" aria-label="Chọn tỉnh thành" style="padding: 10px; border-radius: 8px; border: 1px solid #ccc;">
                     <option value="" selected>Chọn tỉnh thành</option>           
                 </select>
-                  
-                <select class="form-select form-select-sm mb-3" id="district" aria-label=".form-select-sm">
+                <select class="form-select" id="district" aria-label="Chọn quận huyện" style="padding: 10px; border-radius: 8px; border: 1px solid #ccc;">
                     <option value="" selected>Chọn quận huyện</option>
                 </select>
-
-                <select class="form-select form-select-sm mb-3" id="ward" aria-label=".form-select-sm">
+                <select class="form-select" id="ward" aria-label="Chọn phường xã" style="padding: 10px; border-radius: 8px; border: 1px solid #ccc;">
                     <option value="" selected>Chọn phường xã</option>
                 </select>
             </div>
-            <input type="text" id="diachiChiTiet" placeholder="Địa chỉ chi tiết (số nhà, đường, ...)" style="width: 100%; padding: 10px; margin-bottom: 10px;" value="` + chiTiet + `">
-            <button onclick="submitEditDiachi(` + index + `)" style="background: #4CAF50; color: white; padding: 10px; border: none; border-radius: 5px; cursor: pointer;">Cập nhật</button>
-            <button onclick="closeEditDiachiModal()" style="background: #f44336; color: white; padding: 10px; border: none; border-radius: 5px; cursor: pointer; margin-left: 10px;">Hủy</button>
+            <input type="text" id="diachiChiTiet" placeholder="Địa chỉ chi tiết (số nhà, đường, ...)" 
+                value="${chiTiet}" 
+                style="width: 100%; padding: 12px; border-radius: 8px; border: 1px solid #ccc; margin-bottom: 15px; font-size: 15px;">
+            <div style="display: flex; justify-content: flex-end; gap: 10px;">
+                <button onclick="submitEditDiachi(${index})" 
+                    style="background: linear-gradient(135deg, #4CAF50, #45a049); color: #fff; padding: 10px 18px; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; transition: all 0.2s;">
+                    Cập nhật
+                </button>
+                <button onclick="closeEditDiachiModal()" 
+                    style="background: linear-gradient(135deg, #f44336, #d32f2f); color: #fff; padding: 10px 18px; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; transition: all 0.2s;">
+                    Hủy
+                </button>
+            </div>
         </div>
     `;
 
     document.body.appendChild(modal);
 
+    // Load dữ liệu Việt Nam nếu cần
     if (typeof axios === 'undefined') {
         var script = document.createElement('script');
         script.src = 'https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js';
@@ -460,7 +546,7 @@ function loadVietnamDataForEdit(tinhName, huyenName, xaName) {
     var Parameter = {
         url: "https://raw.githubusercontent.com/kenzouno1/DiaGioiHanhChinhVN/master/data.json", 
         method: "GET", 
-        responseType: "application/json", 
+        responseType: "json", 
     };
 
     axios(Parameter).then(function (result) {

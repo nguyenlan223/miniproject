@@ -477,3 +477,8 @@
         flex-direction: column;
     }
 }
+.address-actions .btn-cancel,
+.address-actions .btn-add-address {
+    display: none !important;
+}
+

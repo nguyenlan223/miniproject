@@ -1,0 +1,72 @@
+.chitiet-container {
+  width: 90%;
+  margin: 20px auto;
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+.order-info {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 15px;
+}
+
+.info-left, .info-right {
+  width: 45%;
+}
+
+.product-list table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.product-list th, .product-list td {
+  border: 1px solid #eee;
+  padding: 10px;
+  text-align: center;
+}
+
+.product-list img {
+  width: 70px;
+  height: 70px;
+  border-radius: 6px;
+}
+
+.order-total {
+  text-align: right;
+  margin-top: 20px;
+  font-size: 18px;
+  color: #ee4d2d;
+  font-weight: bold;
+}
+.link-sp {
+  transition: color 0.2s ease;
+}
+
+.link-sp:hover {
+  color: #ee4d2d;
+  text-decoration: underline;
+}
+
+.order-info h3 {
+  color: #ee4d2d;
+}
+
+.order-total h3 {
+  color: #ee4d2d;
+  font-weight: bold;
+}
+#diachi {
+  letter-spacing: 0.5px;
+  font-style: italic;
+  color: #555;
+}
+
+#diachi:hover {
+  color: #000;
+  cursor: help; /* hiển thị dấu hỏi khi hover để xem tooltip */
+}

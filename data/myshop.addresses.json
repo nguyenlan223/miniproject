@@ -1,0 +1,326 @@
+[{
+  "_id": {
+    "$oid": "68fcba4f122f0464a51a9d4c"
+  },
+  "userId": {
+    "$oid": "68fcba39122f0464a51a9cfe"
+  },
+  "diaChiChiTiet": "số nhà 02",
+  "phuongXa": "Xã Vạn Phúc",
+  "quanHuyen": "Huyện Thanh Trì",
+  "tinhThanh": "Thành phố Hà Nội",
+  "macDinh": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68fcb700f0da11c8a7d03001"
+  },
+  "userId": {
+    "$oid": "68fca62ef0da11c8a7d03cc3"
+  },
+  "diaChiChiTiet": "123 Nguyễn Thị Minh Khai",
+  "phuongXa": "Bến Thành",
+  "quanHuyen": "Quận 1",
+  "tinhThanh": "TP. Hồ Chí Minh",
+  "macDinh": true
+},
+{
+  "_id": {
+    "$oid": "68fcb700f0da11c8a7d03002"
+  },
+  "userId": {
+    "$oid": "68fca62ef0da11c8a7d03cc3"
+  },
+  "diaChiChiTiet": "45 Cách Mạng Tháng 8",
+  "phuongXa": "Phường 11",
+  "quanHuyen": "Quận 3",
+  "tinhThanh": "TP. Hồ Chí Minh",
+  "macDinh": false
+},
+{
+  "_id": {
+    "$oid": "68fcb700f0da11c8a7d03003"
+  },
+  "userId": {
+    "$oid": "68fca62ef0da11c8a7d03cc3"
+  },
+  "diaChiChiTiet": "9 Nguyễn Trãi",
+  "phuongXa": "Phường 2",
+  "quanHuyen": "Quận 5",
+  "tinhThanh": "TP. Hồ Chí Minh",
+  "macDinh": false
+},
+{
+  "_id": {
+    "$oid": "68fcb700f0da11c8a7d03004"
+  },
+  "userId": {
+    "$oid": "68fca62ef0da11c8a7d03cc4"
+  },
+  "diaChiChiTiet": "56 Trần Hưng Đạo",
+  "phuongXa": "Phường Cầu Kho",
+  "quanHuyen": "Quận 1",
+  "tinhThanh": "TP. Hồ Chí Minh",
+  "macDinh": true
+},
+{
+  "_id": {
+    "$oid": "68fcb700f0da11c8a7d03005"
+  },
+  "userId": {
+    "$oid": "68fca62ef0da11c8a7d03cc5"
+  },
+  "diaChiChiTiet": "18 Hai Bà Trưng",
+  "phuongXa": "Phường Tân Định",
+  "quanHuyen": "Quận 1",
+  "tinhThanh": "TP. Hồ Chí Minh",
+  "macDinh": true
+},
+{
+  "_id": {
+    "$oid": "68fcb700f0da11c8a7d03006"
+  },
+  "userId": {
+    "$oid": "68fca62ef0da11c8a7d03cc5"
+  },
+  "diaChiChiTiet": "120 Điện Biên Phủ",
+  "phuongXa": "Phường 7",
+  "quanHuyen": "Quận 3",
+  "tinhThanh": "TP. Hồ Chí Minh",
+  "macDinh": false
+},
+{
+  "_id": {
+    "$oid": "68fcb700f0da11c8a7d03007"
+  },
+  "userId": {
+    "$oid": "68fca62ef0da11c8a7d03cc6"
+  },
+  "diaChiChiTiet": "15 Nguyễn Văn Cừ",
+  "phuongXa": "Phường Cô Giang",
+  "quanHuyen": "Quận 1",
+  "tinhThanh": "TP. Hồ Chí Minh",
+  "macDinh": true
+},
+{
+  "_id": {
+    "$oid": "68fcb700f0da11c8a7d03008"
+  },
+  "userId": {
+    "$oid": "68fca62ef0da11c8a7d03cc6"
+  },
+  "diaChiChiTiet": "22 Trường Sa",
+  "phuongXa": "Phường 13",
+  "quanHuyen": "Quận 3",
+  "tinhThanh": "TP. Hồ Chí Minh",
+  "macDinh": false
+},
+{
+  "_id": {
+    "$oid": "68fcb700f0da11c8a7d03009"
+  },
+  "userId": {
+    "$oid": "68fca62ef0da11c8a7d03cc7"
+  },
+  "diaChiChiTiet": "89 Lý Thường Kiệt",
+  "phuongXa": "Phường 7",
+  "quanHuyen": "Quận Tân Bình",
+  "tinhThanh": "TP. Hồ Chí Minh",
+  "macDinh": true
+},
+{
+  "_id": {
+    "$oid": "68fcb700f0da11c8a7d0300a"
+  },
+  "userId": {
+    "$oid": "68fca62ef0da11c8a7d03cc8"
+  },
+  "diaChiChiTiet": "56 Nguyễn Oanh",
+  "phuongXa": "Phường 7",
+  "quanHuyen": "Quận Gò Vấp",
+  "tinhThanh": "TP. Hồ Chí Minh",
+  "macDinh": true
+},
+{
+  "_id": {
+    "$oid": "68fcb700f0da11c8a7d0300b"
+  },
+  "userId": {
+    "$oid": "68fca62ef0da11c8a7d03cc8"
+  },
+  "diaChiChiTiet": "15 Phạm Văn Chiêu",
+  "phuongXa": "Phường 14",
+  "quanHuyen": "Quận Gò Vấp",
+  "tinhThanh": "TP. Hồ Chí Minh",
+  "macDinh": false
+},
+{
+  "_id": {
+    "$oid": "68fcb700f0da11c8a7d0300c"
+  },
+  "userId": {
+    "$oid": "68fca62ef0da11c8a7d03cc9"
+  },
+  "diaChiChiTiet": "23 Phạm Văn Đồng",
+  "phuongXa": "Hiệp Bình Chánh",
+  "quanHuyen": "TP. Thủ Đức",
+  "tinhThanh": "TP. Hồ Chí Minh",
+  "macDinh": true
+},
+{
+  "_id": {
+    "$oid": "68fcb700f0da11c8a7d0300d"
+  },
+  "userId": {
+    "$oid": "68fca62ef0da11c8a7d03cca"
+  },
+  "diaChiChiTiet": "67 Nguyễn Kiệm",
+  "phuongXa": "Phường 3",
+  "quanHuyen": "Quận Gò Vấp",
+  "tinhThanh": "TP. Hồ Chí Minh",
+  "macDinh": true
+},
+{
+  "_id": {
+    "$oid": "68fcb700f0da11c8a7d0300e"
+  },
+  "userId": {
+    "$oid": "68fca62ef0da11c8a7d03cca"
+  },
+  "diaChiChiTiet": "91 Phạm Ngũ Lão",
+  "phuongXa": "Phường 1",
+  "quanHuyen": "Quận Gò Vấp",
+  "tinhThanh": "TP. Hồ Chí Minh",
+  "macDinh": false
+},
+{
+  "_id": {
+    "$oid": "68fcb700f0da11c8a7d0300f"
+  },
+  "userId": {
+    "$oid": "68fca62ef0da11c8a7d03ccb"
+  },
+  "diaChiChiTiet": "90 Cộng Hòa",
+  "phuongXa": "Phường 4",
+  "quanHuyen": "Quận Tân Bình",
+  "tinhThanh": "TP. Hồ Chí Minh",
+  "macDinh": true
+},
+{
+  "_id": {
+    "$oid": "68fcb700f0da11c8a7d03010"
+  },
+  "userId": {
+    "$oid": "68fca62ef0da11c8a7d03ccc"
+  },
+  "diaChiChiTiet": "5 Lê Duẩn",
+  "phuongXa": "Bến Nghé",
+  "quanHuyen": "Quận 1",
+  "tinhThanh": "TP. Hồ Chí Minh",
+  "macDinh": true
+},
+{
+  "_id": {
+    "$oid": "68fcb700f0da11c8a7d03011"
+  },
+  "userId": {
+    "$oid": "68fca62ef0da11c8a7d03ccc"
+  },
+  "diaChiChiTiet": "77 Võ Văn Tần",
+  "phuongXa": "Phường 6",
+  "quanHuyen": "Quận 3",
+  "tinhThanh": "TP. Hồ Chí Minh",
+  "macDinh": false
+},
+{
+  "_id": {
+    "$oid": "68fcb700f0da11c8a7d03012"
+  },
+  "userId": {
+    "$oid": "68fca62ef0da11c8a7d03ccd"
+  },
+  "diaChiChiTiet": "150 Trường Chinh",
+  "phuongXa": "Phường 13",
+  "quanHuyen": "Quận Tân Bình",
+  "tinhThanh": "TP. Hồ Chí Minh",
+  "macDinh": true
+},
+{
+  "_id": {
+    "$oid": "68fcb700f0da11c8a7d03013"
+  },
+  "userId": {
+    "$oid": "68fca62ef0da11c8a7d03cce"
+  },
+  "diaChiChiTiet": "200 Điện Biên Phủ",
+  "phuongXa": "Phường 7",
+  "quanHuyen": "Quận 3",
+  "tinhThanh": "TP. Hồ Chí Minh",
+  "macDinh": true
+},
+{
+  "_id": {
+    "$oid": "68fcb700f0da11c8a7d03014"
+  },
+  "userId": {
+    "$oid": "68fca62ef0da11c8a7d03cce"
+  },
+  "diaChiChiTiet": "15 Nguyễn Văn Trỗi",
+  "phuongXa": "Phường 14",
+  "quanHuyen": "Quận Phú Nhuận",
+  "tinhThanh": "TP. Hồ Chí Minh",
+  "macDinh": false
+},
+{
+  "_id": {
+    "$oid": "68fcb700f0da11c8a7d03015"
+  },
+  "userId": {
+    "$oid": "68fca62ef0da11c8a7d03ccf"
+  },
+  "diaChiChiTiet": "8 Hoàng Văn Thụ",
+  "phuongXa": "Phường 9",
+  "quanHuyen": "Quận Phú Nhuận",
+  "tinhThanh": "TP. Hồ Chí Minh",
+  "macDinh": true
+},
+{
+  "_id": {
+    "$oid": "68fcb700f0da11c8a7d03016"
+  },
+  "userId": {
+    "$oid": "68fca62ef0da11c8a7d03cd0"
+  },
+  "diaChiChiTiet": "19 Phan Xích Long",
+  "phuongXa": "Phường 2",
+  "quanHuyen": "Quận Phú Nhuận",
+  "tinhThanh": "TP. Hồ Chí Minh",
+  "macDinh": true
+},
+{
+  "_id": {
+    "$oid": "68fcb700f0da11c8a7d03017"
+  },
+  "userId": {
+    "$oid": "68fca62ef0da11c8a7d03cd1"
+  },
+  "diaChiChiTiet": "88 Võ Thị Sáu",
+  "phuongXa": "Phường 6",
+  "quanHuyen": "Quận 3",
+  "tinhThanh": "TP. Hồ Chí Minh",
+  "macDinh": true
+},
+{
+  "_id": {
+    "$oid": "68fcb700f0da11c8a7d03018"
+  },
+  "userId": {
+    "$oid": "68fca62ef0da11c8a7d03cd1"
+  },
+  "diaChiChiTiet": "72 Pasteur",
+  "phuongXa": "Phường 8",
+  "quanHuyen": "Quận 3",
+  "tinhThanh": "TP. Hồ Chí Minh",
+  "macDinh": false
+}]

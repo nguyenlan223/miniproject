@@ -4,25 +4,21 @@ var cart = null;   // Giỏ hàng từ server
 var currentUser = null; // User hiện tại
 
 window.onload = async function () {
-    khoiTao();
+    khoiTao()
    try {
     const res = await fetch("http://localhost:5000/api/products");
     var list_products = await res.json();
   } catch (err) {
     console.error("Lỗi tải sản phẩm:", err);
   }
-
-      // Lấy user hiện tại
-    
-
-    const currentUser = await getCurrentUser(); 
- if (!currentUser) {
+   const currentUser = await getCurrentUser(); 
+   if (!currentUser) {
     addAlertBox('Vui lòng đăng nhập trước khi xem giỏ hàng', '#e74c3c', '#fff', 4000);
     setTimeout(() => window.location.href = 'index.html', 1500);
     return;
-}
+   }
 
-
+      // Lấy user hiện tại
     //Đảm bảo rằng ta chờ loadCart() chạy xong trước khi vẽ bảng.
     await loadCart(); // tải giỏ hàng từ server trước
     addProductToTable(currentUser);// giờ products đã có dữ liệu->products đã được load sẵn, không còn bị undefined.

@@ -1,5 +1,5 @@
 import { API_BASE_URL } from "../config.js";
-
+let product = {};
 const params = new URLSearchParams(location.search);
 const id = params.get("id");
 
@@ -7,9 +7,9 @@ const API_BASE = `${API_BASE_URL}/products`;
 
 async function loadProduct() {
     try {
-        const res = await fetch(`${API_BASE}/${id}`);
+        const res = await fetch(`${API_BASE}/${id}`,{credentials: "include"});
         if (!res.ok) throw new Error("Không thể tải dữ liệu sản phẩm!");
-        const product = await res.json();
+         product = await res.json();
         renderProduct(product);
     } catch (err) {
         alert(err.message);
@@ -40,62 +40,87 @@ function renderProduct(p) {
     document.getElementById("rom").value = d.rom || "";
     document.getElementById("microUSB").value = d.microUSB || "";
     document.getElementById("battery").value = d.battery || "";
-
-    document.getElementById("productImage").value = p.img;
-    document.getElementById("previewImage").src = p.img;
+    // Chuẩn hóa đường dẫn tuyệt đối
+   // Chuẩn hóa đường dẫn tuyệt đối từ root
+    let imgPath = p.img;
+    document.getElementById("previewImage").src = imgPath;
+    document.getElementById("productImage").value = imgPath;
 }
 
 // Preview hình ảnh khi nhập URL
 document.getElementById("productImage").addEventListener("input", (e) => {
-    document.getElementById("previewImage").src = e.target.value;
+    let val = e.target.value;
+    document.getElementById("previewImage").src = val;
 });
 
-// Submit form để lưu thay đổi
-document.getElementById("editForm").addEventListener("submit", async (e) => {
-    e.preventDefault();
 
-    const product = {
-        masp: document.getElementById("masp").value,
-        name: document.getElementById("productName").value,
-        company: document.getElementById("company").value,
-        price: +document.getElementById("productPrice").value,
-        stock: +document.getElementById("productStock").value,
-        promo: {
-            name: document.getElementById("promoName").value,
-            value: +document.getElementById("promoValue").value,
-        },
-        img: document.getElementById("productImage").value,
-        detail: {
-            screen: document.getElementById("screen").value,
-            os: document.getElementById("os").value,
-            camara: document.getElementById("camara").value,
-            camaraFront: document.getElementById("camaraFront").value,
-            cpu: document.getElementById("cpu").value,
-            ram: document.getElementById("ram").value,
-            rom: document.getElementById("rom").value,
-            microUSB: document.getElementById("microUSB").value,
-            battery: document.getElementById("battery").value,
-        },
-    };
-
-    try {
-        const res = await fetch(`${API_BASE}/${id}`, {
-            method: "PUT",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify(product),
-        });
-
-        if (!res.ok) throw new Error("Cập nhật sản phẩm thất bại!");
-
-        sessionStorage.setItem("shouldReload", "true");
-        sessionStorage.setItem("ProductID", id);
-        alert("Đã cập nhật thành công!");
-        history.back();
-    } catch (err) {
-        alert(err.message);
+// ✅ Lấy data từ form
+function getFormData() {
+  return {
+    name: document.getElementById("productName").value.trim(),
+    company: document.getElementById("company").value.trim(),
+    price: +document.getElementById("productPrice").value,
+    stock: +document.getElementById("productStock").value,
+    img: document.getElementById("productImage").value.trim(),
+    promo: {
+      name: document.getElementById("promoName").value.trim(),
+      value: +document.getElementById("promoValue").value,
+    },
+    detail: {
+      screen: document.getElementById("screen").value.trim(),
+      os: document.getElementById("os").value.trim(),
+      camara: document.getElementById("camara").value.trim(),
+      camaraFront: document.getElementById("camaraFront").value.trim(),
+      cpu: document.getElementById("cpu").value.trim(),
+      ram: document.getElementById("ram").value.trim(),
+      rom: document.getElementById("rom").value.trim(),
+      microUSB: document.getElementById("microUSB").value.trim(),
+      battery: document.getElementById("battery").value.trim(),
+    },
+  };
+}
+// ✅ So sánh object và chỉ lấy phần thay đổi
+function diffObjects(newObj, oldObj) {
+  const diff = {};
+  for (const key in newObj) {
+    if (typeof newObj[key] === "object" && newObj[key] !== null) {
+      const nestedDiff = diffObjects(newObj[key], oldObj[key] || {});
+      if (Object.keys(nestedDiff).length > 0) diff[key] = nestedDiff;
+    } else if (newObj[key] !== oldObj[key]) {
+      diff[key] = newObj[key];
     }
-});
+  }
+  return diff;
+}
 
+// ✅ Gửi request cập nhật
+document.getElementById("editForm").addEventListener("submit", async (e) => {
+  e.preventDefault();
+  const newData = getFormData();
+  const changedData = diffObjects(newData, product);
+
+  if (Object.keys(changedData).length === 0) {
+    alert("Không có thay đổi nào.");
+    return;
+  }
+
+  try {
+    const res = await fetch(`${API_BASE}/${id}`, {
+      method: "PATCH", // ✅ dùng PATCH thay vì PUT cho partial update
+      headers: { "Content-Type": "application/json" },
+      credentials: "include",
+      body: JSON.stringify(changedData),
+    });
+
+    if (!res.ok) throw new Error("Cập nhật thất bại!");
+    // 🔥 Lưu flag vào sessionStorage
+    sessionStorage.setItem("shouldReload", "true");
+    alert("Cập nhật thành công!");
+    history.back();
+  } catch (err) {
+    alert(err.message);
+  }
+});
 // Nút hủy
 document.getElementById("cancelBtn").addEventListener("click", () => {
     history.back();
@@ -103,3 +128,4 @@ document.getElementById("cancelBtn").addEventListener("click", () => {
 
 // Tải dữ liệu khi trang mở
 loadProduct();
+

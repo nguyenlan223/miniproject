@@ -1,220 +1,366 @@
-/* .listDonHang {
-    display: none;
-} */
-
-.infoUser table {
-    border-collapse: collapse;
-    margin: 0 auto;
+/* ==================== HỒ SƠ NGƯỜI DÙNG ==================== */
+.infoUser {
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+    background: #fefefe;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 12px 28px rgba(0,0,0,0.12);
+    transition: all .3s ease;
+    font-family: 'Segoe UI', sans-serif;
 }
 
-.infoUser table th {
-    font-size: 26px;
-    font-weight: bold;
-    padding: 10px 5px;
+/* CARD thông tin */
+.info-card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 25px 30px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
 }
 
-.infoUser table td {
-    font-size: 18px;
-    padding: 8px 5px;
-}
-.infoUser table td:first-child {
-    font-weight: bold;
-    text-align: right;
-}
-
-.infoUser input {
-    font-size: 20px;
-    border-radius: 5px;
+/* Tiêu đề */
+.info-card h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 25px;
     text-align: center;
-    transition-duration: .15s;
-    border: 1px solid #aaa;
-    padding: 5px;
-    width: 100%;
-    box-sizing: border-box;
+    letter-spacing: 0.5px;
 }
 
-.infoUser input:read-only {
-    border: 1px solid transparent;
-    background-color: #f5f5f5;
+/* Dòng thông tin */
+.info-row {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 18px;
 }
 
-/* Nút sửa thông tin */
-.infoUser .fa-pencil {
-    text-align: center;
-    border-radius: 5px;
-    font-size: 1em;
-    padding: 7px;
-    transition-duration: .2s;
+.info-row label {
+    width: 130px;
+    font-weight: 600;
+    color: #555;
+}
+
+.info-row input {
+    flex: 1;
+    padding: 10px 14px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    transition: all 0.25s ease;
+    background-color: #fafafa;
+}
+
+.info-row input:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 6px rgba(76,175,80,0.2);
+    outline: none;
+}
+
+.info-row.editable {
+    position: relative;
+}
+
+.info-row.editable i.fa-pencil {
+    position: absolute;
+    right: 12px;
+    font-size: 16px;
     cursor: pointer;
-    min-width: 70px;
-    display: inline-block;
+    color: #555;
+    transition: 0.25s;
 }
 
-.infoUser .fa-pencil:hover {
-    background-color: #ccc;
+.info-row.editable i.fa-pencil:hover {
+    color: #4CAF50;
+}
+
+/* Password row */
+.password-row i.fa-pencil {
+    color: #f57c00;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.password-row i.fa-pencil:hover {
+    color: #ef6c00;
+}
+
+/* Khung đổi mật khẩu */
+#khungDoiMatKhau {
+    margin-top: 12px;
+    display: none;
+    flex-direction: column;
+    gap: 12px;
+    padding: 15px;
+    border-radius: 12px;
+    background: #f9f9f9;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+#khungDoiMatKhau.active {
+    display: flex;
+}
+
+.pass-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.pass-row label {
+    width: 140px;
+    font-weight: 500;
     color: #444;
 }
 
-/* Thay đổi mật khẩu */
-#khungDoiMatKhau {
-    padding: 0;
-    border-bottom: 1px solid #ccc;
-    border-top: 1px solid #ccc;
-}
-#khungDoiMatKhau tr td {
-    padding: 0;
-}
-#khungDoiMatKhau tr td div {
-    max-height: 0;
-    overflow: hidden;
-    transition-duration: 0.3s;
-}
-
-/* active */
-#khungDoiMatKhau.active, #khungDoiMatKhau.active tr td {
-    padding: 5px 0;
-}
-#khungDoiMatKhau.active td div {
-    max-height: 100px;
-    transition-duration: 0.6s;
-}
-
-#khungDoiMatKhau button {
-    width: 100%;
-    padding: 5px 10px;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-    background: linear-gradient(135deg, #4CAF50, #45a049);
-    color: white;
-    font-weight: bold;
-}
-#khungDoiMatKhau button:hover {
-    background: linear-gradient(135deg, #45a049, #3d8b40);
-}
-
-/* ========== STYLE CHO ĐỊA CHỈ ========== */
-.diachi-item {
-    margin: 10px 0;
-    padding: 15px;
-    border: 2px solid #e0e0e0;
+.pass-row input {
+    flex: 1;
+    padding: 10px 12px;
     border-radius: 8px;
-    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    background: #fff;
+    font-size: 14px;
+    transition: all 0.25s ease;
+}
+
+.pass-row input:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 6px rgba(76,175,80,0.2);
+}
+#btn_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#diaChi_container{
+    
+}
+/* Button */
+#khungDoiMatKhau button, .btn-them-diachi {
+   
+    padding: 10px 18px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #4CAF50, #45a049);
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
     transition: all 0.3s ease;
+}
+
+#khungDoiMatKhau button:hover, .btn-them-diachi:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(76,175,80,0.25);
+}
+
+.avatar-box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.avatar-wrapper {
+  position: relative;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.avatar-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.avatar-wrapper:hover img {
+  transform: scale(1.05);
+}
+
+.avatar-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 26px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.avatar-wrapper:hover .avatar-overlay {
+  opacity: 1;
+}
+
+.avatar-menu {
+  position: absolute;
+  top: 150px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+  display: none;
+  flex-direction: column;
+  z-index: 10;
+}
+
+.avatar-menu button {
+  padding: 10px 15px;
+  background: none;
+  border: none;
+  text-align: left;
+  width: 180px;
+  cursor: pointer;
+  font-size: 15px;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.avatar-menu button:hover {
+  background: #f5f5f5;
+}
+
+/* Responsive */
+@media(max-width:768px) {
+    .user-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .info-row, .pass-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .info-row label, .pass-row label {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .info-row input, .pass-row input {
+        width: 100%;
+    }
+
+    .info-card {
+        padding: 20px;
+    }
+}
+
+/* ==================== DANH SÁCH ĐỊA CHỈ ==================== */
+#diachiList {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 6px;
+}
+
+/* Mỗi địa chỉ */
+.diachi-item {
     position: relative;
-    min-height: 20px;
+    padding: 14px 18px;
+    border: 2px solid #e0e0e0;
+    border-radius: 12px;
+    background: #fafafa;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+    cursor: pointer;
 }
 
 .diachi-item:hover {
     border-color: #4CAF50;
     background-color: #f0f8f0;
-    box-shadow: 0 2px 8px rgba(76, 175, 80, 0.2);
+    box-shadow: 0 4px 12px rgba(76,175,80,0.15);
 }
 
+/* Nội dung địa chỉ */
 .diachi-item span {
     display: block;
-    margin-bottom: 5px;
-    font-weight: 500;
+    font-size: 14px;
     color: #333;
-    font-size: 16px;
     line-height: 1.4;
-    padding-right: 80px;
+    padding-right: 60px; /* dành chỗ icon */
 }
 
+/* Icon sửa/xóa */
 .diachi-item i {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    cursor: pointer;
-    padding: 8px;
-    border-radius: 5px;
-    transition: all 0.3s ease;
     font-size: 16px;
+    cursor: pointer;
+    padding: 6px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
 }
 
 .diachi-item i.fa-edit {
     right: 40px;
     color: #2196F3;
 }
-
 .diachi-item i.fa-edit:hover {
     background-color: #e3f2fd;
-    color: #1976D2;
+    color: #1565C0;
 }
 
 .diachi-item i.fa-trash {
     right: 10px;
     color: #f44336;
 }
-
 .diachi-item i.fa-trash:hover {
     background-color: #ffebee;
-    color: #d32f2f;
+    color: #c62828;
 }
 
-/* Nút Thêm địa chỉ */
-#btnThemDiaChi {
-    margin-top: 15px;
-    padding: 12px 20px;
+/* Nút thêm địa chỉ */
+.btn-them-diachi {
+    margin-top: 10px;
+    padding: 10px 18px;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 14px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
     background: linear-gradient(135deg, #4CAF50, #45a049);
     color: white;
     border: none;
-    border-radius: 8px;
     cursor: pointer;
-    font-size: 16px;
-    font-weight: bold;
     transition: all 0.3s ease;
-    display: block;
-    width: 100%;
-    box-shadow: 0 2px 5px rgba(76, 175, 80, 0.3);
 }
 
-#btnThemDiaChi:hover {
-    background: linear-gradient(135deg, #45a049, #3d8b40);
+.btn-them-diachi:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(76, 175, 80, 0.4);
+    box-shadow: 0 6px 12px rgba(76,175,80,0.25);
 }
 
-#btnThemDiaChi:active {
-    transform: translateY(0);
-    box-shadow: 0 2px 5px rgba(76, 175, 80, 0.3);
-}
+/* Responsive */
+@media(max-width:768px) {
+    #diachiList {
+        gap: 10px;
+    }
 
-#btnThemDiaChi i {
-    margin-right: 8px;
-    font-size: 14px;
-}
+    .diachi-item {
+        padding: 12px 14px;
+        font-size: 13px;
+    }
 
-/* Đảm bảo bảng hiển thị tốt trên mobile */
-@media (max-width: 768px) {
-    .infoUser table {
+    .btn-them-diachi {
         width: 100%;
-    }
-    
-    .infoUser table th {
-        font-size: 20px;
-    }
-    
-    .infoUser table td {
-        font-size: 16px;
-        padding: 6px 3px;
-    }
-    
-    .diachi-item span {
-        padding-right: 70px;
-        font-size: 14px;
-    }
-    
-    .diachi-item i {
-        padding: 6px;
-        font-size: 14px;
-    }
-    
-    .diachi-item i.fa-edit {
-        right: 35px;
-    }
-    
-    .diachi-item i.fa-trash {
-        right: 8px;
+        justify-content: center;
     }
 }

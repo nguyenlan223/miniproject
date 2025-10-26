@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chi tiết đơn hàng</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/topnav.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/chitietdonhang.css">
+  <link rel="stylesheet" href="css/chitietsanpham.css">
+  <!-- Load font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        crossorigin="anonymous">
+
+  <script src="js/Jquery/Jquery.min.js"></script>
+  <script src="js/dungchung.js"></script>
+  <script src="js/chitietdonhang.js"></script>
+  <script src="js/chitietsanpham.js"></script>
+</head>
+
+<body>
+  <script>addTopNav();</script>
+  <script>addHeader2();</script>
+
+  <div class="chitiet-container">
+    <h2>Chi tiết đơn hàng <span id="madon"></span></h2>
+
+    <div class="order-info">
+      <div class="info-left">
+        <h3>Thông tin nhận hàng</h3>
+        <p><strong>Người dùng:</strong> <span id="tennguoinhan"></span></p>
+        <p><strong>Địa chỉ:</strong> <span id="diachi"></span></p>
+      </div>
+
+      <div class="info-right">
+        <h3>Trạng thái đơn</h3>
+        <p><strong>Ngày đặt:</strong> <span id="ngaydat"></span></p>
+        <p><strong>Trạng thái:</strong> <span id="trangthai"></span></p>
+      </div>
+    </div>
+
+    <div class="product-list">
+      <h3>Sản phẩm</h3>
+      <table id="table-sanpham">
+        <thead>
+          <tr>
+            <th>Ảnh</th>
+            <th>Tên sản phẩm</th>
+            <th>Số lượng</th>
+            <th>Giá</th>
+            <th>Tạm tính</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <div class="order-total">
+      <h3>Tổng tiền: <span id="tongtien"></span></h3>
+    </div>
+  </div>
+
+  <div class="footer"><script>addFooter();</script></div>
+</body>
+</html>
