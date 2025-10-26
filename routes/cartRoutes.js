@@ -38,6 +38,7 @@ router.post("/add", authMiddleware, async (req, res) => {
         }
 
         await cart.save();
+        console.log(req.headers.host)
         res.status(200).json({
             success: true,
             message: "Đã cập nhật giỏ hàng thành công",

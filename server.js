@@ -36,8 +36,9 @@ app.use(
        }),
         cookie: {
             httpOnly: true,
-            secure: true, // nếu chạy localhost, để false
+            secure:true, // nếu chạy localhost, để false
             maxAge: 1000 * 60 * 60 * 24,
+            sameSite: 'none'
         },
     })
 );
@@ -59,6 +60,7 @@ app.use("/admin", (req, res, next) => {
     res.set("Cache-Control", "no-store");
     next();
 });
+
 
 app.use('/img', express.static(path.join(__dirname, 'public/img')));
 // ảnh upload runtime (avatar, sản phẩm)
