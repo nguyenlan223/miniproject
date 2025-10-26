@@ -17,7 +17,7 @@ window.onload = async function () {
 
     // Lấy user hiện tại từ server (session)
     try {
-        const res = await fetch(`${API_BASE}/api/users/me`, { credentials: 'include' });
+        const res = await fetch("https://miniproject-n8x9.onrender.com/api/users/me", { credentials: 'include' });
         const data = await res.json();
         if (data.success && data.user) {
             currentUser = data.user;
@@ -51,7 +51,7 @@ async function changeAvatar(event) {
   formData.append("avatar", file);
 
   try {
-    const res = await fetch(`${API_BASE}/api/users/avatar`, {
+    const res = await fetch("https://miniproject-n8x9.onrender.com/api/users/avatar", {
       method: "PUT",
       body: formData,
       credentials: "include"
@@ -89,7 +89,7 @@ async function removeAvatar() {
   if (!confirm("Bạn có chắc muốn xóa ảnh đại diện?")) return;
 
   try {
-    const res = await fetch(`${API_BASE}/api/users/avatar`, {
+    const res = await fetch("https://miniproject-n8x9.onrender.com/api/users/avatar", {
       method: "DELETE",
       credentials: "include"
     });
@@ -226,7 +226,7 @@ async function changePass() {
     }
 
     try {
-        const res = await fetch(`${API_BASE}/api/users/change-password`, {
+        const res = await fetch("https://miniproject-n8x9.onrender.com/api/users/change-password", {
             method: 'PUT', // dùng PUT vì backend là PUT
             headers: { 'Content-Type': 'application/json' },
             credentials: 'include', // gửi cookie session
@@ -259,7 +259,7 @@ async function changeInfo(iTag, field) {
         const value = inp.value;
 
         try {
-            const res = await fetch(`${API_BASE}/api/users/update`, {
+            const res = await fetch("https://miniproject-n8x9.onrender.com/api/users/update", {
                 method: 'PUT',
                 headers: { 'Content-Type': 'application/json' },
                 credentials: 'include',
@@ -434,7 +434,7 @@ async function submitAddDiachi() {
         quanHuyen: huyen,
         tinhThanh: tinh
     };
-    const res = await fetch(`${API_BASE}/api/users/address`, {
+    const res = await fetch("https://miniproject-n8x9.onrender.com/api/users/address", {
     method: 'POST',
     headers: { "Content-Type": "application/json" },
     credentials: 'include', // gửi cookie session
@@ -626,7 +626,7 @@ async function submitEditDiachi(index) {
         tinhThanh: city.options[city.selectedIndex].text
     }
     diaChi=currentUser.diaChi[index];
-   const res = await fetch(`${API_BASE}/api/users/address/${diaChi._id}`, {
+   const res = await fetch("https://miniproject-n8x9.onrender.com/api/users/address/${diaChi._id}", {
     method: 'PUT',
     headers: { 'Content-Type': 'application/json' },
     credentials: 'include',
@@ -658,7 +658,7 @@ function closeEditDiachiModal() {
 async function deleteDiachi(index) {
     if (window.confirm('Bạn có chắc chắn muốn xóa địa chỉ này?')) {
          diaChi=currentUser.diaChi[index];
-         const res = await fetch(`${API_BASE}/api/users/address/${diaChi._id}`, {
+         const res = await fetch("https://miniproject-n8x9.onrender.com/api/users/address/${diaChi._id}", {
          method: 'DELETE',
          credentials: 'include'
 });
