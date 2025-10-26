@@ -12,6 +12,10 @@ const path = require("path");
 app.use(express.json());
 app.use(express.static(path.join(__dirname, "public", "client")));
 
+app.use(cors({
+    origin: "https://miniproject-n8x9.onrender.com",
+    credentials: true, // quan trọng để gửi cookie
+}));
 // ⚠️ session middleware
 app.use(
     session({
@@ -24,7 +28,7 @@ app.use(
         cookie: {
             httpOnly: true,
             secure:true, // nếu chạy localhost, để false
-            sameSite: 'lax',
+            sameSite: 'none',
             maxAge: 1000 * 60 * 60 * 24
             
         },
