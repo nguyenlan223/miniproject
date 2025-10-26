@@ -1,4 +1,4 @@
-let API_BASE = window.location.origin.includes('localhost')
+var API_BASE = window.location.origin.includes('localhost')
     ? "http://localhost:5000"
     : "https://miniproject-n8x9.onrender.com";
 $(document).ready(async function () {

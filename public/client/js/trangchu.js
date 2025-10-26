@@ -1,5 +1,5 @@
 let list_products = [];
-let API_BASE = window.location.origin.includes('localhost')
+var API_BASE = window.location.origin.includes('localhost')
     ? "http://localhost:5000"
     : window.location.origin;
 window.onload =  async function () {

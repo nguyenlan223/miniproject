@@ -3,7 +3,7 @@ var tongTienTatCaDonHang = 0;
 var tongSanPhamTatCaDonHang = 0;
 var selectedDiachi = null;
 // frontend config
-let API_BASE = window.location.origin.includes('localhost')
+var API_BASE = window.location.origin.includes('localhost')
     ? "http://localhost:5000"
     : "https://miniproject-n8x9.onrender.com";
 window.onload = async function () {

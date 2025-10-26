@@ -1,6 +1,6 @@
 import { API_BASE_URL } from "../config.js";
 
-const API_PRODUCT = `${API_BASE_URL}/products`;
+var API_PRODUCT = `${API_BASE_URL}/products`;
 
 // 🧠 Lấy data từ form
 function getFormData() {

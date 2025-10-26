@@ -1,6 +1,6 @@
 import { API_BASE_URL } from "../config.js";
 
-const API_BASE = `${API_BASE_URL}/orders`;
+var API_BASE = `${API_BASE_URL}/orders`;
 
 async function loadOrders() {
     try {

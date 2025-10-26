@@ -1,6 +1,6 @@
 import { API_BASE_URL } from "../config.js";
 
-const API_BASE = `${API_BASE_URL}/dashboard`;
+var API_BASE = `${API_BASE_URL}/dashboard`;
 
 async function loadDashboard(endpoint = "") {
     const res = await fetch(`${API_BASE}${endpoint}`);

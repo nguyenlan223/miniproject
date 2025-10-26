@@ -3,7 +3,7 @@ let product = {};
 const params = new URLSearchParams(location.search);
 const id = params.get("id");
 
-const API_BASE = `${API_BASE_URL}/products`;
+var API_BASE = `${API_BASE_URL}/products`;
 
 async function loadProduct() {
     try {

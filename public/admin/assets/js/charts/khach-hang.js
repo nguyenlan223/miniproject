@@ -1,6 +1,6 @@
 import { API_BASE_URL } from "../config.js";
 
-const API_USER = `${API_BASE_URL}/users`;
+var API_USER = `${API_BASE_URL}/users`;
 
 async function loadUsers(id = "") {
     try {
