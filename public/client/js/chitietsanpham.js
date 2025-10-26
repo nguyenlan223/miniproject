@@ -1,14 +1,12 @@
 var nameProduct, maProduct, sanPhamHienTai; // Tên sản phẩm trong trang này, 
 // là biến toàn cục để có thể dùng ở bát cứ đâu trong trang
 // không cần tính toán lấy tên từ url nhiều lần
-var API_BASE = window.location.origin.includes('localhost')
-    ? "http://localhost:5000"
-    : "https://miniproject-n8x9.onrender.com";
+
 window.onload = async function () {
     khoiTao();
 
     try {
-        const res = await fetch(`${API_BASE}/api/products`);
+        const res = await fetch("https://miniproject-n8x9.onrender.com/api/products");
         list_products = await res.json();
 
         // ✅ Gọi trực tiếp thay vì chờ DOMContentLoaded

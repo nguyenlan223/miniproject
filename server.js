@@ -8,17 +8,8 @@ const dashboardRoutes = require("./routes/dashboardRoutes");
 
 const app = express();
 const path = require("path");
-const allowedOrigins = ["http://localhost:5000", "https://miniproject-n8x9.onrender.com"];
 app.use(cors({
-    origin: function(origin, callback){
-        // cho phép requests không có origin (Postman, curl)
-        if(!origin) return callback(null, true);
-        if(allowedOrigins.indexOf(origin) === -1){
-            var msg = 'The CORS policy for this site does not allow access from the specified Origin.';
-            return callback(new Error(msg), false);
-        }
-        return callback(null, true);
-    },
+    origin: "https://miniproject-n8x9.onrender.com", // frontend URL
     credentials: true
 }));
 
@@ -37,8 +28,9 @@ app.use(
         cookie: {
             httpOnly: true,
             secure:true, // nếu chạy localhost, để false
-            maxAge: 1000 * 60 * 60 * 24,
-            sameSite: 'none'
+            sameSite: 'none',
+            maxAge: 1000 * 60 * 60 * 24
+            
         },
     })
 );

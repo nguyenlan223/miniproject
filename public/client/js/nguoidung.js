@@ -3,15 +3,13 @@ var tongTienTatCaDonHang = 0;
 var tongSanPhamTatCaDonHang = 0;
 var selectedDiachi = null;
 // frontend config
-var API_BASE = window.location.origin.includes('localhost')
-    ? "http://localhost:5000"
-    : "https://miniproject-n8x9.onrender.com";
+
 window.onload = async function () {
     console.log('nguoidung.js loaded');
     khoiTao();
 
     try {
-    const res = await fetch(`${API_BASE}/api/products`);
+    const res = await fetch("https://miniproject-n8x9.onrender.com/api/products");
     const list_products = await res.json();
     } catch (err) {
     console.error("Lỗi tải sản phẩm:", err);
