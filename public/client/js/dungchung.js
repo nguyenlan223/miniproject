@@ -648,8 +648,8 @@ function addFooter() {
             <span id="closebtn">&times;</span>
         </div>
         <div class="copy-right">
-            <p><a href="index.html">LDD Phone Store</a> - All rights reserved © 2021 - Designed by
-                <span style="color: #eee; font-weight: bold">group 15th</span>
+            <p><a href="index.html">LVN Phone Store</a> - All rights reserved © 2025 - Designed by
+                <span style="color: #eee; font-weight: bold">Nhóm 4: Lan-Vinh-Nhật</span>
             </p>
         </div>`;
     document.body.appendChild(div);
